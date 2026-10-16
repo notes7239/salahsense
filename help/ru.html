@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ru" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Справка — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense — справка</h1>
+<p class="meta">Использование приложения и его настроек · телефон и часы</p>
+<div class="box warn"><p><strong>Важно:</strong> автоматическое отслеживание ракаатов и саджда требует часов (<span data-platform="apple">Apple Watch</span><span data-platform="android">часы Wear OS</span>); один телефон не может измерить движение запястья. Распознавание — это вспомогательный инструмент и может ошибаться: на него влияют положение часов на запястье, посадка ремешка и особенности движений. Вы всегда можете исправить любую запись вручную. Приложение не выносит религиозных решений и не утверждает ничего о действительности намаза.</p></div>
+<p>Частые вопросы и контакты — на <a href="https://notes7239.github.io/salahsense/support/ru.html">странице поддержки</a>. Слова, выделенные жирным, — это названия кнопок и пунктов меню в приложении.</p>
+<nav class="toc" aria-label="Содержание">
+<strong>Содержание</strong>
+<ul>
+<li><a href="#getting-started">1. Начало работы</a></li>
+<li><a href="#prayer-times">2. Местоположение и время намаза</a></li>
+<li><a href="#notifications">3. Уведомления и будильники</a></li>
+<li><a href="#calibration">4. Калибровка на часах</a></li>
+<li><a href="#tracking">5. Автоматическое отслеживание во время намаза</a></li>
+<li><a href="#sequence-check">6. Проверка последовательности и подтверждение</a></li>
+<li><a href="#history">7. История, када и баллы</a></li>
+<li><a href="#excused">8. Дни освобождения</a></li>
+<li><a href="#hijri">9. Календарь по хиджре и Рамадан</a></li>
+<li><a href="#widgets">10. Виджеты, интерактивные уведомления и осложнения</a></li>
+<li><a href="#diagnostics">11. Отправка диагностической записи</a></li>
+<li><a href="#troubleshooting">12. Устранение неполадок и поддержка</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Начало работы</h2>
+<ul>
+<li>Приложение <span data-platform="apple">iPhone</span><span data-platform="android">телефон Android</span> показывает время намаза, киблу, зикр, историю и настройки. Приложение <span data-platform="apple">Apple Watch</span><span data-platform="android">часы Wear OS</span> отслеживает ваши движения во время намаза и управляет напоминаниями об азане и калибровкой.</li>
+<li>Сначала откройте на телефоне <span data-platform="apple">вкладку <strong class="ui">Настройки</strong></span><span data-platform="android">страницу <strong class="ui">Местоположение и настройки</strong></span> и задайте местоположение, метод расчёта, расчёт асра и <strong class="ui">Пол</strong> (разделы 2 и 8).</li>
+<li>Затем один раз выполните <a href="#calibration">калибровку</a> на часах; только после этого автоматическое отслеживание становится надёжным.</li>
+<li>Без часов по-прежнему доступны время намаза, кибла, зикр, ручные записи <strong class="ui">Отметить совершение</strong>, када, статистика, календарь по хиджре, имсакия и виджеты.</li>
+<li>В разделе <strong class="ui">О намазе</strong> — офлайн-сводки с указанием источника о намазах дня и саджда сахв.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Чтобы делиться историей, включите <strong class="ui">Передавать историю намазов на сопряжённый iPhone/Apple Watch</strong> в <strong class="ui">Настройки</strong> → <strong class="ui">Сопряжённое устройство</strong> на iPhone и <strong class="ui">Синхронизировать историю</strong> в <strong class="ui">Сопряжение устройств</strong> на часах. По умолчанию выключено; <strong class="ui">Синхронизировать сейчас</strong> также отправляет более старые записи.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Для синхронизации телефона и часов приложение должно быть на обоих устройствах; без соединения записи остаются на устройстве. При необходимости используйте <strong class="ui">Местоположение и настройки</strong> → <strong class="ui">Повторить синхронизацию</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Язык меняется в <strong class="ui">Настройки</strong> на телефоне и в <strong class="ui">Язык</strong> на часах; каждое устройство хранит свой выбор отдельно.</li>
+</ul>
+
+<h2 id="prayer-times">2. Местоположение и время намаза</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">Настройки</strong> → <strong class="ui">Местоположение и часовой пояс</strong>. Нажмите <strong class="ui">Использовать моё местоположение</strong> и разрешите доступ к геопозиции, либо заполните <strong class="ui">Город</strong>, <strong class="ui">Широта</strong>, <strong class="ui">Долгота</strong> и <strong class="ui">Часовой пояс IANA</strong> (например, Europe/Moscow), затем нажмите <strong class="ui">Сохранить город/местоположение</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Местоположение и настройки</strong>: нажмите <strong class="ui">Определить моё местоположение</strong> либо заполните <strong class="ui">Название места</strong>, <strong class="ui">Широта</strong>, <strong class="ui">Долгота</strong> и <strong class="ui">Часовой пояс</strong>, затем нажмите <strong class="ui">Сохранить</strong>.</li>
+<li>Разрешение на геопозицию не обязательно; город и координаты можно ввести вручную. Обновляйте местоположение и часовой пояс при поездках.</li>
+<li><strong class="ui">Метод расчёта</strong> (12 методов): <strong class="ui">Турция (Диянет)</strong>, <strong class="ui">Всемирная исламская лига</strong>, <strong class="ui">Египетское управление геодезии</strong>, <strong class="ui">Карачи (Университет исламских наук)</strong>, <strong class="ui">Умм аль-Кура (Мекка)</strong>, <strong class="ui">Дубай</strong>, <strong class="ui">Комитет наблюдения за луной</strong>, <strong class="ui">Северная Америка (ISNA)</strong>, <strong class="ui">Кувейт</strong>, <strong class="ui">Катар</strong>, <strong class="ui">Сингапур</strong>, <strong class="ui">Тегеран</strong>. Выберите метод, ближе всего совпадающий с местным расписанием.</li>
+<li><strong class="ui">Расчёт асра</strong>: <strong class="ui">Стандартный</strong> использует тень длиной в один объект (первый аср), <strong class="ui">Ханафитский</strong> — в два объекта (второй аср). Турецкое расписание использует стандартный метод.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Мазхаб</strong>: <strong class="ui">Суннитский (с сунной и витром)</strong> или <strong class="ui">Шафиитский (фард)</strong>. Этот выбор определяет только отслеживаемые ракааты, а не время. На часах: <strong class="ui">Мазхаб / ракааты</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">После изменения время обновляется автоматически; при необходимости нажмите <strong class="ui">Обновить расписание</strong>. На часах метод и расчёт асра находятся в <strong class="ui">Метод расчёта</strong>.</li>
+<li>Время рассчитывается на устройстве. Приложение не является официальным расписанием и может отличаться от вашего на несколько минут.</li>
+</ul>
+
+<h2 id="notifications">3. Уведомления и будильники</h2>
+<h3>Уведомление о времени намаза</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Уведомлять о начале времени намаза</strong> отправляет уведомление для каждого времени намаза. Задайте время шагом: <strong class="ui">В начале времени намаза</strong> или до 60 минут раньше (<strong class="ui">За … мин.</strong>) или позже (<strong class="ui">Через … мин</strong>). На часах та же настройка в <strong class="ui">Напоминания об азане</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Если эти уведомления обрабатывают часы, iPhone не планирует свои собственные; они приходят на часы, пока iPhone заблокирован.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Местоположение и настройки</strong>: включите <strong class="ui">Напоминание</strong> и выберите <strong class="ui">В начале времени намаза</strong> или <strong class="ui">За … мин.</strong>. Если уведомления приходят с опозданием, предоставьте разрешение <strong class="ui">Разрешение на расписание</strong>.</li>
+</ul>
+<h3>Будильник до конца времени намаза</h3>
+<ul>
+<li><strong class="ui">Будильник до конца времени</strong>: <strong class="ui">Выкл.</strong> либо число минут до конца времени намаза. Если намаз не отмечен как совершённый, будильник звонит даже в беззвучном режиме.</li>
+<li>Он может прозвонить и в том случае, если запись, распознанная часами, ещё не дошла до телефона.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Для настоящего будильника нужен iOS 26; в более старой версии или без разрешения на будильник вместо него отправляется уведомление.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">За 45 и 30 минут до конца времени часы проигрывают с вибрацией часть азана «хайя» (<strong class="ui">Спешите на молитву, спешите к успеху</strong>), а если вы спите — ещё раз более настойчиво. Если вы долго сидите или лежите без движения, пока время ещё не закончилось, приходит одно уведомление <strong class="ui">Кажется, вы свободны</strong> (никогда в запретное время).</li>
+</ul>
+<h3>Напоминания о тахаджуде и фаджре (часы)</h3>
+<ul>
+<li>В разделе <span data-platform="apple"><strong class="ui">Напоминания об азане</strong></span><span data-platform="android"><strong class="ui">Напоминания об азане</strong></span> на часах <strong class="ui">Напоминание о тахаджуде</strong> ориентируется на последнюю треть ночи, а <strong class="ui">Напоминание об азане фаджра</strong> — на имсак.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Время напоминания</strong>: <strong class="ui">В начале времени намаза</strong> или за 5–60 минут. <strong class="ui">Отложить</strong>: 1–15 минут.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Движение ненадолго отключает звук будильника; нажатие <strong class="ui">Отметить совершение</strong> останавливает его. <strong class="ui">Движение для отключения звука</strong> задаёт, сколько движения требуется: <strong class="ui">Меньше движения (чувствительно)</strong>, <strong class="ui">Средне</strong>, <strong class="ui">Больше движения (сложно)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Ближайший будильник проигрывает выбранный вами звук азана, остальные напоминания используют звук уведомления. Открытие приложения на часах обновляет ближайший будильник.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Звук и вибрация берутся из канала уведомлений устройства (<strong class="ui">Звук и вибрация</strong>); встроенной записи азана в приложении нет.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Звук азана (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Звук азана</strong> (или <strong class="ui">Напоминания об азане</strong> → <strong class="ui">Выбрать звук азана</strong>): введите https-адрес файла CAF, AIFF или WAV и нажмите <strong class="ui">Загрузить</strong>. В уведомлениях проигрывается до 30 секунд; более длинные файлы звучат только в приложении.</li>
+<li>Выберите один из загруженных звуков; используйте <strong class="ui">Воспроизвести</strong>, <strong class="ui">Стоп</strong> и <strong class="ui">Удалить</strong>. Если звук не выбран, проигрывается встроенный звук будильника.</li>
+<li><strong class="ui">Фрагмент «Хайя» (повтор + вибрация)</strong>: отметьте часть «Хайя аля-с-салах, хайя аля-ль-фалах» секундами <strong class="ui">Начало</strong> и <strong class="ui">Конец</strong>, задайте <strong class="ui">Повторов</strong> и проверьте с помощью <strong class="ui">Воспроизвести фрагмент</strong>.</li>
+<li>Файл скачивается напрямую с указанного адреса; этот сервер не наш.</li>
+</ul>
+<p>На уведомления могут влиять разрешение на уведомления, беззвучный режим, фокусирование, экономия заряда батареи и громкость.</p>
+
+<h2 id="calibration">4. Калибровка на часах</h2>
+<p>Калибровка обучает часы вашим собственным позам такбира, кыяма, руку, саджда и сидения. Она выполняется только на часах.</p>
+<ol>
+<li>Наденьте часы плотно на привычную руку (правую или левую).</li>
+<li><span data-platform="apple"><strong class="ui">Калибровка</strong> → <strong class="ui">Мастер личной калибровки</strong> → <strong class="ui">Начать голосовую калибровку</strong></span><span data-platform="android"><strong class="ui">Калибровка</strong> → <strong class="ui">Начать голосовую калибровку</strong></span>.</li>
+<li>Следуйте голосу: такбир (руки подняты), кыям, руку, выпрямление, саджда, сидение между двумя саджда, вторая саджда, последнее сидение, салам направо, салам налево. После каждой инструкции у вас есть время принять позу, затем следует короткое измерение; сохраняйте позу неподвижно.</li>
+<li>При включённом <strong class="ui">Изучить жест завершения дуа (необязательно)</strong> измеряется также движение рук по лицу после салама; либо нажмите <strong class="ui">Пропустить жест дуа</strong>.</li>
+<li><strong class="ui">Остановить</strong> приостанавливает; <strong class="ui">Продолжить этот шаг</strong> продолжает.</li>
+<li>В конце появляется <strong class="ui">Калибровка завершена</strong> и ваши высоты запястья относительно кыяма.<span data-platform="apple"> Нажмите <strong class="ui">Готово, вернуться к намазу</strong>.</span></li>
+</ol>
+<ul>
+<li>Салам распознаётся только по голосовой подсказке; движение головы не измеряется.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">После успешной калибровки непрерывное распознавание включается автоматически.</li>
+<li>Если позы оказались слишком похожи друг на друга или такбир не был распознан, начните заново на той же руке и держите руки поднятыми на шаге такбира.</li>
+</ul>
+<h3>Второе положение</h3>
+<ul>
+<li>Если часы смещаются вниз по запястью во время намаза, обучите их и этому положению: после обычной калибровки нажмите <strong class="ui">Откалибровать второе положение</strong>, сдвиньте часы на 1–2 см в сторону кисти и повторите те же шаги (включая движение по лицу).</li>
+<li>Распознавание использует то положение, которое подходит лучше. Новая обычная калибровка сохраняет второе положение; если посадка ремешка изменилась, используйте <strong class="ui">Перекалибровать второе положение</strong> или <strong class="ui">Удалить второе положение</strong>.</li>
+</ul>
+<h3>Когда калибровать заново</h3>
+<ul>
+<li>Когда меняется положение часов, посадка ремешка или рука, либо распознавание часто ошибается.<span data-platform="apple"> Уведомление <strong class="ui">Проверьте положение часов</strong> тоже означает, что часы сидят свободно.</span></li>
+<li>Приложение также изучает высоты запястья по вашим намазам. После значительного изменения используйте <strong class="ui">Сбросить изученные высоты</strong>; <strong class="ui">Удалить калибровку</strong> удаляет всю калибровку целиком.</li>
+<li><strong class="ui">Голосовая практика</strong> позволяет потренироваться с голосовой подсказкой; запись при этом не создаётся.</li>
+</ul>
+
+<h2 id="tracking">5. Автоматическое отслеживание во время намаза</h2>
+<ul>
+<li>Откройте приложение на часах в пределах времени намаза и начните с открывающего такбира. Каждая часть (сунна, фард, витр) начинается со своего такбира.<span data-platform="apple"> Когда замечены поднятые руки, появляется <strong class="ui">Поза такбира распознана; перейдите к кыяму.</strong></span></li>
+<li>Порядок сунны и фарда следует открывающим такбирам: <strong class="ui">Фаджр 2+2 · Зухр 4+4+2 · Аср 4+4 · Магриб 3+2 · Иша 4+4+2+3 витр</strong>. Магриб начинается с фарда.<span data-platform="apple"> При выборе <strong class="ui">Шафиитский (фард)</strong> отслеживается только фард.</span></li>
+<li>На экране показаны текущая часть, следующий такбир и распознанные ракааты.</li>
+<li>Чтобы начать сразу с фарда, нажмите <span data-platform="apple"><strong class="ui">Пропустить первую сунну</strong></span><span data-platform="android"><strong class="ui">Начать с фарда</strong></span>.</li>
+<li>Саджда сахв совершается в конце намаза, в последнем сидении; если она распознана, в записи появляется <strong class="ui">Совершён саджда сахв</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Перед саджда сахв можно нажать <strong class="ui">Я выполню саджда сахв</strong>; после этого приложение ожидает два дополнительных саджда и последнее сидение. <strong class="ui">Я повторю эту часть намаза</strong> заново запускает текущую часть. Если сохранение не удалось, нажмите <strong class="ui">Повторить сохранение</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Если калибровка отсутствует, появляется кнопка <strong class="ui">Мастер личной калибровки</strong>.</li>
+</ul>
+<h3>Неверный счёт или пропущенный намаз</h3>
+<ul>
+<li>Если распознано слишком много или слишком мало ракаатов, часы предупреждают вас (<strong class="ui">Проверьте число ракаатов</strong>). Проверьте счёт самостоятельно.</li>
+<li>Отметьте намаз вручную: <span data-platform="apple"><strong class="ui">Отметить совершение фарда</strong></span><span data-platform="android"><strong class="ui">Отметить совершение</strong></span> на часах, <strong class="ui">Отметить совершение</strong> на телефоне.</li>
+<li>Если вы совершили намаз вовремя, но распознавание его пропустило, после окончания времени откройте <strong class="ui">История</strong> на телефоне, нажмите <strong class="ui">Отметить совершение вовремя</strong>, задайте <strong class="ui">Время совершения</strong> и нажмите <strong class="ui">Сохранить как совершённый</strong>. Время должно быть в пределах времени намаза; это действие нельзя отменить.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Неверную запись в истории можно отменить с помощью <strong class="ui">Отменить запись</strong>, а затем снова нажать <strong class="ui">Отметить совершение</strong>.</li>
+</ul>
+<h3>Непрерывное распознавание и батарея</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Настройки распознавания</strong></span><span data-platform="android"><strong class="ui">Распознавание намаза</strong></span> → <strong class="ui">Непрерывное распознавание (экспериментально)</strong> позволяет распознаванию работать при выключенном экране или на циферблате часов.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Для этого часы весь день держат открытой тренировочную сессию. Тренировка в Health не сохраняется, но расход батареи растёт, а кольца активности могут меняться. Если сессия остановилась, откройте приложение заново.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Фоновое распознавание расходует батарею быстрее. Если приложение было принудительно остановлено, откройте его заново.</li>
+<li>Когда функция выключена, распознавание работает только при открытом приложении.</li>
+</ul>
+<h3>Дополнительные намазы</h3>
+<ul>
+<li>Время тахаджуда и духа показано на экране времени намаза; отмечайте их в пределах времени с помощью <strong class="ui">Отметить совершение · +500</strong>. Часы также могут распознать их по открывающему такбиру.</li>
+<li><strong class="ui">Возмещение фаджра → Духа</strong>: выберите записанный када фаджра, после чего ракааты духа распознаются по порядку.</li>
+</ul>
+
+<h2 id="sequence-check">6. Проверка последовательности и подтверждение</h2>
+<p>Прежде чем распознанный фард будет сохранён, проверяется его последовательность: открывающий такбир, руку и два саджда в каждом ракаате, последнее сидение, саджда в одну и ту же сторону и отсутствие похожего на ходьбу поворота.</p>
+<ul>
+<li>Если проверка не пройдена, часы вибрируют и спрашивают <strong class="ui">Вы совершили фард …?</strong>, указывая причины. В списке времени появляется <strong class="ui">Ожидает подтверждения</strong>.</li>
+<li><strong class="ui">Да, совершила</strong>: сохраняется с распознанным временем окончания как <strong class="ui">Автораспознавание (подтверждено)</strong>.</li>
+<li><strong class="ui">Нет</strong>: ничего не сохраняется; напоминания для этого времени намаза возвращаются.</li>
+<li>Если ответа нет до конца времени намаза: сохраняется как <strong class="ui">Автораспознавание (не подтверждено, проверьте)</strong>, чтобы совершённый намаз не потерялся. Нажатие <strong class="ui">Отметить совершение</strong> в это время убирает вопрос.</li>
+</ul>
+<h3>Метки <strong class="ui">Отмечено: …</strong></h3>
+<ul>
+<li><strong class="ui">Автоматическое распознавание</strong>: фард прошёл проверку.</li>
+<li><strong class="ui">Автораспознавание (подтверждено)</strong> / <strong class="ui">Автораспознавание (не подтверждено, проверьте)</strong>: см. выше.</li>
+<li><strong class="ui">Автораспознавание (резервная запись, проверьте)</strong>: распознавание точно подсчитало ракааты фарда, но обычный шаг сохранения не удался, поэтому запись была сделана резервным путём.</li>
+<li><strong class="ui">«Совершено» на часах</strong>, <strong class="ui">«Совершено» в уведомлении часов</strong>, <strong class="ui">«Совершено» на телефоне</strong>, <strong class="ui">«Совершено» в уведомлении телефона</strong>, <strong class="ui">Исправление «Вовремя»</strong>, <strong class="ui">Отметить восполнение</strong>: отметки, сделанные вручную.</li>
+<li>Метки, которые просят проверить, выделены в истории оранжевым цветом; просмотрите и исправьте при необходимости.</li>
+</ul>
+
+<h2 id="history">7. История, када и баллы</h2>
+<ul>
+<li><span data-platform="apple">Вкладка <strong class="ui">История</strong></span><span data-platform="android">Страница <strong class="ui">История</strong></span> на телефоне показывает каждый намаз как <strong class="ui">Совершён</strong>, <strong class="ui">Восполнен</strong> или <strong class="ui">Ожидается / пропущен</strong>, с меткой <strong class="ui">Совершён саджда сахв</strong> и указанием того, кто отметил намаз, если это уместно.</li>
+<li>Время намаза, прошедшее без записи, попадает в список када (<strong class="ui">Намазов для восполнения: …</strong>). Когда вы его восполняете, нажмите <strong class="ui">Отметить совершение</strong> рядом с этим намазом<span data-platform="apple">; на часах используйте <strong class="ui">Восполнение намазов</strong></span><span data-platform="android">; после окончания времени его кнопка становится <strong class="ui">Отметить восполнение</strong></span>.</li>
+<li><strong class="ui">Баллы</strong>: намаз, совершённый раньше в пределах времени, даёт больше баллов; пропущенный намаз снижает счёт. Дополнительные намазы добавляют бонус (<strong class="ui">Отметить совершение · +500</strong>).</li>
+<li><strong class="ui">Статистика</strong>: недельные, месячные и годовые сводки и пунктуальность.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Создать резервную копию</strong> сохраняет историю фардов в выбранный вами файл; <strong class="ui">Восстановить копию</strong> объединяет его обратно с текущими данными.</li>
+<li>Отсутствие записи не доказывает, что намаз был пропущен; приложение хранит только отметки, сделанные вами и распознаванием.</li>
+</ul>
+
+<h2 id="excused">8. Дни освобождения</h2>
+<ul>
+<li>Этот раздел появляется только тогда, когда в <span data-platform="apple"><strong class="ui">Настройки</strong></span><span data-platform="android"><strong class="ui">Местоположение и настройки</strong></span> → <strong class="ui">Пол</strong> выбрано <strong class="ui">Женщина</strong>.<span data-platform="apple"> На iPhone это находится в <strong class="ui">Расчёт и напоминания</strong>; в меню часов есть строка <strong class="ui">Пол</strong>.</span> При <strong class="ui">Выберите</strong> или <strong class="ui">Мужчина</strong> раздел скрыт; изменение выбора не удаляет сохранённые периоды.</li>
+<li><span data-platform="apple"><strong class="ui">Настройки</strong> → <strong class="ui">Дни освобождения</strong> (также в меню часов)</span><span data-platform="android"><strong class="ui">Дни освобождения</strong></span>: нажмите <strong class="ui">Начать период</strong>, когда период начинается, и <strong class="ui">Завершить период</strong>, когда он заканчивается. Если период остаётся открытым долго, появляется предупреждение.</li>
+<li>Изменяйте прошедшие периоды с помощью <strong class="ui">Изменить</strong> (<strong class="ui">Начало</strong>, <strong class="ui">Конец</strong>, <strong class="ui">Продолжается</strong>), затем нажмите <strong class="ui">Сохранить</strong>, либо удаляйте их через <strong class="ui">Удалить период</strong>.</li>
+<li>В течение периода нет уведомлений о времени намаза, сухуре или ифтаре, не учитываются када и баллы; распознавание и <strong class="ui">Отметить совершение</strong> выключены, а отслеживание тахаджуда и духа приостанавливается. Во времени и виджетах отображается <strong class="ui">День освобождения</strong>.</li>
+<li>Периоды вводите только вы. Они хранятся на вашем устройстве и при включённой синхронизации передаются на другое устройство вместе с историей.</li>
+</ul>
+
+<h2 id="hijri">9. Календарь по хиджре и Рамадан</h2>
+<ul>
+<li>Дата по хиджре на экране времени намаза рассчитывается по календарю Умм аль-Кура. Если она отличается от вашего местного календаря на один день, выберите −1, 0 или +1 в <span data-platform="apple"><strong class="ui">Настройки</strong> → <strong class="ui">Хиджра (календарь)</strong></span><span data-platform="android"><strong class="ui">Местоположение и настройки</strong></span> → <strong class="ui">Сдвиг даты хиджры</strong>.</li>
+<li><strong class="ui">Религиозные дни</strong> показывает список предстоящих религиозных дней; ближайший также отображается на экране времени.</li>
+<li><strong class="ui">Расписание Рамадана</strong> показывает время имсака и ифтара на Рамадан.</li>
+<li><strong class="ui">Напоминание о сухуре</strong>: <strong class="ui">Выкл.</strong> или <strong class="ui">за … мин до имсака</strong> (30, 45, 60, 90). <strong class="ui">Уведомление об ифтаре</strong> уведомляет во время ифтара. Оба уведомления настраиваются только в Рамадан.</li>
+<li>Пост: в Рамадан экран времени показывает обратный отсчёт до имсака или ифтара и кнопку <strong class="ui">Я постилась</strong>; отмеченный день показывает <strong class="ui">Пост соблюдён</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. Виджеты, интерактивные уведомления и осложнения</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>Виджет <strong class="ui">Следующий намаз</strong> отсчитывает время до следующего намаза или до конца текущего. Добавьте его на главный экран (маленький, средний) или на экран блокировки: нажмите и удерживайте главный экран → Изменить → Добавить виджет → Salah Sense.</li>
+<li><strong class="ui">Интерактивное уведомление</strong> (в <strong class="ui">Настройки</strong>) показывает обратный отсчёт на экране блокировки и в Dynamic Island; не запускается во время периода освобождения.</li>
+<li>Осложнения Apple Watch: измените циферблат и выберите Salah Sense (прямоугольное, встроенное, круговое, угловое).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Виджет главного экрана Android показывает следующее время намаза; нажмите и удерживайте главный экран и добавьте Salah Sense из списка виджетов.</li>
+<li>Wear OS предлагает плитку и осложнение Salah Sense.</li>
+</ul>
+<p>Во время периода освобождения виджеты и осложнения показывают <strong class="ui">День освобождения</strong>.</p>
+
+<h2 id="diagnostics">11. Отправка диагностической записи</h2>
+<p>Если распознавание постоянно ошибается в одном и том же намазе, диагностическая запись поможет нам разобраться.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">На часах: <strong class="ui">Настройки распознавания</strong> → <strong class="ui">Диагностическая запись</strong> → <strong class="ui">Начать запись</strong>. Подождите 3 секунды с опущенными руками, совершите все части намаза, затем нажмите <strong class="ui">Завершить запись</strong>. Запись длится не более 20 минут.</li>
+<li data-platform="android" data-badge="Android · Wear OS">На часах включите <strong class="ui">Диагностическая запись</strong> на странице <strong class="ui">Распознавание намаза</strong>, пока работает распознавание, затем совершите намаз.</li>
+<li><span data-platform="apple"><strong class="ui">Отправить записи на iPhone</strong> (приложение должно быть открыто на iPhone); при необходимости <strong class="ui">Повторно отправить последнюю запись</strong></span><span data-platform="android"><strong class="ui">Отправить записи на телефон</strong></span>.</li>
+<li>На телефоне: <span data-platform="apple"><strong class="ui">Настройки</strong> → <strong class="ui">Диагностические записи</strong> → выберите запись → <strong class="ui">Поделиться записью</strong></span><span data-platform="android"><strong class="ui">Распознавание намаза</strong> → <strong class="ui">Поделиться</strong></span> и отправьте её по электронной почте на <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>Для записи при выключенном экране нужно непрерывное распознавание.</li>
+<li>Для каждого фарда, сохранённого распознаванием, хранится короткая <strong class="ui">Автосводка фарда</strong> за последние минуты, которую можно отправить так же.</li>
+<li>Записи содержат значения датчиков движения, давление/относительную высоту, состояние распознавания, данные калибровки и версию приложения; без местоположения, звука, имени или данных учётной записи. Они покидают устройство, только если вы сами ими поделитесь. Недавние записи хранятся на устройстве; удалите их через <strong class="ui">Удалить запись</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Устранение неполадок и поддержка</h2>
+<ul>
+<li><strong>Время отличается:</strong> проверьте метод расчёта, расчёт асра, местоположение и часовой пояс<span data-platform="apple">, затем нажмите <strong class="ui">Обновить расписание</strong></span>.</li>
+<li><strong>Нет уведомлений:</strong> проверьте разрешение на уведомления, беззвучный режим и фокусирование в настройках устройства.<span data-platform="android"> Экономия заряда батареи и <strong class="ui">Разрешение на расписание</strong> тоже важны.</span></li>
+<li><strong>Распознавание не запускается:</strong> при <strong class="ui">Нет данных датчика движения.</strong> откройте приложение на часах заново; при <strong class="ui">Нет измерения такбира. Запустите голосовую калибровку.</strong> выполните калибровку; для работы при выключенном экране включите непрерывное распознавание.</li>
+<li><strong>Счёт часто неверный:</strong> подтяните часы, откалибруйте второе положение или заново откалибруйте часы; отметьте вручную и отправьте диагностическую запись.</li>
+<li><strong>История на телефоне и часах отличается:</strong> включите синхронизацию на обоих устройствах<span data-platform="apple"> и нажмите <strong class="ui">Синхронизировать сейчас</strong></span><span data-platform="android">; используйте <strong class="ui">Повторить синхронизацию</strong></span>.</li>
+<li><strong>Будильник не прозвонил:</strong> проверьте громкость часов и беззвучный режим<span data-platform="apple">; открытие приложения на часах обновляет ближайший будильник</span>.</li>
+</ul>
+<div class="box">
+<p>Больше ответов: <a href="https://notes7239.github.io/salahsense/support/ru.html">страница поддержки</a> (частые вопросы). Контакт: <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — пожалуйста, укажите модель устройства, версию ОС и версию приложения.</p>
+<p>Как обрабатываются ваши данные: <a href="https://notes7239.github.io/salahsense/privacy/ru.html">Политика конфиденциальности</a>. Нет учётной записи, рекламы, аналитики или сервера; ваши данные остаются на ваших устройствах.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/ru.html">Поддержка</a> · <a href="https://notes7239.github.io/salahsense/privacy/ru.html">Политика конфиденциальности</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

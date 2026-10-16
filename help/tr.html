@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Yardım — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense Yardım</h1>
+<p class="meta">Uygulamanın kullanımı ve ayarlar · telefon ve saat</p>
+<div class="box warn"><p><strong>Önemli:</strong> Otomatik rekât ve secde takibi saat gerektirir (<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS saat</span>); telefon tek başına bilek hareketini ölçemez. Algılama bir yardımcıdır ve hata yapabilir: saatin bilekteki konumu, kayış ayarı ve kişisel hareket farklılıkları sonucu etkiler. Her kaydı elle düzeltebilirsiniz. Uygulama dini hüküm vermez; namazın sıhhati hakkında kesinlik iddia etmez.</p></div>
+<p>Sık sorulan sorular ve iletişim için <a href="https://notes7239.github.io/salahsense/support/tr.html">destek sayfasına</a> bakın. Kalın yazılan ifadeler uygulamadaki düğme ve menü adlarıdır.</p>
+<nav class="toc" aria-label="İçindekiler">
+<strong>İçindekiler</strong>
+<ul>
+<li><a href="#getting-started">1. Başlarken</a></li>
+<li><a href="#prayer-times">2. Konum ve vakitler</a></li>
+<li><a href="#notifications">3. Bildirimler ve alarmlar</a></li>
+<li><a href="#calibration">4. Saatte kalibrasyon</a></li>
+<li><a href="#tracking">5. Namaz sırasında otomatik takip</a></li>
+<li><a href="#sequence-check">6. Silsile kontrolü ve onay sorusu</a></li>
+<li><a href="#history">7. Geçmiş, kaza ve puan</a></li>
+<li><a href="#excused">8. Özür günleri</a></li>
+<li><a href="#hijri">9. Hicri takvim ve Ramazan</a></li>
+<li><a href="#widgets">10. Widget'lar, Canlı Etkinlik ve komplikasyonlar</a></li>
+<li><a href="#diagnostics">11. Tanı kaydı gönderme</a></li>
+<li><a href="#troubleshooting">12. Sorun giderme ve destek</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Başlarken</h2>
+<ul>
+<li>Uygulamanın iki parçası vardır: <span data-platform="apple">iPhone</span><span data-platform="android">Android telefon</span> uygulaması vakitleri, kıbleyi, zikri, geçmişi ve ayarları gösterir; <span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS saat</span> uygulaması namaz sırasında hareketlerinizi takip eder, ezan uyarılarını ve kalibrasyonu yönetir.</li>
+<li>İlk açılışta telefonda <span data-platform="apple"><strong class="ui">Ayarlar</strong> sekmesini</span><span data-platform="android"><strong class="ui">Konum ve ayarlar</strong> sayfasını</span> açın: konumu, hesaplama yöntemini, ikindi hesabını ve <strong class="ui">Cinsiyet</strong> seçimini yapın (bkz. 2 ve 8).</li>
+<li>Saatte önce bir kez <a href="#calibration">kalibrasyon</a> yapın; otomatik takip ancak bundan sonra güvenilir çalışır.</li>
+<li>Saat olmadan da vakitler, kıble, zikir, elle <strong class="ui">Kıldım</strong> kaydı, kaza listesi, istatistik, hicri takvim, imsakiye ve widget'lar kullanılabilir.</li>
+<li><strong class="ui">Namaz Bilgileri</strong> bölümünde vakit namazları ve sehiv secdesi hakkında kaynak gösterilen, çevrimdışı okunabilen özetler vardır.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Geçmişi telefon ile saat arasında paylaşmak için iPhone'da <strong class="ui">Ayarlar</strong> → <strong class="ui">Eşlenmiş cihaz</strong> bölümünde <strong class="ui">Namaz geçmişimi eşlenmiş iPhone/Apple Watch ile paylaş</strong> seçeneğini, saatte <strong class="ui">Cihaz Eşleme</strong> → <strong class="ui">Geçmişi eşle</strong> seçeneğini açın. Varsayılan kapalıdır; eski kayıtlar için <strong class="ui">Şimdi eşle</strong>'ye dokunun.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Android telefon ile Wear OS saat arasında eşleme için uygulama iki cihazda da kurulu olmalıdır; bağlantı yoksa kayıtlar cihazda kalır. Gerekirse <strong class="ui">Konum ve ayarlar</strong> → <strong class="ui">Eşlemeyi yeniden dene</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Uygulama dili telefonda <strong class="ui">Ayarlar</strong>, saatte <strong class="ui">Dil</strong> bölümünden değiştirilir; seçim her cihazda ayrı saklanır.</li>
+</ul>
+
+<h2 id="prayer-times">2. Konum ve vakitler</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone'da <strong class="ui">Ayarlar</strong> → <strong class="ui">Konum ve saat dilimi</strong>: <strong class="ui">Konumumu kullan</strong>'a dokunup konum izni verin ya da <strong class="ui">Şehir</strong>, <strong class="ui">Enlem</strong>, <strong class="ui">Boylam</strong> ve <strong class="ui">IANA saat dilimi</strong> (ör. Europe/Istanbul) alanlarını doldurup <strong class="ui">Şehir/konum bilgilerini kaydet</strong>'e dokunun.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Konum ve ayarlar</strong>: <strong class="ui">Konumumu al</strong>'a dokunun ya da <strong class="ui">Konum adı</strong>, <strong class="ui">Enlem</strong>, <strong class="ui">Boylam</strong> ve <strong class="ui">Saat dilimi</strong> alanlarını doldurup <strong class="ui">Kaydet</strong>'e dokunun.</li>
+<li>Konum izni vermek zorunlu değildir; şehri ve koordinatları elle girebilirsiniz. Seyahatte konumu ve saat dilimini güncelleyin.</li>
+<li><strong class="ui">Hesaplama yöntemi</strong> (12 yöntem): <strong class="ui">Türkiye (Diyanet)</strong>, <strong class="ui">Müslüman Dünya Birliği</strong>, <strong class="ui">Mısır (Genel Etüt Kurumu)</strong>, <strong class="ui">Karaçi (İslami İlimler Üniversitesi)</strong>, <strong class="ui">Ümmül Kura (Mekke)</strong>, <strong class="ui">Dubai</strong>, <strong class="ui">Ay Gözlem Komitesi</strong>, <strong class="ui">Kuzey Amerika (ISNA)</strong>, <strong class="ui">Kuveyt</strong>, <strong class="ui">Katar</strong>, <strong class="ui">Singapur</strong>, <strong class="ui">Tahran</strong>. Ülkenizde kullanılan takvime en yakın olanı seçin.</li>
+<li><strong class="ui">İkindi hesabı</strong>: <strong class="ui">Standart</strong> gölge boyunun bir katını (asr-ı evvel), <strong class="ui">Hanefi</strong> iki katını (asr-ı sâni) esas alır. Türkiye takvimi standart kullanır.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Mezhep</strong>: <strong class="ui">Sünni (sünnet + vitir dahil)</strong> ya da <strong class="ui">Şafi (farz)</strong>. Bu seçim yalnız takip edilen rekât düzenini belirler, vakitleri değiştirmez. Saatte <strong class="ui">Mezhep / Rekât</strong> bölümündedir.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Değişiklikten sonra vakitler kendiliğinden yenilenir; gerekirse <strong class="ui">Vakitleri yenile</strong>'ye dokunun. Saatte yöntem ve ikindi hesabı <strong class="ui">Hesaplama yöntemi</strong> bölümündedir.</li>
+<li>Vakitler cihazda hesaplanır; uygulama resmî bir takvim servisi değildir ve yerel takvimle birkaç dakika fark olabilir.</li>
+</ul>
+
+<h2 id="notifications">3. Bildirimler ve alarmlar</h2>
+<h3>Vakit bildirimi</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Vakit girince bildir</strong> açıkken her vakit için bildirim gelir. Adımlayıcıyla zamanı ayarlayın: <strong class="ui">Vakit başlangıcında</strong>, vakitten 60 dakikaya kadar önce (<strong class="ui">… dk önce</strong>) veya sonra (<strong class="ui">… dk sonra</strong>). Saatte aynı ayar <strong class="ui">Ezan Uyarıları</strong> bölümündedir.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Saat vakit bildirimlerini üstleniyorsa iPhone ayrıca bildirim kurmaz; bildirim iPhone kilitliyken saate yansır.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Konum ve ayarlar</strong> → <strong class="ui">Hatırlatma</strong> anahtarını açın; zamanı <strong class="ui">Vakit başlangıcında</strong> ya da <strong class="ui">… dakika önce</strong> olarak seçin. Bildirim gecikiyorsa <strong class="ui">Zamanlama izni</strong> ile kesin zaman iznini verin.</li>
+</ul>
+<h3>Vakit çıkmadan alarm</h3>
+<ul>
+<li><strong class="ui">Vakit çıkmadan alarm</strong>: <strong class="ui">Kapalı</strong> ya da vaktin çıkışından belirli dakika önce. Namaz kılındı olarak kaydedilmediyse alarm sessiz modda da çalar.</li>
+<li>Saatin algıladığı kayıt telefona henüz ulaşmadıysa alarm yine çalabilir.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Gerçek alarm için iOS 26 gerekir; daha eski sürümde ya da alarm izni kapalıysa yerine bildirim gönderilir.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Saat, vaktin çıkışına 45 ve 30 dakika kala ezan sesinin hayya bölümünü titreşimle çalar (<strong class="ui">Haydi namaza, Haydi felaha</strong>); uyuyorsanız bir kez daha güçlü uyarır. Vakit varken uzun süre oturur ya da uzanır görünürseniz bir kez <strong class="ui">Müsait görünüyorsun</strong> bildirimi gelir; kerahat vaktinde gelmez.</li>
+</ul>
+<h3>Teheccüd ve sabah uyarısı (saat)</h3>
+<ul>
+<li>Saatte <span data-platform="apple"><strong class="ui">Ezan Uyarıları</strong></span><span data-platform="android"><strong class="ui">Ezan uyarıları</strong></span>: <strong class="ui">Teheccüd uyarısı</strong> gecenin son üçte birine, <strong class="ui">Sabah ezanı uyarısı</strong> imsak vaktine göre kurulur.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Uyarı zamanı</strong>: <strong class="ui">Vakit başlangıcında</strong> ya da 5–60 dakika önce. <strong class="ui">Erteleme</strong> süresi 1–15 dakikadır.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Alarm sırasında hareket edince geçici susar; <strong class="ui">Kıldım</strong>'a dokununca kapanır. Ne kadar hareket gerektiğini <strong class="ui">Susturma hareketi</strong> ile seçin: <strong class="ui">Az hareketle (hassas)</strong>, <strong class="ui">Orta</strong>, <strong class="ui">Çok hareketle (zor)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">İki uyarı ayrı kaydedilir; en yakın alarmda seçtiğiniz ezan sesi çalar, diğerleri bildirim sesiyle gelir. Saat uygulamasını açınca en yakın alarm yenilenir.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Ses ve titreşim cihazın bildirim kanalından seçilir (<strong class="ui">Uyarı sesi ve titreşim</strong>); uygulamada hazır ezan kaydı yoktur.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Ezan sesi (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Ezan Sesi</strong> (ya da <strong class="ui">Ezan Uyarıları</strong> → <strong class="ui">Ezan sesini seç</strong>): bir CAF, AIFF veya WAV dosyasının https adresini yazıp <strong class="ui">İndir</strong>'e dokunun. 30 saniyeye kadar olan ses bildirimde çalar; daha uzunu yalnız uygulama içinde çalar.</li>
+<li>Yüklü sesler listesinden birini seçin; <strong class="ui">Çal</strong>, <strong class="ui">Dur</strong> ve <strong class="ui">Sil</strong> ile yönetin. Ses seçilmediyse hazır alarm sesi çalar.</li>
+<li><strong class="ui">Hayya bölümü (tekrarlı + titreşim)</strong>: seçili sesin yalnız "Hayya ale's-salah, Hayya ale'l-felah" kısmını <strong class="ui">Başlangıç</strong> ve <strong class="ui">Bitiş</strong> saniyeleriyle işaretleyin, <strong class="ui">Tekrar</strong> sayısını seçin ve <strong class="ui">Segmenti çal</strong> ile dinleyin.</li>
+<li>Dosya doğrudan girdiğiniz adresten indirilir; o sunucu bizim değildir (bkz. gizlilik politikası).</li>
+</ul>
+<p>Bildirim izni, sessiz mod, odak ayarları, pil tasarrufu ve ses düzeyi uyarıları etkileyebilir.</p>
+
+<h2 id="calibration">4. Saatte kalibrasyon</h2>
+<p>Kalibrasyon, kendi tekbir, kıyam, rükû, secde ve oturuş duruşlarınızı saate öğretir. Saatte yapılır; telefon bilek hareketinizi ölçemez.</p>
+<ol>
+<li>Saati her zamanki bileğinize, kaymayacak şekilde takın. Sağ veya sol bilek kullanılabilir.</li>
+<li><span data-platform="apple"><strong class="ui">Kalibrasyon</strong> → <strong class="ui">Kişisel kalibrasyon (sihirbaz)</strong> → <strong class="ui">Sesli kalibrasyonu başlat</strong></span><span data-platform="android"><strong class="ui">Kalibrasyon</strong> → <strong class="ui">Sesli kalibrasyonu başlat</strong></span>.</li>
+<li>Sesli yönlendirmeyi izleyin: tekbir (eller kalkık), kıyam, rükû, doğrulma, secde, iki secde arası oturuş, ikinci secde, son oturuş, sağa selam, sola selam. Her yönergeden sonra duruşa geçmeniz için süre verilir, ardından kısa bir ölçüm yapılır; duruşu rahatça koruyun.</li>
+<li>İsteğe bağlı olarak <strong class="ui">Dua bitiş hareketini öğren (isteğe bağlı)</strong> açıkken selamdan sonra ellerinizi yüzünüze sürme hareketi de ölçülür; istemezseniz <strong class="ui">Dua hareketini atla</strong>.</li>
+<li>Ara vermek için <strong class="ui">Durdur</strong>; devam etmek için <strong class="ui">Kaldığım adımdan devam et</strong>.</li>
+<li>Sonunda <strong class="ui">Kalibrasyon tamamlandı</strong> ve kıyama göre bilek yükseklikleri görünür.<span data-platform="apple"> <strong class="ui">Tamam, namaza dön</strong> ile çıkın.</span></li>
+</ol>
+<ul>
+<li>Selam yalnız sesle yönlendirilir; baş hareketi saatten ölçülmez.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Başarılı kalibrasyondan sonra kesintisiz algılama kendiliğinden açılır.</li>
+<li>"Duruşlar yeterince ayrılmadı" ya da tekbir uyarısı çıkarsa saati aynı bilekte tutarak yeniden başlatın; tekbir adımında ellerinizi kaldırıp bekleyin.</li>
+</ul>
+<h3>İkinci konum</h3>
+<ul>
+<li>Saat namazda bileğinizde aşağı kayıyorsa o konumu da öğretin: önce normal kalibrasyonu yapın, sonra <strong class="ui">İkinci konumu kalibre et</strong>'e dokunun, saati 1–2 cm aşağı (ele doğru) kaydırın ve aynı adımları (yüze sürme dahil) tekrarlayın.</li>
+<li>Algılama hangi konum daha iyi uyuyorsa onu kullanır. Yeni normal kalibrasyon ikinci konumu korur; kayış ayarınız değiştiyse <strong class="ui">İkinci konumu yeniden kalibre et</strong> ya da <strong class="ui">İkinci konumu sil</strong>.</li>
+</ul>
+<h3>Ne zaman yeniden kalibre etmeli?</h3>
+<ul>
+<li>Saatin konumu, kayış ayarı ya da bilek değiştiyse ya da algılama sık şaşırıyorsa.<span data-platform="apple"> <strong class="ui">Saatin konumunu kontrol edin</strong> bildirimi de saatin oturmadığını gösterir.</span></li>
+<li>Uygulama namazlarınızdan bilek yüksekliklerini de öğrenir. Büyük bir değişiklikten sonra <strong class="ui">Öğrenilen yükseklikleri sıfırla</strong> kullanılabilir; <strong class="ui">Kalibrasyonu sil</strong> tüm kalibrasyonu kaldırır.</li>
+<li><strong class="ui">Sesli pratik</strong> hareketleri sesli yönlendirmeyle çalışmanızı sağlar; kayıt oluşturmaz.</li>
+</ul>
+
+<h2 id="tracking">5. Namaz sırasında otomatik takip</h2>
+<ul>
+<li>Vakit içinde saat uygulamasını açın ve açılış tekbiriyle başlayın. Her bölüm (sünnet, farz, vitir) kendi açılış tekbiriyle başlar.<span data-platform="apple"> Ellerin kalktığı görülünce <strong class="ui">Tekbir duruşu görüldü; kıyama geçin.</strong> yazar.</span></li>
+<li>Sünnet–farz sırası açılış tekbirlerine göre izlenir: <strong class="ui">Sabah 2+2 · Öğle 4+4+2 · İkindi 4+4 · Akşam 3+2 · Yatsı 4+4+2+3 vitir</strong>. Akşam farzla başlar.<span data-platform="apple"> <strong class="ui">Şafi (farz)</strong> seçiliyse yalnız farz takip edilir.</span></li>
+<li>Ekranda o anki bölüm, sıradaki tekbir ve algılanan rekât sayısı görünür.</li>
+<li>İlk sünneti kılmadan doğrudan farza başlayacaksanız <span data-platform="apple"><strong class="ui">İlk sünneti atla</strong></span><span data-platform="android"><strong class="ui">Farzdan başla</strong></span>.</li>
+<li>Sehiv secdesi namazın sonunda, son oturuşta yapılır; algılanırsa kayıtta <strong class="ui">Sehiv secdesi yapıldı</strong> görünür.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Sehiv secdesi yapacaksanız <strong class="ui">Sehiv secdesi yapacağım</strong>'a dokunun; uygulama iki ek secde ve son oturuş bekler. Bir bölümü baştan kılacaksanız <strong class="ui">Bu bölümü yeniden kılacağım</strong>. Kayıt kaydedilemediyse <strong class="ui">Kaydı yeniden dene</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Kalibrasyon eksikse ekranda <strong class="ui">Kişisel kalibrasyon (sihirbaz)</strong> düğmesi çıkar.</li>
+</ul>
+<h3>Yanlış sayım ya da kaçırılan namaz</h3>
+<ul>
+<li>Fazla ya da eksik rekât algılanırsa saat uyarır (<strong class="ui">Rekât sayısını kontrol edin</strong>). Sayımı kendiniz kontrol edin.</li>
+<li>Namazı elle işaretleyin: saatte <span data-platform="apple"><strong class="ui">Farzı kıldım</strong></span><span data-platform="android"><strong class="ui">Kıldım</strong></span>, telefonda <strong class="ui">Kıldım</strong>.</li>
+<li>Vaktinde kıldığınız ama algılamanın kaçırdığı bir namazı, vakit çıktıktan sonra telefonda <strong class="ui">Geçmiş</strong> listesinde <strong class="ui">Vaktinde kıldım</strong> ile düzeltin: <strong class="ui">Kıldığınız saat</strong>'i seçip <strong class="ui">Kılındı olarak kaydet</strong>'e dokunun. Saat vakit aralığında olmalıdır; bu işlem geri alınamaz.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Android'de yanlış bir kaydı geçmişte <strong class="ui">Kaydı geri al</strong> ile geri alabilir, ardından yeniden <strong class="ui">Kıldım</strong> diyebilirsiniz.</li>
+</ul>
+<h3>Kesintisiz algılama ve pil</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Algılama ayarları</strong></span><span data-platform="android"><strong class="ui">Namaz algılama</strong></span> → <strong class="ui">Kesintisiz algılama (deneysel)</strong>: ekran kapalıyken ve saat kadranındayken de algılamanın sürmesini sağlar.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Bunun için saat gün boyu bir antrenman oturumu açık tutar. Sağlık uygulamasına antrenman kaydedilmez, ancak pil tüketimi artar ve Aktivite halkaları etkilenebilir. Oturum kesilirse uygulamayı yeniden açın.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Arka plan algılaması pili daha hızlı tüketir. Uygulama zorla durdurulursa yeniden açın.</li>
+<li>Kapalıyken algılama yalnız uygulama açıkken çalışır.</li>
+</ul>
+<h3>Nafile namazlar</h3>
+<ul>
+<li>Teheccüd ve kuşluk vakitleri vakitler ekranında görünür; vakti içinde <strong class="ui">Kıldım · +500</strong> ile işaretlenir, saatte açılış tekbiriyle algılanabilir.</li>
+<li><strong class="ui">Sabah kazası → Kuşluk</strong>: kayıtlı bir sabah kazası seçip ardından kuşluk rekâtlarını sırayla algılatır.</li>
+</ul>
+
+<h2 id="sequence-check">6. Silsile kontrolü ve onay sorusu</h2>
+<p>Algılanan her farz kaydedilmeden önce namaz silsilesine uygunluğu kontrol edilir: açılış tekbiri, her rekâtta rükû ve iki secde, son oturuş, secdelerin aynı yöne yapılması ve namaz sırasında yürüme benzeri dönüş olmaması.</p>
+<ul>
+<li>Kontrolden geçmezse saat titreşir ve <strong class="ui">… farzını kıldınız mı?</strong> diye sorar; nedenleri altında yazar. Vakit listesinde <strong class="ui">Onay bekliyor</strong> görünür.</li>
+<li><strong class="ui">Evet, kıldım</strong>: algılanan bitiş saatiyle kaydedilir; etiket <strong class="ui">Otomatik algılama (onaylandı)</strong> olur.</li>
+<li><strong class="ui">Hayır</strong>: hiçbir şey kaydedilmez; o vaktin hatırlatmaları geri gelir.</li>
+<li>Vakit çıkana kadar cevap vermezseniz, kılınmış olabilecek namaz kaybolmasın diye <strong class="ui">Otomatik algılama (onaylanmadı, kontrol edin)</strong> olarak kaydedilir. Bu arada <strong class="ui">Kıldım</strong> ile işaretlerseniz soru kalkar.</li>
+</ul>
+<h3><strong class="ui">İşaretleyen: …</strong> etiketleri</h3>
+<ul>
+<li><strong class="ui">Otomatik algılama</strong>: farz kontrolden geçti.</li>
+<li><strong class="ui">Otomatik algılama (onaylandı)</strong> / <strong class="ui">Otomatik algılama (onaylanmadı, kontrol edin)</strong>: yukarıdaki soruya göre.</li>
+<li><strong class="ui">Otomatik algılama (yedek kayıt, kontrol edin)</strong>: algılama farzın rekât sayısını tam saydı, ancak normal kayıt adımı tamamlanamadığı için yedek yoldan yazıldı.</li>
+<li><strong class="ui">Saatte Kıldım</strong>, <strong class="ui">Saat bildiriminde Kıldım</strong>, <strong class="ui">Telefonda Kıldım</strong>, <strong class="ui">Telefon bildiriminde Kıldım</strong>, <strong class="ui">Vaktinde kıldım düzeltmesi</strong>, <strong class="ui">Kaza kıldım</strong>: elle yapılan işaretler.</li>
+<li>"Kontrol edin" içeren etiketler geçmişte turuncu görünür; kaydı gözden geçirip gerekirse düzeltin.</li>
+</ul>
+
+<h2 id="history">7. Geçmiş, kaza ve puan</h2>
+<ul>
+<li>Telefonda <span data-platform="apple"><strong class="ui">Geçmiş</strong> sekmesi</span><span data-platform="android"><strong class="ui">Geçmiş</strong> sayfası</span> her vakit için durumu gösterir: <strong class="ui">Kılındı</strong>, <strong class="ui">Kaza edildi</strong> ya da <strong class="ui">Bekliyor / kaçırıldı</strong>; varsa <strong class="ui">Sehiv secdesi yapıldı</strong> ve işaretleyen etiketi.</li>
+<li>Kılınmadan çıkan vakitler kaza listesine (<strong class="ui">Kaza borcu: …</strong>) eklenir. Kaza kıldıkça ilgili vaktin yanındaki <strong class="ui">Kıldım</strong>'a dokunun<span data-platform="apple">; saatte <strong class="ui">Kaza</strong> bölümü aynı işi yapar</span><span data-platform="android">; vakit çıktıktan sonra vakit listesindeki düğme <strong class="ui">Kaza kıldım</strong> olur</span>.</li>
+<li><strong class="ui">Puan</strong>: namazı vaktin başına yakın kılmak daha yüksek puan verir; kaçırılan vakit puanı düşürür. Nafile namazlar <strong class="ui">Kıldım · +500</strong> ile bonus ekler.</li>
+<li><strong class="ui">İstatistik</strong>: haftalık, aylık ve yıllık özet ile dakiklik.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Yedek dosyası oluştur</strong> farz geçmişinizi seçtiğiniz bir dosyaya kaydeder; <strong class="ui">Yedekten geri yükle</strong> mevcut geçmişle birleştirir.</li>
+<li>Kaydın olmaması namazın kılınmadığını kanıtlamaz; uygulama yalnız sizin ve algılamanın işaretlerini tutar.</li>
+</ul>
+
+<h2 id="excused">8. Özür günleri</h2>
+<ul>
+<li>Bu bölüm yalnız <span data-platform="apple"><strong class="ui">Ayarlar</strong></span><span data-platform="android"><strong class="ui">Konum ve ayarlar</strong></span> → <strong class="ui">Cinsiyet</strong> = <strong class="ui">Kadın</strong> seçiliyken görünür.<span data-platform="apple"> iPhone'da ayar <strong class="ui">Hesap ve hatırlatma</strong> altındadır; saatte menüde <strong class="ui">Cinsiyet</strong> satırı vardır.</span> <strong class="ui">Seçiniz</strong> ya da <strong class="ui">Erkek</strong> seçiliyse gizlenir; seçimi değiştirmek kayıtlı dönemleri silmez.</li>
+<li><span data-platform="apple"><strong class="ui">Ayarlar</strong> → <strong class="ui">Özür günleri</strong> (saatte menüde <strong class="ui">Özür günleri</strong>)</span><span data-platform="android"><strong class="ui">Özür günleri</strong></span>: dönem başlayınca <strong class="ui">Dönem başlat</strong>, bitince <strong class="ui">Dönemi bitir</strong>'e dokunun. Dönem uzun süre açık kalırsa uyarı görünür.</li>
+<li>Geçmiş dönemleri <strong class="ui">Düzenle</strong> ile (<strong class="ui">Başlangıç</strong>, <strong class="ui">Bitiş</strong>, <strong class="ui">Sürüyor</strong>) değiştirip <strong class="ui">Kaydet</strong>'e dokunun ya da <strong class="ui">Dönemi sil</strong>.</li>
+<li>Dönem boyunca vakit bildirimi gönderilmez, kaza borcu ve puan işlenmez, algılama ve <strong class="ui">Kıldım</strong> kapalıdır, teheccüd ve kuşluk takibi durur, sahur ve iftar bildirimi gönderilmez. Vakitlerde ve widget'larda <strong class="ui">Özür günü</strong> yazar.</li>
+<li>Dönemleri yalnız siz girersiniz; bilgi cihazınızda saklanır ve eşleme açıksa geçmişle birlikte diğer cihaza aktarılır.</li>
+</ul>
+
+<h2 id="hijri">9. Hicri takvim ve Ramazan</h2>
+<ul>
+<li>Hicri tarih vakitler ekranında görünür ve Ümmül Kura takvimine göre hesaplanır. Yerel takvimle bir gün fark varsa <span data-platform="apple"><strong class="ui">Ayarlar</strong> → <strong class="ui">Hicri takvim</strong></span><span data-platform="android"><strong class="ui">Konum ve ayarlar</strong></span> → <strong class="ui">Hicri tarih kaydırma</strong> ile −1, 0 ya da +1 seçin.</li>
+<li><strong class="ui">Dini günler</strong> yaklaşan dini günleri listeler; en yakını vakitler ekranında görünür.</li>
+<li><strong class="ui">İmsakiye</strong> Ramazan ayının imsak ve iftar vakitlerini gösterir.</li>
+<li><strong class="ui">Sahur hatırlatması</strong>: <strong class="ui">Kapalı</strong> ya da <strong class="ui">İmsaktan … dk önce</strong> (30, 45, 60, 90). <strong class="ui">İftar bildirimi</strong> iftar vaktinde haber verir. Bu bildirimler yalnız Ramazan'da kurulur.</li>
+<li>Oruç takibi: Ramazan'da vakitler ekranında imsaka ya da iftara kalan süre ve <strong class="ui">Oruç tuttum</strong> düğmesi görünür; işaretlenen gün <strong class="ui">Tutuldu</strong> olur.</li>
+</ul>
+
+<h2 id="widgets">10. Widget'lar, Canlı Etkinlik ve komplikasyonlar</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Sonraki Namaz</strong> widget'ı sonraki vakte ya da vaktin çıkışına geri sayar. iPhone ana ekranına (küçük, orta) ve kilit ekranına eklenebilir: ana ekranda boş bir yere basılı tutun, düzenle → widget ekle → Salah Sense.</li>
+<li><strong class="ui">Canlı Etkinlik</strong>: <strong class="ui">Ayarlar</strong>'da açıldığında kilit ekranında ve Dynamic Island'da sonraki vakte geri sayım gösterir; özür döneminde başlatılmaz.</li>
+<li>Apple Watch komplikasyonları: saat kadranını düzenleyip Salah Sense'i seçin (dikdörtgen, satır içi, daire ve köşe).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Android ana ekran widget'ı sonraki vakti gösterir; ana ekranda basılı tutup widget'lar arasından Salah Sense'i ekleyin.</li>
+<li>Wear OS saatte Salah Sense kutucuğu (tile) ve komplikasyonu kullanılabilir.</li>
+</ul>
+<p>Özür döneminde widget'lar ve komplikasyonlar <strong class="ui">Özür günü</strong> gösterir.</p>
+
+<h2 id="diagnostics">11. Tanı kaydı gönderme</h2>
+<p>Algılama belirli bir namazda sürekli şaşırıyorsa tanı kaydı göndererek sorunu incelememize yardım edebilirsiniz.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Saatte <strong class="ui">Algılama ayarları</strong> → <strong class="ui">Tanılama kaydı</strong> → <strong class="ui">Kaydı başlat</strong>. Ellerinizi aşağıda tutarak 3 saniye bekleyin, namazın tüm bölümlerini kılın ve <strong class="ui">Kaydı bitir</strong>'e dokunun. Bir kayıt en fazla 20 dakika sürer.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Saatte <strong class="ui">Namaz algılama</strong> sayfasında algılama çalışırken <strong class="ui">Tanılama kaydı</strong> anahtarını açın ve namazı kılın.</li>
+<li><span data-platform="apple"><strong class="ui">Kayıtları iPhone'a gönder</strong> (iPhone'da uygulama açık olmalı); gerekirse <strong class="ui">Son kaydı tekrar gönder</strong></span><span data-platform="android"><strong class="ui">Kayıtları telefona gönder</strong></span>.</li>
+<li>Telefonda <span data-platform="apple"><strong class="ui">Ayarlar</strong> → <strong class="ui">Tanılama kayıtları</strong> → kaydı seçin → <strong class="ui">Kaydı paylaş</strong></span><span data-platform="android"><strong class="ui">Namaz algılama</strong> → <strong class="ui">Paylaş</strong></span> ve e-postayla <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> adresine gönderin.</li>
+</ol>
+<ul>
+<li>Ekran kapalıyken kayıt için kesintisiz algılamanın açık olması gerekir.</li>
+<li>Algılamanın kaydettiği her farz için son dakikaların kısa bir <strong class="ui">Otomatik farz özeti</strong> de cihazda tutulur ve aynı yerden paylaşılabilir.</li>
+<li>Kayıt hareket sensörü değerlerini, basınç/göreli yükseklik bilgisini, algılama durumunu, kalibrasyon bilgisini ve uygulama sürümünü içerir; konum, ses, ad veya hesap bilgisi içermez. Yalnız siz paylaşırsanız cihazdan çıkar. Son kayıtlar cihazda saklanır; <strong class="ui">Kaydı sil</strong> ile silebilirsiniz.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Sorun giderme ve destek</h2>
+<ul>
+<li><strong>Vakitler farklı:</strong> hesaplama yöntemini, ikindi hesabını, konumu ve saat dilimini kontrol edin<span data-platform="apple">; ardından <strong class="ui">Vakitleri yenile</strong></span>.</li>
+<li><strong>Bildirim gelmiyor:</strong> cihaz ayarlarında Salah Sense bildirim iznini, sessiz modu ve odak ayarlarını kontrol edin.<span data-platform="android">  Pil tasarrufu ve <strong class="ui">Zamanlama izni</strong> de etkiler.</span></li>
+<li><strong>Algılama başlamıyor:</strong> <strong class="ui">Hareket sensöründen veri gelmedi.</strong> yazıyorsa saat uygulamasını kapatıp yeniden açın; <strong class="ui">Tekbir ölçümü eksik; sesli kalibrasyonu başlat.</strong> yazıyorsa kalibrasyonu yapın; ekran kapalıyken çalışması için kesintisiz algılamayı açın.</li>
+<li><strong>Sayım sık yanlış:</strong> saatin bileğe oturduğundan emin olun, ikinci konumu kalibre edin ya da kalibrasyonu yenileyin; namazı elle işaretleyin ve tanı kaydı gönderin.</li>
+<li><strong>Telefonla saatin geçmişi farklı:</strong> eşlemenin iki cihazda da açık olduğunu kontrol edin<span data-platform="apple"> ve <strong class="ui">Şimdi eşle</strong>'ye dokunun</span><span data-platform="android">; <strong class="ui">Eşlemeyi yeniden dene</strong></span>.</li>
+<li><strong>Alarm çalmadı:</strong> saatin ses düzeyini ve sessiz modunu kontrol edin<span data-platform="apple">; saat uygulamasını açmak en yakın alarmı yeniler</span>.</li>
+</ul>
+<div class="box">
+<p>Diğer sorular için <a href="https://notes7239.github.io/salahsense/support/tr.html">destek sayfası</a> (sık sorulan sorular). İletişim: <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>. Lütfen cihaz modelinizi, işletim sistemi ve uygulama sürümünü yazın.</p>
+<p>Verilerinizin nasıl işlendiği: <a href="https://notes7239.github.io/salahsense/privacy/tr.html">Gizlilik Politikası</a>. Hesap, reklam, analitik ve sunucu yoktur; veriler cihazlarınızda kalır.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/tr.html">Destek</a> · <a href="https://notes7239.github.io/salahsense/privacy/tr.html">Gizlilik Politikası</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

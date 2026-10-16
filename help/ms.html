@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ms" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Bantuan — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Bantuan Salah Sense</h1>
+<p class="meta">Menggunakan aplikasi dan tetapannya · telefon dan jam tangan</p>
+<div class="box warn"><p><strong>Penting:</strong> Penjejakan rakaat dan sujud automatik memerlukan jam tangan (<span data-platform="apple">Apple Watch</span><span data-platform="android">jam tangan Wear OS</span>); telefon sahaja tidak dapat mengukur pergerakan pergelangan tangan. Pengesanan adalah bantuan dan boleh membuat kesilapan: kedudukan jam tangan, kekencangan tali dan perbezaan pergerakan individu memberi kesan kepadanya. Anda sentiasa boleh membetulkan rekod secara manual. Aplikasi ini tidak memberikan hukum agama dan tidak menilai sah atau tidaknya solat anda.</p></div>
+<p>Untuk soalan lazim dan maklumat hubungan, lihat <a href="https://notes7239.github.io/salahsense/support/ms.html">halaman sokongan</a>. Perkataan tebal ialah nama butang dan menu dalam aplikasi.</p>
+<nav class="toc" aria-label="Kandungan">
+<strong>Kandungan</strong>
+<ul>
+<li><a href="#getting-started">1. Permulaan</a></li>
+<li><a href="#prayer-times">2. Lokasi dan waktu solat</a></li>
+<li><a href="#notifications">3. Pemberitahuan dan penggera</a></li>
+<li><a href="#calibration">4. Penentukuran pada jam tangan</a></li>
+<li><a href="#tracking">5. Penjejakan automatik semasa solat</a></li>
+<li><a href="#sequence-check">6. Semakan susunan dan pengesahan</a></li>
+<li><a href="#history">7. Sejarah, solat qada dan mata</a></li>
+<li><a href="#excused">8. Hari uzur</a></li>
+<li><a href="#hijri">9. Kalendar Hijrah dan Ramadan</a></li>
+<li><a href="#widgets">10. Widget, Aktiviti Langsung dan komplikasi</a></li>
+<li><a href="#diagnostics">11. Menghantar rakaman diagnostik</a></li>
+<li><a href="#troubleshooting">12. Penyelesaian masalah dan sokongan</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Permulaan</h2>
+<ul>
+<li>Aplikasi <span data-platform="apple">iPhone</span><span data-platform="android">telefon Android</span> memaparkan waktu solat, kiblat, zikir, sejarah dan tetapan. Aplikasi <span data-platform="apple">Apple Watch</span><span data-platform="android">jam tangan Wear OS</span> menjejaki pergerakan anda semasa solat serta menguruskan peringatan azan dan penentukuran.</li>
+<li>Mula-mula, buka <span data-platform="apple">tab <strong class="ui">Tetapan</strong></span><span data-platform="android">halaman <strong class="ui">Lokasi dan tetapan</strong></span> pada telefon dan tetapkan lokasi, kaedah pengiraan, pengiraan Asar dan <strong class="ui">Jantina</strong> (bahagian 2 dan 8).</li>
+<li>Kemudian <a href="#calibration">tentukur</a> sekali pada jam tangan; penjejakan automatik hanya boleh dipercayai selepas itu.</li>
+<li>Tanpa jam tangan, anda masih boleh menggunakan waktu solat, kiblat, zikir, rekod manual <strong class="ui">Tandakan telah solat</strong>, solat qada, statistik, kalendar Hijrah, imsakiah dan widget.</li>
+<li><strong class="ui">Panduan Solat</strong> mengandungi ringkasan luar talian, lengkap dengan sumber, tentang solat harian dan sujud sahwi.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Untuk berkongsi sejarah, hidupkan <strong class="ui">Kongsikan sejarah solat dengan iPhone/Apple Watch berpasangan</strong> dalam <strong class="ui">Tetapan</strong> → <strong class="ui">Peranti berpasangan</strong> pada iPhone dan <strong class="ui">Segerakkan sejarah</strong> dalam <strong class="ui">Pemadanan peranti</strong> pada jam tangan. Ciri ini dimatikan secara lalai; <strong class="ui">Segerakkan sekarang</strong> turut menghantar rekod lama.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Penyegerakan telefon–jam tangan memerlukan aplikasi pada kedua-dua peranti; tanpa sambungan, rekod kekal pada peranti. Jika perlu, gunakan <strong class="ui">Lokasi dan tetapan</strong> → <strong class="ui">Cuba penyegerakan lagi</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Tukar bahasa dalam <strong class="ui">Tetapan</strong> pada iPhone dan <strong class="ui">Bahasa</strong> pada jam tangan; setiap peranti menyimpan pilihannya sendiri.</li>
+</ul>
+
+<h2 id="prayer-times">2. Lokasi dan waktu solat</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">Tetapan</strong> → <strong class="ui">Lokasi dan zon waktu</strong>. Ketik <strong class="ui">Gunakan lokasi saya</strong> dan benarkan lokasi, atau isikan <strong class="ui">Bandar</strong>, <strong class="ui">Latitud</strong>, <strong class="ui">Longitud</strong> dan <strong class="ui">Zon waktu IANA</strong> (cth. Asia/Kuala_Lumpur), kemudian ketik <strong class="ui">Simpan bandar/lokasi</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Lokasi dan tetapan</strong>: ketik <strong class="ui">Dapatkan lokasi saya</strong>, atau isikan <strong class="ui">Nama lokasi</strong>, <strong class="ui">Latitud</strong>, <strong class="ui">Longitud</strong> dan <strong class="ui">Zon waktu</strong>, kemudian ketik <strong class="ui">Simpan</strong>.</li>
+<li>Kebenaran lokasi adalah pilihan; anda boleh memasukkan bandar dan koordinat secara manual. Kemas kini lokasi dan zon waktu apabila anda bermusafir.</li>
+<li><strong class="ui">Kaedah pengiraan</strong> (12 kaedah): <strong class="ui">Türkiye (Diyanet)</strong>, <strong class="ui">Liga Muslim Sedunia</strong>, <strong class="ui">Pihak Berkuasa Am Mesir</strong>, <strong class="ui">Karachi (Univ. Sains Islam)</strong>, <strong class="ui">Umm al-Qura (Makkah)</strong>, <strong class="ui">Dubai</strong>, <strong class="ui">Jawatankuasa Cerapan Anak Bulan</strong>, <strong class="ui">Amerika Utara (ISNA)</strong>, <strong class="ui">Kuwait</strong>, <strong class="ui">Qatar</strong>, <strong class="ui">Singapura</strong>, <strong class="ui">Tehran</strong>. Pilih yang paling hampir dengan jadual tempatan anda.</li>
+<li><strong class="ui">Pengiraan Asar</strong>: <strong class="ui">Standard</strong> menggunakan bayang sepanjang satu kali ganda panjang objek (Asar pertama), <strong class="ui">Hanafi</strong> dua kali ganda (Asar kedua). Jadual Turki menggunakan kaedah standard.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Mazhab</strong>: <strong class="ui">Sunni (termasuk sunat dan witir)</strong> atau <strong class="ui">Syafi‘i (fardu)</strong>. Pilihan ini hanya menentukan rakaat yang dijejaki, bukan waktunya. Pada jam tangan: <strong class="ui">Mazhab / rakaat</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Waktu solat dikemas kini secara automatik selepas perubahan; ketik <strong class="ui">Kemas kini jadual solat</strong> jika perlu. Pada jam tangan, kaedah dan pengiraan Asar terdapat dalam <strong class="ui">Kaedah pengiraan</strong>.</li>
+<li>Waktu solat dikira pada peranti. Aplikasi ini bukan jadual rasmi dan mungkin berbeza beberapa minit daripada jadual anda.</li>
+</ul>
+
+<h2 id="notifications">3. Pemberitahuan dan penggera</h2>
+<h3>Pemberitahuan waktu solat</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Maklumkan apabila waktu solat bermula</strong> menghantar pemberitahuan untuk setiap waktu solat. Tetapkan masanya dengan stepper: <strong class="ui">Pada waktu solat dimulakan</strong>, atau sehingga 60 minit sebelum (<strong class="ui">… minit lebih awal</strong>) atau selepas (<strong class="ui">… minit selepas</strong>). Jam tangan mempunyai tetapan yang sama dalam <strong class="ui">Peringatan azan</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Apabila jam tangan menguruskan pemberitahuan ini, iPhone tidak menjadualkan pemberitahuannya sendiri; pemberitahuan tetap sampai ke jam tangan walaupun iPhone berkunci.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Lokasi dan tetapan</strong>: hidupkan <strong class="ui">Peringatan</strong> dan pilih <strong class="ui">Pada waktu solat dimulakan</strong> atau <strong class="ui">… minit lebih awal</strong>. Jika pemberitahuan lewat, berikan kebenaran <strong class="ui">Kebenaran penjadualan</strong>.</li>
+</ul>
+<h3>Penggera sebelum waktu tamat</h3>
+<ul>
+<li><strong class="ui">Penggera sebelum waktu tamat</strong>: <strong class="ui">Mati</strong> atau beberapa minit sebelum waktu solat tamat. Jika solat belum direkodkan sebagai telah ditunaikan, penggera tetap berbunyi walaupun dalam mod senyap.</li>
+<li>Penggera masih boleh berbunyi jika rekod yang dikesan oleh jam tangan belum sampai ke telefon.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Penggera sebenar memerlukan iOS 26; jika tidak, atau tanpa kebenaran penggera, pemberitahuan dihantar sebagai gantinya.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">45 dan 30 minit sebelum waktu tamat, jam tangan memainkan bahagian hayya daripada azan disertai getaran (<strong class="ui">Marilah solat, marilah menuju kemenangan</strong>), dan sekali lagi dengan lebih kuat jika anda sedang tidur. Jika anda kelihatan duduk atau berbaring diam sedangkan waktunya masih ada, anda akan menerima satu pemberitahuan <strong class="ui">Anda nampaknya mempunyai masa lapang</strong> (tidak pernah pada waktu makruh).</li>
+</ul>
+<h3>Peringatan tahajud dan subuh (jam tangan)</h3>
+<ul>
+<li>Pada jam tangan, dalam <span data-platform="apple"><strong class="ui">Peringatan azan</strong></span><span data-platform="android"><strong class="ui">Peringatan azan</strong></span>, <strong class="ui">Peringatan Tahajud</strong> mengikut sepertiga malam terakhir dan <strong class="ui">Peringatan azan Subuh</strong> mengikut waktu imsak.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Waktu peringatan</strong>: <strong class="ui">Pada waktu solat dimulakan</strong> atau 5–60 minit lebih awal. <strong class="ui">Tunda</strong>: 1–15 minit.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Bergerak akan menyenyapkan penggera seketika; mengetik <strong class="ui">Tandakan telah solat</strong> menghentikannya. <strong class="ui">Pergerakan untuk menyenyapkan</strong> menetapkan jumlah pergerakan yang diperlukan: <strong class="ui">Sedikit pergerakan (peka)</strong>, <strong class="ui">Sederhana</strong>, <strong class="ui">Lebih banyak pergerakan (sukar)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Penggera terdekat memainkan suara azan pilihan anda, peringatan lain menggunakan suara pemberitahuan. Membuka aplikasi jam tangan memperbaharui penggera terdekat.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Bunyi dan getaran berasal daripada saluran pemberitahuan peranti (<strong class="ui">Suara dan getaran peringatan</strong>); aplikasi tidak mempunyai rakaman azan terbina dalam.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Suara azan (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Suara azan</strong> (atau <strong class="ui">Peringatan azan</strong> → <strong class="ui">Pilih suara azan</strong>): masukkan alamat https bagi fail CAF, AIFF atau WAV, kemudian ketik <strong class="ui">Muat turun</strong>. Sehingga 30 saat dimainkan dalam pemberitahuan; fail yang lebih panjang hanya dimainkan dalam aplikasi.</li>
+<li>Pilih salah satu suara yang dipasang; gunakan <strong class="ui">Mainkan</strong>, <strong class="ui">Hentikan</strong> dan <strong class="ui">Padam</strong>. Jika tiada yang dipilih, suara penggera terbina dalam akan dimainkan.</li>
+<li><strong class="ui">Bahagian Hayya (ulang + getaran)</strong>: tandakan bahagian "Hayya ala's-salah, Hayya ala'l-falah" dengan saat <strong class="ui">Mula</strong> dan <strong class="ui">Tamat</strong>, tetapkan <strong class="ui">Ulangan</strong>, dan uji dengan <strong class="ui">Mainkan bahagian</strong>.</li>
+<li>Fail dimuat turun terus daripada alamat tersebut; pelayan itu bukan milik kami.</li>
+</ul>
+<p>Kebenaran pemberitahuan, mod senyap, Fokus, penjimatan bateri dan kelantangan semuanya boleh menjejaskan peringatan.</p>
+
+<h2 id="calibration">4. Penentukuran pada jam tangan</h2>
+<p>Penentukuran mengajar jam tangan postur takbir, qiyam, rukuk, sujud dan duduk anda sendiri. Ia hanya dilakukan pada jam tangan.</p>
+<ol>
+<li>Pakai jam tangan dengan kemas pada pergelangan tangan biasa anda (kanan atau kiri).</li>
+<li><span data-platform="apple"><strong class="ui">Penentukuran</strong> → <strong class="ui">Panduan penentukuran peribadi</strong> → <strong class="ui">Mula penentukuran suara</strong></span><span data-platform="android"><strong class="ui">Penentukuran</strong> → <strong class="ui">Mula penentukuran suara</strong></span>.</li>
+<li>Ikuti panduan suara: takbir (tangan terangkat), qiyam, rukuk, bangun berdiri, sujud, duduk antara dua sujud, sujud kedua, duduk akhir, salam kanan, salam kiri. Selepas setiap arahan anda diberi masa untuk mengambil kedudukan tersebut, kemudian pengukuran ringkas dilakukan; kekalkan kedudukan dengan selesa.</li>
+<li>Jika <strong class="ui">Pelajari gerakan penutup doa (pilihan)</strong> dihidupkan, gerakan mengusap wajah dengan tangan selepas salam turut diukur; atau ketik <strong class="ui">Langkau gerakan doa</strong>.</li>
+<li><strong class="ui">Hentikan</strong> menjeda; <strong class="ui">Teruskan langkah ini</strong> meneruskan.</li>
+<li>Pada akhirnya anda akan melihat <strong class="ui">Penentukuran selesai</strong> dan ketinggian pergelangan tangan anda berbanding qiyam.<span data-platform="apple"> Ketik <strong class="ui">Selesai, kembali ke solat</strong>.</span></li>
+</ol>
+<ul>
+<li>Salam hanya dipandu suara; pergerakan kepala tidak diukur.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Selepas penentukuran berjaya, pengesanan berterusan dihidupkan secara automatik.</li>
+<li>Jika postur terlalu serupa atau takbir tidak dikesan, mulakan semula pada pergelangan tangan yang sama dan tahan tangan terangkat pada langkah takbir.</li>
+</ul>
+<h3>Kedudukan kedua</h3>
+<ul>
+<li>Jika jam tangan tergelincir ke bawah pergelangan tangan semasa solat, ajarkan juga kedudukan tersebut: selepas penentukuran biasa, ketik <strong class="ui">Kalibrasi kedudukan kedua</strong>, gelongsorkan jam tangan 1–2 cm ke arah tangan, dan ulangi langkah-langkah tersebut (termasuk mengusap wajah).</li>
+<li>Pengesanan menggunakan kedudukan mana sahaja yang lebih sesuai. Penentukuran biasa yang baharu mengekalkan kedudukan kedua; jika kekencangan tali berubah, gunakan <strong class="ui">Kalibrasi semula kedudukan kedua</strong> atau <strong class="ui">Padam kedudukan kedua</strong>.</li>
+</ul>
+<h3>Bila perlu tentukur semula</h3>
+<ul>
+<li>Apabila kedudukan jam tangan, kekencangan tali atau pergelangan tangan berubah, atau pengesanan kerap silap.<span data-platform="apple"> Pemberitahuan <strong class="ui">Periksa kedudukan jam</strong> turut bermaksud jam tangan longgar.</span></li>
+<li>Aplikasi juga mempelajari ketinggian pergelangan tangan daripada solat anda. Selepas perubahan besar, gunakan <strong class="ui">Tetapkan semula ketinggian yang dipelajari</strong>; <strong class="ui">Padam penentukuran</strong> memadam keseluruhan penentukuran.</li>
+<li><strong class="ui">Latihan suara</strong> membolehkan anda berlatih dengan panduan suara; ia tidak mencipta sebarang rekod.</li>
+</ul>
+
+<h2 id="tracking">5. Penjejakan automatik semasa solat</h2>
+<ul>
+<li>Buka aplikasi jam tangan dalam waktu solat dan mulakan dengan takbiratulihram. Setiap bahagian (sunat, fardu, witir) bermula dengan takbirnya sendiri.<span data-platform="apple"> Apabila tangan terangkat dikesan, <strong class="ui">Postur takbir dikesan; beralih ke qiyam.</strong> akan dipaparkan.</span></li>
+<li>Susunan mengikut takbir pembuka: <strong class="ui">Subuh 2+2 · Zohor 4+4+2 · Asar 4+4 · Maghrib 3+2 · Isyak 4+4+2+3 witir</strong>. Maghrib bermula dengan fardu.<span data-platform="apple"> Dengan <strong class="ui">Syafi‘i (fardu)</strong>, hanya fardu yang dijejaki.</span></li>
+<li>Skrin memaparkan bahagian semasa, takbir seterusnya dan rakaat yang dikesan.</li>
+<li>Untuk memulakan terus dengan fardu, ketik <span data-platform="apple"><strong class="ui">Langkau sunat awal</strong></span><span data-platform="android"><strong class="ui">Mulakan dengan fardu</strong></span>.</li>
+<li>Sujud sahwi dilakukan pada akhir solat, semasa duduk akhir; jika dikesan, rekod akan memaparkan <strong class="ui">Sujud sahwi dilakukan</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Sebelum sujud sahwi, anda boleh ketik <strong class="ui">Saya akan melakukan sujud sahwi</strong>; aplikasi kemudian akan menanti dua sujud tambahan dan duduk akhir. <strong class="ui">Saya akan mengulangi bahagian solat ini</strong> memulakan semula bahagian semasa. Jika penyimpanan gagal, ketik <strong class="ui">Cuba simpan lagi</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Jika penentukuran belum ada, butang <strong class="ui">Panduan penentukuran peribadi</strong> akan dipaparkan.</li>
+</ul>
+<h3>Kiraan salah atau solat terlepas</h3>
+<ul>
+<li>Jika rakaat yang dikesan terlalu banyak atau terlalu sedikit, jam tangan akan memberi amaran (<strong class="ui">Semak bilangan rakaat</strong>). Semak kiraan anda.</li>
+<li>Tandakan solat secara manual: <span data-platform="apple"><strong class="ui">Tandakan fardu ditunaikan</strong></span><span data-platform="android"><strong class="ui">Tandakan telah solat</strong></span> pada jam tangan, <strong class="ui">Tandakan telah solat</strong> pada telefon.</li>
+<li>Jika anda bersolat tepat pada waktunya tetapi tidak dikesan, selepas waktu solat tamat buka <strong class="ui">Sejarah</strong> pada telefon, ketik <strong class="ui">Tandakan solat dalam waktu</strong>, tetapkan <strong class="ui">Waktu anda solat</strong> dan ketik <strong class="ui">Simpan sebagai telah solat</strong>. Waktunya mesti berada dalam waktu solat tersebut; tindakan ini tidak boleh dibatalkan.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Anda boleh membatalkan rekod yang salah dalam sejarah dengan <strong class="ui">Batalkan rekod</strong>, kemudian ketik <strong class="ui">Tandakan telah solat</strong> semula.</li>
+</ul>
+<h3>Pengesanan berterusan dan bateri</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Tetapan pengesanan</strong></span><span data-platform="android"><strong class="ui">Pengesanan solat</strong></span> → <strong class="ui">Pengesanan berterusan (percubaan)</strong> mengekalkan pengesanan tetap berjalan walaupun skrin dimatikan atau pada muka jam.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Untuk ini, jam tangan mengekalkan sesi senaman terbuka sepanjang hari. Tiada senaman disimpan ke Kesihatan, tetapi penggunaan bateri meningkat dan gelang Aktiviti mungkin terjejas. Jika sesi terhenti, buka semula aplikasi.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Pengesanan latar belakang menghabiskan bateri dengan lebih cepat. Jika aplikasi dihentikan paksa, buka semula.</li>
+<li>Apabila dimatikan, pengesanan hanya berfungsi semasa aplikasi dibuka.</li>
+</ul>
+<h3>Solat sunat</h3>
+<ul>
+<li>Waktu tahajud dan duha dipaparkan pada skrin waktu solat; tandakan dalam waktunya dengan <strong class="ui">Tandakan telah solat · +500</strong>. Jam tangan juga boleh mengesannya daripada takbir pembuka.</li>
+<li><strong class="ui">Qada Subuh → Duha</strong>: pilih solat qada Subuh yang telah direkodkan, kemudian rakaat duha akan dikesan secara berurutan.</li>
+</ul>
+
+<h2 id="sequence-check">6. Semakan susunan dan pengesahan</h2>
+<p>Sebelum fardu yang dikesan disimpan, susunannya disemak: takbir pembuka, satu rukuk dan dua sujud dalam setiap rakaat, duduk akhir, sujud ke arah yang sama, dan tiada pergerakan berpaling seperti berjalan.</p>
+<ul>
+<li>Jika semakan gagal, jam tangan bergetar dan bertanya <strong class="ui">Adakah anda sudah solat fardu …?</strong> disertai sebabnya. Senarai waktu memaparkan <strong class="ui">Menunggu pengesahan</strong>.</li>
+<li><strong class="ui">Ya, sudah</strong>: disimpan dengan waktu selesai yang dikesan sebagai <strong class="ui">Pengesanan automatik (disahkan)</strong>.</li>
+<li><strong class="ui">Tidak</strong>: tiada apa yang disimpan; peringatan untuk waktu solat tersebut akan muncul semula.</li>
+<li>Jika tidak dijawab sehingga waktu solat tamat: disimpan sebagai <strong class="ui">Pengesanan automatik (belum disahkan, sila semak)</strong>, supaya solat yang telah ditunaikan tidak hilang. Mengetik <strong class="ui">Tandakan telah solat</strong> pada waktu itu akan membuang soalan tersebut.</li>
+</ul>
+<h3>Label <strong class="ui">Ditanda oleh: …</strong></h3>
+<ul>
+<li><strong class="ui">Pengesanan automatik</strong>: fardu lulus semakan.</li>
+<li><strong class="ui">Pengesanan automatik (disahkan)</strong> / <strong class="ui">Pengesanan automatik (belum disahkan, sila semak)</strong>: lihat di atas.</li>
+<li><strong class="ui">Pengesanan automatik (rekod sandaran, sila semak)</strong>: pengesanan mengira rakaat fardu dengan tepat, tetapi langkah penyimpanan biasa gagal, lalu direkodkan melalui laluan sandaran.</li>
+<li><strong class="ui">“Sudah solat” pada jam</strong>, <strong class="ui">“Sudah solat” dalam pemberitahuan jam</strong>, <strong class="ui">“Sudah solat” pada telefon</strong>, <strong class="ui">“Sudah solat” dalam pemberitahuan telefon</strong>, <strong class="ui">Pembetulan “Solat tepat waktu”</strong>, <strong class="ui">Tandakan telah diqada</strong>: tanda yang dibuat secara manual.</li>
+<li>Label yang meminta anda menyemak berwarna oren dalam sejarah; semak dan betulkan jika perlu.</li>
+</ul>
+
+<h2 id="history">7. Sejarah, solat qada dan mata</h2>
+<ul>
+<li><span data-platform="apple">Tab <strong class="ui">Sejarah</strong></span><span data-platform="android">Halaman <strong class="ui">Sejarah</strong></span> pada telefon memaparkan setiap solat sebagai <strong class="ui">Telah solat</strong>, <strong class="ui">Telah diqada</strong> atau <strong class="ui">Menunggu / tertinggal</strong>, disertai <strong class="ui">Sujud sahwi dilakukan</strong> dan label penanda jika berkenaan.</li>
+<li>Waktu solat yang tamat tanpa rekod masuk ke senarai qada (<strong class="ui">Solat yang perlu diqada: …</strong>). Apabila anda mengqadakannya, ketik <strong class="ui">Tandakan telah solat</strong> di sebelah solat tersebut<span data-platform="apple">; pada jam tangan gunakan <strong class="ui">Solat qada</strong></span><span data-platform="android">; selepas waktu tamat, butangnya bertukar menjadi <strong class="ui">Tandakan telah diqada</strong></span>.</li>
+<li><strong class="ui">Mata</strong>: bersolat lebih awal dalam waktunya memberi mata lebih tinggi; solat yang tertinggal menurunkan mata. Solat sunat menambah bonus (<strong class="ui">Tandakan telah solat · +500</strong>).</li>
+<li><strong class="ui">Statistik</strong>: ringkasan mingguan, bulanan dan tahunan serta ketepatan masa.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Buat fail sandaran</strong> menyimpan sejarah fardu anda ke fail pilihan anda; <strong class="ui">Pulihkan sandaran</strong> menggabungkannya semula.</li>
+<li>Ketiadaan rekod tidak membuktikan solat tertinggal; aplikasi hanya menyimpan tanda yang dibuat oleh anda dan oleh pengesanan.</li>
+</ul>
+
+<h2 id="excused">8. Hari uzur</h2>
+<ul>
+<li>Bahagian ini hanya muncul apabila <span data-platform="apple"><strong class="ui">Tetapan</strong></span><span data-platform="android"><strong class="ui">Lokasi dan tetapan</strong></span> → <strong class="ui">Jantina</strong> ialah <strong class="ui">Perempuan</strong>.<span data-platform="apple"> Pada iPhone, tetapan ini terdapat di bawah <strong class="ui">Pengiraan dan peringatan</strong>; menu jam tangan mempunyai baris <strong class="ui">Jantina</strong>.</span> Dengan <strong class="ui">Pilih</strong> atau <strong class="ui">Lelaki</strong>, bahagian ini disembunyikan; menukar pilihan tidak memadam tempoh yang telah disimpan.</li>
+<li><span data-platform="apple"><strong class="ui">Tetapan</strong> → <strong class="ui">Hari uzur</strong> (turut terdapat dalam menu jam tangan)</span><span data-platform="android"><strong class="ui">Hari uzur</strong></span>: ketik <strong class="ui">Mulakan tempoh</strong> apabila tempoh bermula dan <strong class="ui">Tamatkan tempoh</strong> apabila ia tamat. Amaran akan muncul jika sesuatu tempoh kekal terbuka terlalu lama.</li>
+<li>Edit tempoh terdahulu dengan <strong class="ui">Edit</strong> (<strong class="ui">Mula</strong>, <strong class="ui">Tamat</strong>, <strong class="ui">Sedang berjalan</strong>) dan <strong class="ui">Simpan</strong>, atau padam dengan <strong class="ui">Padam tempoh</strong>.</li>
+<li>Semasa tempoh berlangsung, tiada pemberitahuan waktu solat, sahur, atau berbuka, tiada hutang qada atau mata; pengesanan dan <strong class="ui">Tandakan telah solat</strong> dimatikan, serta penjejakan tahajud/duha dijeda. Waktu solat dan widget memaparkan <strong class="ui">Hari uzur</strong>.</li>
+<li>Hanya anda yang memasukkan tempoh. Maklumat ini disimpan pada peranti anda dan, jika penyegerakan dihidupkan, dikongsi dengan peranti lain anda bersama sejarah.</li>
+</ul>
+
+<h2 id="hijri">9. Kalendar Hijrah dan Ramadan</h2>
+<ul>
+<li>Tarikh Hijrah pada skrin waktu solat mengikut kalendar Umm al-Qura. Jika ia berbeza satu hari daripada kalendar tempatan anda, pilih −1, 0, atau +1 dalam <span data-platform="apple"><strong class="ui">Tetapan</strong> → <strong class="ui">Kalendar Hijrah</strong></span><span data-platform="android"><strong class="ui">Lokasi dan tetapan</strong></span> → <strong class="ui">Pelarasan tarikh Hijrah</strong>.</li>
+<li><strong class="ui">Hari-hari keagamaan</strong> menyenaraikan hari-hari keagamaan yang akan datang; yang terdekat turut dipaparkan pada skrin waktu solat.</li>
+<li><strong class="ui">Jadual imsakiah</strong> memaparkan waktu imsak dan berbuka untuk Ramadan.</li>
+<li><strong class="ui">Peringatan sahur</strong>: <strong class="ui">Mati</strong> atau <strong class="ui">… minit sebelum imsak</strong> (30, 45, 60, 90). <strong class="ui">Pemberitahuan berbuka</strong> memaklumkan pada waktu berbuka. Kedua-duanya hanya dijadualkan semasa Ramadan.</li>
+<li>Puasa: semasa Ramadan, skrin waktu solat memaparkan kiraan detik ke imsak atau berbuka serta butang <strong class="ui">Saya berpuasa</strong>; hari yang ditandakan memaparkan <strong class="ui">Berpuasa</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. Widget, Aktiviti Langsung dan komplikasi</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>Widget <strong class="ui">Solat seterusnya</strong> mengira detik ke waktu solat seterusnya atau ke akhir waktu semasa. Tambahkan ke Skrin Utama (kecil, sederhana) atau Skrin Kunci: sentuh dan tahan Skrin Utama → Edit → Tambah Widget → Salah Sense.</li>
+<li><strong class="ui">Aktiviti Langsung</strong> (dalam <strong class="ui">Tetapan</strong>) memaparkan kiraan detik pada Skrin Kunci dan dalam Dynamic Island; ia tidak bermula semasa hari uzur.</li>
+<li>Komplikasi Apple Watch: edit muka jam dan pilih Salah Sense (segi empat tepat, sebaris, bulat, sudut).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Widget Skrin Utama Android memaparkan waktu solat seterusnya; sentuh dan tahan Skrin Utama, kemudian tambahkan Salah Sense daripada senarai widget.</li>
+<li>Wear OS menyediakan tile dan komplikasi Salah Sense.</li>
+</ul>
+<p>Semasa hari uzur, widget dan komplikasi memaparkan <strong class="ui">Hari uzur</strong>.</p>
+
+<h2 id="diagnostics">11. Menghantar rakaman diagnostik</h2>
+<p>Jika pengesanan terus tersilap untuk solat tertentu, rakaman diagnostik membantu kami menyiasatnya.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Pada jam tangan: <strong class="ui">Tetapan pengesanan</strong> → <strong class="ui">Rakaman diagnostik</strong> → <strong class="ui">Mulakan rakaman</strong>. Tunggu 3 saat dengan tangan ke bawah, tunaikan semua bahagian solat, kemudian ketik <strong class="ui">Tamatkan rakaman</strong>. Satu rakaman berlangsung selama-lamanya 20 minit.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Pada jam tangan, hidupkan <strong class="ui">Rakaman diagnostik</strong> pada halaman <strong class="ui">Pengesanan solat</strong> semasa pengesanan berjalan, kemudian tunaikan solat.</li>
+<li><span data-platform="apple"><strong class="ui">Hantar rakaman ke iPhone</strong> (dengan aplikasi dibuka pada iPhone); jika perlu <strong class="ui">Hantar semula rakaman terkini</strong></span><span data-platform="android"><strong class="ui">Hantar rakaman ke telefon</strong></span>.</li>
+<li>Pada telefon: <span data-platform="apple"><strong class="ui">Tetapan</strong> → <strong class="ui">Rakaman diagnostik</strong> → pilih rakaman → <strong class="ui">Kongsi rakaman</strong></span><span data-platform="android"><strong class="ui">Pengesanan solat</strong> → <strong class="ui">Kongsi</strong></span>, kemudian hantar melalui e-mel ke <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>Merakam dengan skrin dimatikan memerlukan pengesanan berterusan.</li>
+<li>Untuk setiap fardu yang disimpan oleh pengesanan, <strong class="ui">Ringkasan fardu automatik</strong> ringkas bagi beberapa minit terakhir disimpan dan boleh dikongsi dengan cara yang sama.</li>
+<li>Rakaman mengandungi nilai penderia gerakan, tekanan/ketinggian relatif, status pengesanan, data penentukuran, dan versi aplikasi; tiada lokasi, audio, nama, atau data akaun. Rakaman hanya keluar daripada peranti jika anda mengongsikannya. Rakaman terkini disimpan; padam dengan <strong class="ui">Padam rakaman</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Penyelesaian masalah dan sokongan</h2>
+<ul>
+<li><strong>Waktu berbeza:</strong> semak kaedah pengiraan, pengiraan Asar, lokasi dan zon waktu<span data-platform="apple">, kemudian ketik <strong class="ui">Kemas kini jadual solat</strong></span>.</li>
+<li><strong>Tiada pemberitahuan:</strong> semak kebenaran pemberitahuan, mod senyap dan Fokus dalam tetapan peranti.<span data-platform="android"> Penjimatan bateri dan <strong class="ui">Kebenaran penjadualan</strong> turut memberi kesan.</span></li>
+<li><strong>Pengesanan tidak bermula:</strong> jika <strong class="ui">Tidak ada data penderia gerakan.</strong> dipaparkan, buka semula aplikasi jam tangan; jika <strong class="ui">Pengukuran takbir belum ada. Mula penentukuran suara.</strong> dipaparkan, lakukan penentukuran; untuk penggunaan skrin dimatikan, hidupkan pengesanan berterusan.</li>
+<li><strong>Kiraan kerap salah:</strong> ketatkan jam tangan, tentukur kedudukan kedua, atau tentukur semula; tandakan secara manual dan hantar rakaman diagnostik.</li>
+<li><strong>Sejarah telefon dan jam tangan berbeza:</strong> hidupkan penyegerakan pada kedua-dua peranti<span data-platform="apple"> dan ketik <strong class="ui">Segerakkan sekarang</strong></span><span data-platform="android">; gunakan <strong class="ui">Cuba penyegerakan lagi</strong></span>.</li>
+<li><strong>Penggera tidak berbunyi:</strong> semak kelantangan jam tangan dan mod senyap<span data-platform="apple">; membuka aplikasi jam tangan memperbaharui penggera terdekat</span>.</li>
+</ul>
+<div class="box">
+<p>Jawapan lain: <a href="https://notes7239.github.io/salahsense/support/ms.html">halaman sokongan</a> (FAQ). Hubungi: <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — sila sertakan model peranti, versi OS dan versi aplikasi.</p>
+<p>Cara data anda dikendalikan: <a href="https://notes7239.github.io/salahsense/privacy/ms.html">Dasar Privasi</a>. Tiada akaun, iklan, analitik atau pelayan; data anda kekal pada peranti anda.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/ms.html">Sokongan</a> · <a href="https://notes7239.github.io/salahsense/privacy/ms.html">Dasar Privasi</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Help — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense Help</h1>
+<p class="meta">Using the app and its settings · phone and watch</p>
+<div class="box warn"><p><strong>Important:</strong> Automatic rakah and sajdah tracking requires a watch (<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS watch</span>); a phone alone cannot measure wrist movement. Detection is an aid and can make mistakes: watch position, strap fit and personal movement differences affect it. You can always correct records by hand. The app does not issue religious rulings or judge whether a prayer is valid.</p></div>
+<p>For FAQs and contact details see the <a href="https://notes7239.github.io/salahsense/support/en.html">support page</a>. Bold words are button and menu names in the app.</p>
+<nav class="toc" aria-label="Contents">
+<strong>Contents</strong>
+<ul>
+<li><a href="#getting-started">1. Getting started</a></li>
+<li><a href="#prayer-times">2. Location and prayer times</a></li>
+<li><a href="#notifications">3. Notifications and alarms</a></li>
+<li><a href="#calibration">4. Calibration on the watch</a></li>
+<li><a href="#tracking">5. Automatic tracking during prayer</a></li>
+<li><a href="#sequence-check">6. Sequence check and confirmation</a></li>
+<li><a href="#history">7. History, make-up prayers and score</a></li>
+<li><a href="#excused">8. Excused days</a></li>
+<li><a href="#hijri">9. Hijri calendar and Ramadan</a></li>
+<li><a href="#widgets">10. Widgets, Live Activity and complications</a></li>
+<li><a href="#diagnostics">11. Sending a diagnostic recording</a></li>
+<li><a href="#troubleshooting">12. Troubleshooting and support</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Getting started</h2>
+<ul>
+<li>The <span data-platform="apple">iPhone</span><span data-platform="android">Android phone</span> app shows prayer times, qibla, dhikr, history and settings. The <span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS watch</span> app follows your movements during prayer and handles adhan alerts and calibration.</li>
+<li>First open <span data-platform="apple">the <strong class="ui">Settings</strong> tab</span><span data-platform="android">the <strong class="ui">Location and settings</strong> page</span> on the phone and set location, calculation method, Asr calculation and <strong class="ui">Gender</strong> (sections 2 and 8).</li>
+<li>Then <a href="#calibration">calibrate</a> once on the watch; automatic tracking is only reliable after that.</li>
+<li>Without a watch you can still use prayer times, qibla, dhikr, manual <strong class="ui">Mark prayed</strong> records, make-up prayers, statistics, the Hijri calendar, the imsakiyah and widgets.</li>
+<li><strong class="ui">Prayer Guide</strong> has offline summaries, with sources, on the daily prayers and sajdah sahw.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">To share history, turn on <strong class="ui">Share prayer history with my paired iPhone/Apple Watch</strong> in <strong class="ui">Settings</strong> → <strong class="ui">Paired device</strong> on the iPhone and <strong class="ui">Sync history</strong> in <strong class="ui">Device pairing</strong> on the watch. It is off by default; <strong class="ui">Sync now</strong> also sends older records.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Phone–watch sync needs the app on both devices; without a connection, records stay on the device. If needed, use <strong class="ui">Location and settings</strong> → <strong class="ui">Retry sync</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Change the language in <strong class="ui">Settings</strong> on the phone and <strong class="ui">Language</strong> on the watch; each device keeps its own choice.</li>
+</ul>
+
+<h2 id="prayer-times">2. Location and prayer times</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">Settings</strong> → <strong class="ui">Location and time zone</strong>. Tap <strong class="ui">Use my location</strong> and allow location, or fill in <strong class="ui">City</strong>, <strong class="ui">Latitude</strong>, <strong class="ui">Longitude</strong> and <strong class="ui">IANA time zone</strong> (e.g. Europe/London), then tap <strong class="ui">Save city/location</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Location and settings</strong>: tap <strong class="ui">Get my location</strong>, or fill in <strong class="ui">Location name</strong>, <strong class="ui">Latitude</strong>, <strong class="ui">Longitude</strong> and <strong class="ui">Time zone</strong>, then tap <strong class="ui">Save</strong>.</li>
+<li>Location permission is optional; you can enter the city and coordinates by hand. Update location and time zone when you travel.</li>
+<li><strong class="ui">Calculation method</strong> (12 methods): <strong class="ui">Türkiye (Diyanet)</strong>, <strong class="ui">Muslim World League</strong>, <strong class="ui">Egyptian General Authority</strong>, <strong class="ui">Karachi (Univ. of Islamic Sciences)</strong>, <strong class="ui">Umm al-Qura (Makkah)</strong>, <strong class="ui">Dubai</strong>, <strong class="ui">Moonsighting Committee</strong>, <strong class="ui">North America (ISNA)</strong>, <strong class="ui">Kuwait</strong>, <strong class="ui">Qatar</strong>, <strong class="ui">Singapore</strong>, <strong class="ui">Tehran</strong>. Choose the one closest to your local timetable.</li>
+<li><strong class="ui">Asr calculation</strong>: <strong class="ui">Standard</strong> uses a shadow of one object length (first Asr), <strong class="ui">Hanafi</strong> two lengths (second Asr). The Turkish timetable uses standard.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Madhab</strong>: <strong class="ui">Sunni (including sunnah and witr)</strong> or <strong class="ui">Shafi'i (fard)</strong>. It only sets which rakahs are tracked, not the times. On the watch: <strong class="ui">Madhab / rakahs</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Times refresh after a change; tap <strong class="ui">Refresh prayer times</strong> if needed. On the watch, method and Asr are under <strong class="ui">Calculation method</strong>.</li>
+<li>Times are calculated on the device. The app is not an official timetable and may differ from yours by a few minutes.</li>
+</ul>
+
+<h2 id="notifications">3. Notifications and alarms</h2>
+<h3>Prayer time notification</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Notify when prayer time begins</strong> sends a notification for each prayer time. Set the timing with the stepper: <strong class="ui">At prayer time</strong>, or up to 60 minutes before (<strong class="ui">… min before</strong>) or after (<strong class="ui">… min after</strong>). The watch has the same setting in <strong class="ui">Adhan alerts</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">When the watch handles these notifications, the iPhone does not schedule its own; they reach the watch while the iPhone is locked.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Location and settings</strong>: turn on <strong class="ui">Reminder</strong> and choose <strong class="ui">At prayer time</strong> or <strong class="ui">… min before</strong>. If notifications are late, grant <strong class="ui">Scheduling permission</strong>.</li>
+</ul>
+<h3>Alarm before the time ends</h3>
+<ul>
+<li><strong class="ui">Alarm before the time ends</strong>: <strong class="ui">Off</strong> or a number of minutes before the prayer time ends. If the prayer is not recorded as prayed, it rings even in silent mode.</li>
+<li>It may still ring if a record detected by the watch has not reached the phone yet.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">A real alarm needs iOS 26; otherwise, or without alarm permission, a notification is sent instead.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">45 and 30 minutes before the end, the watch plays the hayya part of the adhan with vibration (<strong class="ui">Come to prayer, come to success</strong>), and once more strongly if you are asleep. If you seem to be sitting or lying idle while there is time, you get one <strong class="ui">You seem available</strong> notification (never in a prohibited time).</li>
+</ul>
+<h3>Tahajjud and Fajr alerts (watch)</h3>
+<ul>
+<li>In <span data-platform="apple"><strong class="ui">Adhan alerts</strong></span><span data-platform="android"><strong class="ui">Adhan alerts</strong></span> on the watch, <strong class="ui">Tahajjud alert</strong> follows the last third of the night and <strong class="ui">Fajr adhan alert</strong> follows imsak.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Alert time</strong>: <strong class="ui">At prayer time</strong> or 5–60 minutes before. <strong class="ui">Snooze</strong>: 1–15 minutes.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Moving silences the alarm briefly; tapping <strong class="ui">Mark prayed</strong> stops it. <strong class="ui">Silencing movement</strong> sets how much movement is needed: <strong class="ui">Less movement (sensitive)</strong>, <strong class="ui">Medium</strong>, <strong class="ui">More movement (hard)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">The nearest alarm plays your adhan sound, other alerts use the notification sound. Opening the watch app renews the nearest alarm.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Sound and vibration come from the device notification channel (<strong class="ui">Alert sound and vibration</strong>); the app has no built-in adhan recording.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Adhan sound (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Adhan sound</strong> (or <strong class="ui">Adhan alerts</strong> → <strong class="ui">Choose adhan sound</strong>): enter the https address of a CAF, AIFF or WAV file and tap <strong class="ui">Download</strong>. Up to 30 seconds plays in notifications; longer files play only in the app.</li>
+<li>Select an installed sound; use <strong class="ui">Play</strong>, <strong class="ui">Stop</strong> and <strong class="ui">Delete</strong>. With none selected, the built-in alarm sound plays.</li>
+<li><strong class="ui">Hayya segment (repeat + vibration)</strong>: mark the "Hayya ala's-salah, Hayya ala'l-falah" part with <strong class="ui">Start</strong> and <strong class="ui">End</strong> seconds, set <strong class="ui">Repeat</strong>, and test with <strong class="ui">Play segment</strong>.</li>
+<li>The file is downloaded directly from that address; the server is not ours.</li>
+</ul>
+<p>Notification permission, silent mode, Focus, battery saving and volume can all affect alerts.</p>
+
+<h2 id="calibration">4. Calibration on the watch</h2>
+<p>Calibration teaches the watch your own takbir, qiyam, ruku, sajdah and sitting postures. It is done on the watch only.</p>
+<ol>
+<li>Wear the watch snugly on your usual wrist (right or left).</li>
+<li><span data-platform="apple"><strong class="ui">Calibration</strong> → <strong class="ui">Personal calibration wizard</strong> → <strong class="ui">Start spoken calibration</strong></span><span data-platform="android"><strong class="ui">Calibration</strong> → <strong class="ui">Start spoken calibration</strong></span>.</li>
+<li>Follow the voice: takbir (hands raised), qiyam, ruku, standing up, sajdah, sitting between sajdahs, second sajdah, final sitting, salam right, salam left. After each instruction you have time to take the posture, then a short measurement follows; hold still comfortably.</li>
+<li>With <strong class="ui">Learn the prayer-ending gesture (optional)</strong> on, wiping the hands over the face after salam is also measured; or tap <strong class="ui">Skip the prayer gesture</strong>.</li>
+<li><strong class="ui">Stop</strong> pauses; <strong class="ui">Resume this step</strong> continues.</li>
+<li>At the end you see <strong class="ui">Calibration complete</strong> and your wrist heights relative to qiyam.<span data-platform="apple"> Tap <strong class="ui">Done, return to prayer</strong>.</span></li>
+</ol>
+<ul>
+<li>Salam is voice-guided only; head movement is not measured.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">After a successful calibration, continuous detection turns on automatically.</li>
+<li>If postures were too similar or the takbir was not recognised, restart on the same wrist and hold your hands raised in the takbir step.</li>
+</ul>
+<h3>Second position</h3>
+<ul>
+<li>If the watch slides down your wrist during prayer, teach that position too: after the normal calibration tap <strong class="ui">Calibrate second position</strong>, slide the watch 1–2 cm towards the hand and repeat the steps (including wiping the face).</li>
+<li>Detection uses whichever position fits better. A new normal calibration keeps the second position; if the strap fit changed, use <strong class="ui">Recalibrate second position</strong> or <strong class="ui">Delete second position</strong>.</li>
+</ul>
+<h3>When to recalibrate</h3>
+<ul>
+<li>When the watch position, strap fit or wrist changes, or detection is often wrong.<span data-platform="apple"> A <strong class="ui">Check the watch position</strong> notification also means the watch is loose.</span></li>
+<li>The app also learns wrist heights from your prayers. After a big change use <strong class="ui">Reset learned heights</strong>; <strong class="ui">Delete calibration</strong> removes the whole calibration.</li>
+<li><strong class="ui">Voice practice</strong> lets you practise with voice guidance; it creates no record.</li>
+</ul>
+
+<h2 id="tracking">5. Automatic tracking during prayer</h2>
+<ul>
+<li>Open the watch app within the prayer time and start with the opening takbir. Each part (sunnah, fard, witr) starts with its own takbir.<span data-platform="apple"> When raised hands are seen, <strong class="ui">Takbir posture detected; move into qiyam.</strong> appears.</span></li>
+<li>The order follows the opening takbirs: <strong class="ui">Fajr 2+2 · Dhuhr 4+4+2 · Asr 4+4 · Maghrib 3+2 · Isha 4+4+2+3 witr</strong>. Maghrib starts with the fard.<span data-platform="apple"> With <strong class="ui">Shafi'i (fard)</strong>, only the fard is tracked.</span></li>
+<li>The screen shows the current part, the next takbir and the rakahs detected.</li>
+<li>To start directly with the fard, tap <span data-platform="apple"><strong class="ui">Skip the first sunnah</strong></span><span data-platform="android"><strong class="ui">Start with fard</strong></span>.</li>
+<li>Sajdah sahw is made at the end of the prayer, in the final sitting; if detected, the record shows <strong class="ui">Sahw prostration performed</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Before sajdah sahw you can tap <strong class="ui">I will perform prostrations of forgetfulness</strong>; the app then expects two extra sajdahs and the final sitting. <strong class="ui">I will repeat this section</strong> restarts the current part. If saving failed, tap <strong class="ui">Retry saving</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">If calibration is missing, a <strong class="ui">Personal calibration wizard</strong> button appears.</li>
+</ul>
+<h3>Wrong count or missed prayer</h3>
+<ul>
+<li>If too many or too few rakahs are detected, the watch warns you (<strong class="ui">Check the rakat count</strong>). Check your count.</li>
+<li>Mark the prayer by hand: <span data-platform="apple"><strong class="ui">Mark fard prayed</strong></span><span data-platform="android"><strong class="ui">Mark prayed</strong></span> on the watch, <strong class="ui">Mark prayed</strong> on the phone.</li>
+<li>If you prayed on time but detection missed it, after the time ends open <strong class="ui">History</strong> on the phone, tap <strong class="ui">Mark prayed on time</strong>, set <strong class="ui">Time you prayed</strong> and tap <strong class="ui">Save as prayed</strong>. The time must be within the prayer time; this cannot be undone.</li>
+<li data-platform="android" data-badge="Android · Wear OS">You can undo a wrong record in history with <strong class="ui">Undo record</strong> and then tap <strong class="ui">Mark prayed</strong> again.</li>
+</ul>
+<h3>Continuous detection and battery</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Detection settings</strong></span><span data-platform="android"><strong class="ui">Prayer detection</strong></span> → <strong class="ui">Continuous detection (experimental)</strong> keeps detection running with the screen off or on the watch face.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">For this the watch keeps a workout session open all day. No workout is saved to Health, but battery use rises and Activity rings may be affected. If the session stops, reopen the app.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Background detection drains the battery faster. If the app is force-stopped, reopen it.</li>
+<li>When it is off, detection works only while the app is open.</li>
+</ul>
+<h3>Optional prayers</h3>
+<ul>
+<li>Tahajjud and Duha times appear on the prayer times screen; mark them within their time with <strong class="ui">Mark prayed · +500</strong>. The watch can also detect them from the opening takbir.</li>
+<li><strong class="ui">Fajr make-up → Duha</strong>: choose a recorded Fajr make-up prayer, then the Duha rakahs are detected in order.</li>
+</ul>
+
+<h2 id="sequence-check">6. Sequence check and confirmation</h2>
+<p>Before a detected fard is saved, the sequence is checked: opening takbir, a ruku and two sajdahs in each rakah, the final sitting, sajdahs in the same direction, and no walking-like turn.</p>
+<ul>
+<li>If the check fails, the watch vibrates and asks <strong class="ui">Did you pray the … fard?</strong> with the reasons. The time list shows <strong class="ui">Awaiting confirmation</strong>.</li>
+<li><strong class="ui">Yes, I prayed</strong>: saved with the detected finish time as <strong class="ui">Automatic detection (confirmed)</strong>.</li>
+<li><strong class="ui">No</strong>: nothing is saved; reminders for that prayer time return.</li>
+<li>No answer by the end of the prayer time: saved as <strong class="ui">Automatic detection (not confirmed, please check)</strong>, so a performed prayer is not lost. Tapping <strong class="ui">Mark prayed</strong> meanwhile removes the question.</li>
+</ul>
+<h3><strong class="ui">Marked by: …</strong> labels</h3>
+<ul>
+<li><strong class="ui">Automatic detection</strong>: the fard passed the check.</li>
+<li><strong class="ui">Automatic detection (confirmed)</strong> / <strong class="ui">Automatic detection (not confirmed, please check)</strong>: see above.</li>
+<li><strong class="ui">Automatic detection (fallback record, please check)</strong>: detection counted the fard's rakahs exactly, but the normal save step failed, so a backup path wrote it.</li>
+<li><strong class="ui">“Prayed” on watch</strong>, <strong class="ui">“Prayed” in watch notification</strong>, <strong class="ui">“Prayed” on phone</strong>, <strong class="ui">“Prayed” in phone notification</strong>, <strong class="ui">“Prayed on time” correction</strong>, <strong class="ui">Mark made up</strong>: manual marks.</li>
+<li>Labels asking you to check are orange in history; review and correct if needed.</li>
+</ul>
+
+<h2 id="history">7. History, make-up prayers and score</h2>
+<ul>
+<li><span data-platform="apple">The <strong class="ui">History</strong> tab</span><span data-platform="android">The <strong class="ui">History</strong> page</span> on the phone shows each prayer as <strong class="ui">Prayed</strong>, <strong class="ui">Made up</strong> or <strong class="ui">Pending / missed</strong>, with <strong class="ui">Sahw prostration performed</strong> and the marked-by label where relevant.</li>
+<li>Prayer times that end unrecorded go to the make-up list (<strong class="ui">Make-up prayers due: …</strong>). When you make one up, tap <strong class="ui">Mark prayed</strong> next to that prayer<span data-platform="apple">; on the watch use <strong class="ui">Make-up prayers</strong></span><span data-platform="android">; after a time ends its button becomes <strong class="ui">Mark made up</strong></span>.</li>
+<li><strong class="ui">Score</strong>: praying earlier in the time scores higher; a missed prayer lowers the score. Optional prayers add a bonus (<strong class="ui">Mark prayed · +500</strong>).</li>
+<li><strong class="ui">Statistics</strong>: weekly, monthly and yearly summaries and punctuality.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Create backup file</strong> saves your fard history to a file you choose; <strong class="ui">Restore backup</strong> merges it back.</li>
+<li>A missing record does not prove a prayer was missed; the app only keeps marks made by you and by detection.</li>
+</ul>
+
+<h2 id="excused">8. Excused days</h2>
+<ul>
+<li>This section appears only when <span data-platform="apple"><strong class="ui">Settings</strong></span><span data-platform="android"><strong class="ui">Location and settings</strong></span> → <strong class="ui">Gender</strong> is <strong class="ui">Female</strong>.<span data-platform="apple"> On the iPhone it is under <strong class="ui">Calculation and reminders</strong>; the watch menu has a <strong class="ui">Gender</strong> row.</span> With <strong class="ui">Select</strong> or <strong class="ui">Male</strong> it is hidden; changing the choice does not delete saved periods.</li>
+<li><span data-platform="apple"><strong class="ui">Settings</strong> → <strong class="ui">Excused days</strong> (also in the watch menu)</span><span data-platform="android"><strong class="ui">Excused days</strong></span>: tap <strong class="ui">Start period</strong> when a period begins and <strong class="ui">End period</strong> when it ends. A warning appears if a period stays open long.</li>
+<li>Edit past periods with <strong class="ui">Edit</strong> (<strong class="ui">Start</strong>, <strong class="ui">End</strong>, <strong class="ui">Ongoing</strong>) and <strong class="ui">Save</strong>, or remove them with <strong class="ui">Delete period</strong>.</li>
+<li>During a period there are no prayer time, suhoor or iftar notifications, no make-up debt or score; detection and <strong class="ui">Mark prayed</strong> are off and Tahajjud/Duha tracking pauses. Times and widgets show <strong class="ui">Excused day</strong>.</li>
+<li>Only you enter periods. They are stored on your device and, with sync on, shared with your other device along with history.</li>
+</ul>
+
+<h2 id="hijri">9. Hijri calendar and Ramadan</h2>
+<ul>
+<li>The Hijri date on the times screen follows the Umm al-Qura calendar. If it is a day off from your local calendar, choose −1, 0 or +1 in <span data-platform="apple"><strong class="ui">Settings</strong> → <strong class="ui">Hijri calendar</strong></span><span data-platform="android"><strong class="ui">Location and settings</strong></span> → <strong class="ui">Hijri date adjustment</strong>.</li>
+<li><strong class="ui">Religious days</strong> lists upcoming religious days; the next one also appears on the times screen.</li>
+<li><strong class="ui">Ramadan timetable</strong> shows imsak and iftar times for Ramadan.</li>
+<li><strong class="ui">Suhoor reminder</strong>: <strong class="ui">Off</strong> or <strong class="ui">… min before imsak</strong> (30, 45, 60, 90). <strong class="ui">Iftar notification</strong> notifies at iftar. Both are scheduled only in Ramadan.</li>
+<li>Fasting: in Ramadan the times screen shows the countdown to imsak or iftar and an <strong class="ui">I fasted</strong> button; a marked day shows <strong class="ui">Fasted</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. Widgets, Live Activity and complications</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>The <strong class="ui">Next prayer</strong> widget counts down to the next prayer time or the end of the current one. Add it to the Home Screen (small, medium) or Lock Screen: touch and hold the Home Screen → Edit → Add Widget → Salah Sense.</li>
+<li><strong class="ui">Live Activity</strong> (in <strong class="ui">Settings</strong>) shows a countdown on the Lock Screen and in the Dynamic Island; it does not start during an excused period.</li>
+<li>Apple Watch complications: edit the watch face and choose Salah Sense (rectangular, inline, circular, corner).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>The Android Home Screen widget shows the next prayer time; touch and hold the Home Screen and add Salah Sense from the widgets.</li>
+<li>Wear OS offers a Salah Sense tile and complication.</li>
+</ul>
+<p>During an excused period, widgets and complications show <strong class="ui">Excused day</strong>.</p>
+
+<h2 id="diagnostics">11. Sending a diagnostic recording</h2>
+<p>If detection keeps getting a prayer wrong, a diagnostic recording helps us investigate.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">On the watch: <strong class="ui">Detection settings</strong> → <strong class="ui">Diagnostic recording</strong> → <strong class="ui">Start recording</strong>. Wait 3 seconds with your hands down, pray all parts, then tap <strong class="ui">End recording</strong>. A recording lasts at most 20 minutes.</li>
+<li data-platform="android" data-badge="Android · Wear OS">On the watch, turn on <strong class="ui">Diagnostic recording</strong> on the <strong class="ui">Prayer detection</strong> page while detection runs, then pray.</li>
+<li><span data-platform="apple"><strong class="ui">Send recordings to iPhone</strong> (with the app open on the iPhone); if needed <strong class="ui">Resend latest recording</strong></span><span data-platform="android"><strong class="ui">Send recordings to phone</strong></span>.</li>
+<li>On the phone: <span data-platform="apple"><strong class="ui">Settings</strong> → <strong class="ui">Diagnostic recordings</strong> → choose the recording → <strong class="ui">Share recording</strong></span><span data-platform="android"><strong class="ui">Prayer detection</strong> → <strong class="ui">Share</strong></span>, and email it to <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>Recording with the screen off needs continuous detection.</li>
+<li>For each fard saved by detection, a short <strong class="ui">Automatic fard summary</strong> of the last minutes is kept and can be shared the same way.</li>
+<li>Recordings contain motion sensor values, pressure/relative altitude, detection state, calibration data and app version; no location, audio, name or account data. They leave the device only if you share them. Recent recordings are kept; delete with <strong class="ui">Delete recording</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Troubleshooting and support</h2>
+<ul>
+<li><strong>Times differ:</strong> check calculation method, Asr calculation, location and time zone<span data-platform="apple">, then tap <strong class="ui">Refresh prayer times</strong></span>.</li>
+<li><strong>No notifications:</strong> check notification permission, silent mode and Focus in the device settings.<span data-platform="android"> Battery saving and <strong class="ui">Scheduling permission</strong> matter too.</span></li>
+<li><strong>Detection does not start:</strong> on <strong class="ui">No motion sensor data received.</strong> reopen the watch app; on <strong class="ui">Takbir measurement is missing. Start spoken calibration.</strong> calibrate; for screen-off use turn on continuous detection.</li>
+<li><strong>Count often wrong:</strong> tighten the watch, calibrate the second position or recalibrate; mark by hand and send a diagnostic recording.</li>
+<li><strong>Phone and watch history differ:</strong> turn on sync on both devices<span data-platform="apple"> and tap <strong class="ui">Sync now</strong></span><span data-platform="android">; use <strong class="ui">Retry sync</strong></span>.</li>
+<li><strong>Alarm did not ring:</strong> check watch volume and silent mode<span data-platform="apple">; opening the watch app renews the nearest alarm</span>.</li>
+</ul>
+<div class="box">
+<p>More answers: <a href="https://notes7239.github.io/salahsense/support/en.html">support page</a> (FAQ). Contact: <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — please include device model, OS version and app version.</p>
+<p>How your data is handled: <a href="https://notes7239.github.io/salahsense/privacy/en.html">Privacy Policy</a>. No account, ads, analytics or server; your data stays on your devices.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/en.html">Support</a> · <a href="https://notes7239.github.io/salahsense/privacy/en.html">Privacy Policy</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

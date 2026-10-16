@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>مدد — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense مدد</h1>
+<p class="meta">ایپ اور اس کی ترتیبات کا استعمال · فون اور گھڑی</p>
+<div class="box warn"><p><strong>اہم:</strong> رکعت اور سجدے کی خودکار ٹریکنگ کے لیے گھڑی درکار ہے (<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS گھڑی</span>)؛ اکیلا فون کلائی کی حرکت نہیں ناپ سکتا۔ شناخت ایک معاون ذریعہ ہے اور غلطی کر سکتی ہے: گھڑی کی پوزیشن، پٹے کی فٹنگ اور ذاتی حرکت کا فرق اس پر اثر انداز ہوتے ہیں۔ آپ ہمیشہ ریکارڈز دستی طور پر درست کر سکتے ہیں۔ ایپ کوئی دینی فتویٰ نہیں دیتی اور نماز کے درست ہونے کے بارے میں کوئی دعویٰ نہیں کرتی۔</p></div>
+<p>اکثر پوچھے جانے والے سوالات اور رابطے کی تفصیلات کے لیے <a href="https://notes7239.github.io/salahsense/support/ur.html">معاونت کا صفحہ</a> دیکھیں۔ موٹے الفاظ ایپ میں بٹن اور مینو کے نام ہیں۔</p>
+<nav class="toc" aria-label="فہرست">
+<strong>فہرست</strong>
+<ul>
+<li><a href="#getting-started">1. شروع کرنا</a></li>
+<li><a href="#prayer-times">2. مقام اور نماز کے اوقات</a></li>
+<li><a href="#notifications">3. اطلاعات اور الارمز</a></li>
+<li><a href="#calibration">4. گھڑی پر کیلیبریشن</a></li>
+<li><a href="#tracking">5. نماز کے دوران خودکار ٹریکنگ</a></li>
+<li><a href="#sequence-check">6. ترتیب کی جانچ اور تصدیق</a></li>
+<li><a href="#history">7. تاریخچہ، قضا اور پوائنٹس</a></li>
+<li><a href="#excused">8. عذر کے دن</a></li>
+<li><a href="#hijri">9. ہجری کیلنڈر اور رمضان</a></li>
+<li><a href="#widgets">10. ویجٹس، لائیو سرگرمی اور کمپلیکیشنز</a></li>
+<li><a href="#diagnostics">11. تشخیصی ریکارڈنگ بھیجنا</a></li>
+<li><a href="#troubleshooting">12. مسائل کا حل اور معاونت</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. شروع کرنا</h2>
+<ul>
+<li><span data-platform="apple">iPhone</span><span data-platform="android">Android فون</span> ایپ نماز کے اوقات، قبلہ، ذکر، تاریخچہ اور ترتیبات دکھاتی ہے۔ <span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS گھڑی</span> ایپ نماز کے دوران آپ کی حرکات کی پیروی کرتی ہے اور اذان کی یاد دہانیوں اور کیلیبریشن کا انتظام کرتی ہے۔</li>
+<li>سب سے پہلے فون پر <span data-platform="apple"><strong class="ui">ترتیبات</strong> ٹیب</span><span data-platform="android"><strong class="ui">مقام اور ترتیبات</strong> صفحہ</span> کھولیں اور مقام، حساب کا طریقہ، عصر کا حساب اور <strong class="ui">جنس</strong> مرتب کریں (حصہ 2 اور 8)۔</li>
+<li>پھر گھڑی پر ایک بار <a href="#calibration">کیلیبریشن</a> کریں؛ خودکار ٹریکنگ اس کے بعد ہی قابلِ اعتماد ہوتی ہے۔</li>
+<li>گھڑی کے بغیر بھی نماز کے اوقات، قبلہ، ذکر، دستی <strong class="ui">نماز ادا کرنے کا نشان</strong> اندراج، قضا، اعداد و شمار، ہجری کیلنڈر، امساکیہ اور ویجٹس استعمال کیے جا سکتے ہیں۔</li>
+<li><strong class="ui">نماز کی معلومات</strong> میں روزانہ کی نمازوں اور سجدہ سہو کے بارے میں ماخذ کے ساتھ آف لائن خلاصے موجود ہیں۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">تاریخچہ بانٹنے کے لیے، iPhone پر <strong class="ui">ترتیبات</strong> → <strong class="ui">جڑا ہوا آلہ</strong> میں <strong class="ui">نماز کا تاریخچہ جڑے ہوئے iPhone/Apple Watch سے بانٹیں</strong> اور گھڑی پر <strong class="ui">آلات کا جوڑا بنانا</strong> میں <strong class="ui">تاریخچہ ہم آہنگ کریں</strong> کو آن کریں۔ یہ طے شدہ طور پر بند ہے؛ <strong class="ui">ابھی ہم آہنگ کریں</strong> پرانے ریکارڈز بھی بھیجتا ہے۔</li>
+<li data-platform="android" data-badge="Android · Wear OS">فون اور گھڑی کے درمیان ہم آہنگی کے لیے ایپ دونوں آلات پر ہونی چاہیے؛ کنکشن نہ ہو تو ریکارڈز آلے پر رہتے ہیں۔ ضرورت پڑنے پر <strong class="ui">مقام اور ترتیبات</strong> → <strong class="ui">ہم آہنگی دوبارہ آزمائیں</strong> استعمال کریں۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">زبان فون پر <strong class="ui">ترتیبات</strong> اور گھڑی پر <strong class="ui">زبان</strong> میں بدلی جاتی ہے؛ ہر آلہ اپنا انتخاب الگ رکھتا ہے۔</li>
+</ul>
+
+<h2 id="prayer-times">2. مقام اور نماز کے اوقات</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">ترتیبات</strong> → <strong class="ui">مقام اور منطقۂ وقت</strong>۔ <strong class="ui">میرا مقام استعمال کریں</strong> پر ٹیپ کریں اور مقام کی اجازت دیں، یا <strong class="ui">شہر</strong>، <strong class="ui">عرض بلد</strong>، <strong class="ui">طول بلد</strong> اور <strong class="ui">IANA منطقۂ وقت</strong> (مثلاً Asia/Karachi) پُر کریں، پھر <strong class="ui">شہر/مقام محفوظ کریں</strong> پر ٹیپ کریں۔</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">مقام اور ترتیبات</strong>: <strong class="ui">میرا مقام حاصل کریں</strong> پر ٹیپ کریں یا <strong class="ui">مقام کا نام</strong>، <strong class="ui">عرض بلد</strong>، <strong class="ui">طول بلد</strong> اور <strong class="ui">منطقۂ وقت</strong> پُر کریں، پھر <strong class="ui">محفوظ کریں</strong> پر ٹیپ کریں۔</li>
+<li>مقام کی اجازت ضروری نہیں؛ شہر اور متناسقات دستی طور پر درج کیے جا سکتے ہیں۔ سفر کے دوران مقام اور منطقۂ وقت کو تازہ کریں۔</li>
+<li><strong class="ui">حساب کا طریقہ</strong> (12 طریقے): <strong class="ui">ترکیہ (دیانت)</strong>، <strong class="ui">رابطہ عالم اسلامی</strong>، <strong class="ui">مصری جنرل اتھارٹی</strong>، <strong class="ui">کراچی (جامعہ علوم اسلامیہ)</strong>، <strong class="ui">ام القریٰ (مکہ)</strong>، <strong class="ui">دبئی</strong>، <strong class="ui">رؤیت ہلال کمیٹی</strong>، <strong class="ui">شمالی امریکہ (ISNA)</strong>، <strong class="ui">کویت</strong>، <strong class="ui">قطر</strong>، <strong class="ui">سنگاپور</strong>، <strong class="ui">تہران</strong>۔ وہ طریقہ منتخب کریں جو آپ کے مقامی ٹائم ٹیبل سے سب سے زیادہ قریب ہو۔</li>
+<li><strong class="ui">عصر کا حساب</strong>: <strong class="ui">معیاری</strong> ایک جسم کے سائے (عصرِ اول) پر، <strong class="ui">حنفی</strong> دو گنا سائے (عصرِ ثانی) پر مبنی ہے۔ ترکی کا ٹائم ٹیبل معیاری طریقہ استعمال کرتا ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">مسلک</strong>: <strong class="ui">سنی (سنت اور وتر سمیت)</strong> یا <strong class="ui">شافعی (فرض)</strong>۔ یہ انتخاب صرف یہ طے کرتا ہے کہ کون سی رکعتیں ریکارڈ ہوں گی، اوقات نہیں بدلتا۔ گھڑی پر یہ <strong class="ui">مسلک / رکعتیں</strong> میں ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">تبدیلی کے بعد اوقات خود بخود تازہ ہو جاتے ہیں؛ ضرورت پڑنے پر <strong class="ui">اوقات تازہ کریں</strong> پر ٹیپ کریں۔ گھڑی پر طریقہ اور عصر کا حساب <strong class="ui">حساب کا طریقہ</strong> میں ہے۔</li>
+<li>اوقات آلے پر شمار کیے جاتے ہیں۔ یہ ایپ کوئی سرکاری ٹائم ٹیبل نہیں ہے اور آپ کے مقامی ٹائم ٹیبل سے چند منٹ مختلف ہو سکتی ہے۔</li>
+</ul>
+
+<h2 id="notifications">3. اطلاعات اور الارمز</h2>
+<h3>نماز کے وقت کی اطلاع</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">نماز کا وقت شروع ہونے پر اطلاع دیں</strong> ہر نماز کے وقت کے لیے اطلاع بھیجتا ہے۔ اسٹیپر سے وقت مقرر کریں: <strong class="ui">نماز کا وقت شروع ہونے پر</strong>، یا 60 منٹ تک پہلے (<strong class="ui">… منٹ پہلے</strong>) یا بعد (<strong class="ui">… منٹ بعد</strong>)۔ گھڑی پر یہی ترتیب <strong class="ui">اذان کی یاد دہانیاں</strong> میں ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">جب گھڑی یہ اطلاعات سنبھالتی ہے تو iPhone اپنی الگ اطلاع مقرر نہیں کرتا؛ یہ اطلاعات گھڑی تک اس وقت پہنچتی ہیں جب iPhone مقفل ہو۔</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">مقام اور ترتیبات</strong>: <strong class="ui">یاد دہانی</strong> آن کریں اور <strong class="ui">نماز کا وقت شروع ہونے پر</strong> یا <strong class="ui">… منٹ پہلے</strong> منتخب کریں۔ اگر اطلاعات دیر سے آئیں تو <strong class="ui">وقت مقرر کرنے کی اجازت</strong> کی اجازت دیں۔</li>
+</ul>
+<h3>وقت ختم ہونے سے پہلے الارم</h3>
+<ul>
+<li><strong class="ui">وقت ختم ہونے سے پہلے الارم</strong>: <strong class="ui">بند</strong> یا وقت ختم ہونے سے مخصوص منٹ پہلے۔ اگر نماز ادا شدہ کے طور پر درج نہ ہو تو الارم خاموش موڈ میں بھی بجتا ہے۔</li>
+<li>اگر گھڑی کا شناخت کردہ ریکارڈ ابھی فون تک نہیں پہنچا تو بھی الارم بج سکتا ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">حقیقی الارم کے لیے iOS 26 درکار ہے؛ اس کے بغیر، یا الارم کی اجازت نہ ہونے کی صورت میں، اس کی جگہ اطلاع بھیجی جاتی ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">وقت ختم ہونے سے 45 اور 30 منٹ پہلے گھڑی لرزش کے ساتھ اذان کا حی علی والا حصہ بجاتی ہے (<strong class="ui">نماز کی طرف آؤ، کامیابی کی طرف آؤ</strong>)، اور اگر آپ سوئے ہوں تو ایک بار مزید زور سے۔ اگر وقت باقی ہوتے ہوئے آپ دیر تک بیٹھے یا لیٹے بغیر حرکت کے نظر آئیں تو ایک بار <strong class="ui">لگتا ہے آپ فارغ ہیں</strong> اطلاع آتی ہے (مکروہ وقت میں کبھی نہیں)۔</li>
+</ul>
+<h3>تہجد اور فجر کی یاد دہانیاں (گھڑی)</h3>
+<ul>
+<li>گھڑی پر <span data-platform="apple"><strong class="ui">اذان کی یاد دہانیاں</strong></span><span data-platform="android"><strong class="ui">اذان کی یاد دہانیاں</strong></span> میں، <strong class="ui">تہجد کی یاد دہانی</strong> رات کے آخری تہائی حصے کے مطابق اور <strong class="ui">فجر کی اذان کی یاد دہانی</strong> امساک کے مطابق مقرر ہوتی ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">یاد دہانی کا وقت</strong>: <strong class="ui">نماز کا وقت شروع ہونے پر</strong> یا 5–60 منٹ پہلے۔ <strong class="ui">اسنوز</strong>: 1–15 منٹ۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">حرکت کرنے سے الارم عارضی طور پر خاموش ہو جاتا ہے؛ <strong class="ui">نماز ادا کرنے کا نشان</strong> پر ٹیپ کرنے سے وہ بند ہو جاتا ہے۔ کتنی حرکت درکار ہے یہ <strong class="ui">خاموش کرنے کی حرکت</strong> سے طے ہوتا ہے: <strong class="ui">کم حرکت (حساس)</strong>، <strong class="ui">درمیانی</strong>، <strong class="ui">زیادہ حرکت (مشکل)</strong>۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">قریب ترین الارم آپ کی منتخب کردہ اذان کی آواز بجاتا ہے، باقی یاد دہانیاں اطلاع کی آواز استعمال کرتی ہیں۔ گھڑی کی ایپ کھولنے سے قریب ترین الارم تازہ ہو جاتا ہے۔</li>
+<li data-platform="android" data-badge="Android · Wear OS">آواز اور لرزش آلے کے اطلاعی چینل سے آتی ہے (<strong class="ui">یاد دہانی کی آواز اور لرزش</strong>)؛ ایپ میں اذان کی کوئی بلٹ اِن ریکارڈنگ نہیں ہے۔</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">اذان کی آواز (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">اذان کی آواز</strong> (یا <strong class="ui">اذان کی یاد دہانیاں</strong> → <strong class="ui">اذان کی آواز منتخب کریں</strong>): کسی CAF، AIFF یا WAV فائل کا https ایڈریس درج کریں اور <strong class="ui">ڈاؤن لوڈ</strong> پر ٹیپ کریں۔ اطلاعات میں 30 سیکنڈ تک بجتا ہے؛ اس سے لمبی فائل صرف ایپ کے اندر بجتی ہے۔</li>
+<li>نصب شدہ آوازوں میں سے کوئی ایک منتخب کریں؛ <strong class="ui">چلائیں</strong>، <strong class="ui">روکیں</strong> اور <strong class="ui">حذف کریں</strong> استعمال کریں۔ کوئی منتخب نہ ہونے پر بلٹ اِن الارم کی آواز بجتی ہے۔</li>
+<li><strong class="ui">حی علی کا حصہ (تکرار + لرزش)</strong>: "حی علی الصلاۃ، حی علی الفلاح" والے حصے کو <strong class="ui">آغاز</strong> اور <strong class="ui">اختتام</strong> سیکنڈز سے نشان زد کریں، <strong class="ui">تکرار</strong> مقرر کریں اور <strong class="ui">حصہ چلائیں</strong> سے جانچیں۔</li>
+<li>فائل براہِ راست اسی ایڈریس سے ڈاؤن لوڈ ہوتی ہے؛ وہ سرور ہمارا نہیں ہے۔</li>
+</ul>
+<p>اطلاع کی اجازت، خاموش موڈ، فوکس، بیٹری کی بچت اور آواز کا حجم — سب یاد دہانیوں پر اثر ڈال سکتے ہیں۔</p>
+
+<h2 id="calibration">4. گھڑی پر کیلیبریشن</h2>
+<p>کیلیبریشن گھڑی کو آپ کی اپنی تکبیر، قیام، رکوع، سجدہ اور بیٹھنے کی پوزیشنز سکھاتی ہے۔ یہ صرف گھڑی پر کی جاتی ہے۔</p>
+<ol>
+<li>گھڑی کو اپنی معمول کی کلائی (دائیں یا بائیں) پر مضبوطی سے پہنیں۔</li>
+<li><span data-platform="apple"><strong class="ui">کیلیبریشن</strong> → <strong class="ui">ذاتی کیلیبریشن کی رہنمائی</strong> → <strong class="ui">صوتی کیلیبریشن شروع کریں</strong></span><span data-platform="android"><strong class="ui">کیلیبریشن</strong> → <strong class="ui">صوتی کیلیبریشن شروع کریں</strong></span>۔</li>
+<li>آواز کی پیروی کریں: تکبیر (ہاتھ اٹھے ہوئے)، قیام، رکوع، سیدھا کھڑا ہونا، سجدہ، دو سجدوں کے درمیان بیٹھنا، دوسرا سجدہ، آخری قعدہ، دائیں سلام، بائیں سلام۔ ہر ہدایت کے بعد آپ کے پاس پوسچر اپنانے کا وقت ہوتا ہے، پھر ایک مختصر پیمائش ہوتی ہے؛ آرام سے ساکت رہیں۔</li>
+<li><strong class="ui">دعا کے اختتامی اشارے کو سیکھیں (اختیاری)</strong> آن ہونے پر سلام کے بعد ہاتھوں کو چہرے پر پھیرنے کی حرکت بھی ناپی جاتی ہے؛ یا <strong class="ui">دعا کی حرکت کو چھوڑ دیں</strong> پر ٹیپ کریں۔</li>
+<li><strong class="ui">روکیں</strong> وقفہ دیتا ہے؛ <strong class="ui">یہی مرحلہ جاری رکھیں</strong> اسی مرحلے سے جاری رکھتا ہے۔</li>
+<li>آخر میں <strong class="ui">کیلیبریشن مکمل</strong> اور قیام کے مقابلے میں آپ کی کلائی کی اونچائیاں نظر آتی ہیں۔<span data-platform="apple"> <strong class="ui">مکمل، نماز پر واپس جائیں</strong> پر ٹیپ کریں۔</span></li>
+</ol>
+<ul>
+<li>سلام صرف آواز سے رہنمائی پاتا ہے؛ سر کی حرکت نہیں ناپی جاتی۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">کامیاب کیلیبریشن کے بعد مسلسل شناخت خود بخود آن ہو جاتی ہے۔</li>
+<li>اگر پوسچرز ایک دوسرے سے زیادہ ملتے جلتے ہوں یا تکبیر شناخت نہ ہوئی ہو تو اسی کلائی پر دوبارہ شروع کریں اور تکبیر کے مرحلے میں ہاتھ اٹھا کر رکھیں۔</li>
+</ul>
+<h3>دوسری پوزیشن</h3>
+<ul>
+<li>اگر نماز کے دوران گھڑی کلائی پر نیچے کھسک جائے تو وہ پوزیشن بھی سکھائیں: عام کیلیبریشن کے بعد <strong class="ui">دوسری پوزیشن کیلیبریٹ کریں</strong> پر ٹیپ کریں، گھڑی کو 1–2 سینٹی میٹر ہاتھ کی طرف سرکائیں اور وہی مراحل (چہرے پر ہاتھ پھیرنا بھی شامل) دہرائیں۔</li>
+<li>شناخت وہی پوزیشن استعمال کرتی ہے جو بہتر فٹ ہو۔ نئی عام کیلیبریشن دوسری پوزیشن کو برقرار رکھتی ہے؛ اگر پٹے کی فٹنگ بدل گئی ہو تو <strong class="ui">دوسری پوزیشن دوبارہ کیلیبریٹ کریں</strong> یا <strong class="ui">دوسری پوزیشن حذف کریں</strong> استعمال کریں۔</li>
+</ul>
+<h3>دوبارہ کیلیبریشن کب کریں؟</h3>
+<ul>
+<li>جب گھڑی کی پوزیشن، پٹے کی فٹنگ یا کلائی بدل جائے، یا شناخت اکثر غلط ہو۔<span data-platform="apple"> <strong class="ui">گھڑی کی جگہ چیک کریں</strong> کی اطلاع کا مطلب بھی یہی ہے کہ گھڑی ڈھیلی ہے۔</span></li>
+<li>ایپ آپ کی نمازوں سے کلائی کی اونچائیاں بھی سیکھتی ہے۔ کسی بڑی تبدیلی کے بعد <strong class="ui">سیکھی گئی اونچائیاں ری سیٹ کریں</strong> استعمال کریں؛ <strong class="ui">کیلیبریشن حذف کریں</strong> پوری کیلیبریشن ہٹا دیتا ہے۔</li>
+<li><strong class="ui">صوتی مشق</strong> آپ کو آواز کی رہنمائی کے ساتھ مشق کرنے دیتا ہے؛ یہ کوئی ریکارڈ نہیں بناتا۔</li>
+</ul>
+
+<h2 id="tracking">5. نماز کے دوران خودکار ٹریکنگ</h2>
+<ul>
+<li>نماز کے وقت کے اندر گھڑی کی ایپ کھولیں اور ابتدائی تکبیر سے شروع کریں۔ ہر حصہ (سنت، فرض، وتر) اپنی الگ ابتدائی تکبیر سے شروع ہوتا ہے۔<span data-platform="apple"> ہاتھ اٹھے دیکھنے پر <strong class="ui">تکبیر کی حالت شناخت ہوگئی؛ قیام میں آجائیں۔</strong> ظاہر ہوتا ہے۔</span></li>
+<li>سنت و فرض کی ترتیب ابتدائی تکبیروں کے مطابق ہے: <strong class="ui">فجر 2+2 · ظہر 4+4+2 · عصر 4+4 · مغرب 3+2 · عشاء 4+4+2+3 وتر</strong>۔ مغرب فرض سے شروع ہوتی ہے۔<span data-platform="apple"> <strong class="ui">شافعی (فرض)</strong> منتخب ہونے پر صرف فرض ریکارڈ ہوتا ہے۔</span></li>
+<li>اسکرین پر موجودہ حصہ، اگلی تکبیر اور شناخت شدہ رکعتیں نظر آتی ہیں۔</li>
+<li>براہ راست فرض سے شروع کرنے کے لیے <span data-platform="apple"><strong class="ui">پہلی سنت چھوڑ دیں</strong></span><span data-platform="android"><strong class="ui">فرض سے شروع کریں</strong></span> پر ٹیپ کریں۔</li>
+<li>سجدہ سہو نماز کے آخر میں، آخری قعدے میں کیا جاتا ہے؛ اگر شناخت ہو جائے تو ریکارڈ میں <strong class="ui">سجدہ سہو کیا گیا</strong> نظر آتا ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">سجدہ سہو سے پہلے آپ <strong class="ui">میں سجدہ سہو کروں گا</strong> پر ٹیپ کر سکتے ہیں؛ اس کے بعد ایپ دو اضافی سجدوں اور آخری قعدے کا انتظار کرتی ہے۔ <strong class="ui">میں نماز کا یہ حصہ دوبارہ پڑھوں گا</strong> موجودہ حصے کو دوبارہ شروع کرتا ہے۔ اگر محفوظ کرنا ناکام ہو جائے تو <strong class="ui">دوبارہ محفوظ کرنے کی کوشش</strong> پر ٹیپ کریں۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">اگر کیلیبریشن موجود نہ ہو تو <strong class="ui">ذاتی کیلیبریشن کی رہنمائی</strong> بٹن ظاہر ہوتا ہے۔</li>
+</ul>
+<h3>غلط گنتی یا چھوٹی ہوئی نماز</h3>
+<ul>
+<li>اگر رکعتیں زیادہ یا کم شناخت ہوں تو گھڑی خبردار کرتی ہے (<strong class="ui">رکعتوں کی تعداد چیک کریں</strong>)۔ اپنی گنتی خود چیک کریں۔</li>
+<li>نماز کو دستی طور پر نشان زد کریں: گھڑی پر <span data-platform="apple"><strong class="ui">فرض ادا کرنے کا نشان لگائیں</strong></span><span data-platform="android"><strong class="ui">نماز ادا کرنے کا نشان</strong></span>، فون پر <strong class="ui">نماز ادا کرنے کا نشان</strong>۔</li>
+<li>اگر آپ نے وقت پر نماز پڑھی مگر شناخت نے اسے چھوڑ دیا تو وقت ختم ہونے کے بعد فون پر <strong class="ui">تاریخچہ</strong> کھولیں، <strong class="ui">وقت پر ادا کرنے کا نشان</strong> پر ٹیپ کریں، <strong class="ui">نماز ادا کرنے کا وقت</strong> مقرر کریں اور <strong class="ui">ادا شدہ کے طور پر محفوظ کریں</strong> پر ٹیپ کریں۔ وقت نماز کی حد میں ہونا چاہیے؛ یہ عمل واپس نہیں ہو سکتا۔</li>
+<li data-platform="android" data-badge="Android · Wear OS">آپ تاریخچے میں غلط اندراج کو <strong class="ui">اندراج واپس لیں</strong> سے واپس لے سکتے ہیں اور پھر دوبارہ <strong class="ui">نماز ادا کرنے کا نشان</strong> پر ٹیپ کر سکتے ہیں۔</li>
+</ul>
+<h3>مسلسل شناخت اور بیٹری</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">شناخت کی ترتیبات</strong></span><span data-platform="android"><strong class="ui">نماز کی شناخت</strong></span> → <strong class="ui">مسلسل شناخت (تجرباتی)</strong> اسکرین بند ہونے یا گھڑی کے ڈائل پر بھی شناخت جاری رکھتا ہے۔</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">اس کے لیے گھڑی پورا دن ایک ورک آؤٹ سیشن کھلا رکھتی ہے۔ Health میں کوئی ورک آؤٹ محفوظ نہیں ہوتا، لیکن بیٹری کا استعمال بڑھ جاتا ہے اور ایکٹیویٹی رِنگز متاثر ہو سکتے ہیں۔ اگر سیشن رک جائے تو ایپ دوبارہ کھولیں۔</li>
+<li data-platform="android" data-badge="Android · Wear OS">بیک گراؤنڈ شناخت بیٹری زیادہ تیزی سے استعمال کرتی ہے۔ اگر ایپ زبردستی بند کر دی جائے تو اسے دوبارہ کھولیں۔</li>
+<li>بند ہونے پر شناخت صرف ایپ کھلی ہونے کی صورت میں کام کرتی ہے۔</li>
+</ul>
+<h3>نفلی نمازیں</h3>
+<ul>
+<li>تہجد اور چاشت کے اوقات نماز کے اوقات کی اسکرین پر نظر آتے ہیں؛ انہیں وقت کے اندر <strong class="ui">نماز ادا کرنے کا نشان · +500</strong> سے نشان زد کریں۔ گھڑی انہیں ابتدائی تکبیر سے بھی شناخت کر سکتی ہے۔</li>
+<li><strong class="ui">فجر کی قضا ← چاشت</strong>: کوئی ریکارڈ شدہ فجر کی قضا منتخب کریں، پھر چاشت کی رکعتیں ترتیب سے شناخت ہوتی ہیں۔</li>
+</ul>
+
+<h2 id="sequence-check">6. ترتیب کی جانچ اور تصدیق</h2>
+<p>شناخت شدہ فرض محفوظ ہونے سے پہلے اس کی ترتیب جانچی جاتی ہے: ابتدائی تکبیر، ہر رکعت میں رکوع اور دو سجدے، آخری قعدہ، سجدوں کا ایک ہی سمت میں ہونا، اور چلنے جیسا کوئی موڑ نہ ہونا۔</p>
+<ul>
+<li>اگر جانچ ناکام ہو تو گھڑی لرزتی ہے اور وجوہات کے ساتھ <strong class="ui">کیا آپ نے … کے فرض پڑھے؟</strong> پوچھتی ہے۔ وقت کی فہرست میں <strong class="ui">تصدیق کا انتظار</strong> نظر آتا ہے۔</li>
+<li><strong class="ui">جی، پڑھ لی</strong>: شناخت شدہ اختتامی وقت کے ساتھ <strong class="ui">خودکار شناخت (تصدیق شدہ)</strong> کے طور پر محفوظ ہو جاتا ہے۔</li>
+<li><strong class="ui">نہیں</strong>: کچھ محفوظ نہیں ہوتا؛ اس نماز کے وقت کی یاد دہانیاں واپس آ جاتی ہیں۔</li>
+<li>اگر نماز کا وقت ختم ہونے تک جواب نہ دیا جائے تو <strong class="ui">خودکار شناخت (غیر تصدیق شدہ، براہ کرم جانچیں)</strong> کے طور پر محفوظ ہو جاتا ہے، تاکہ ادا کی گئی نماز ضائع نہ ہو۔ اسی دوران <strong class="ui">نماز ادا کرنے کا نشان</strong> پر ٹیپ کرنے سے سوال ختم ہو جاتا ہے۔</li>
+</ul>
+<h3><strong class="ui">نشان زد: …</strong> کے لیبل</h3>
+<ul>
+<li><strong class="ui">خودکار شناخت</strong>: فرض نے جانچ پاس کر لی۔</li>
+<li><strong class="ui">خودکار شناخت (تصدیق شدہ)</strong> / <strong class="ui">خودکار شناخت (غیر تصدیق شدہ، براہ کرم جانچیں)</strong>: اوپر دیکھیں۔</li>
+<li><strong class="ui">خودکار شناخت (متبادل اندراج، براہ کرم جانچیں)</strong>: شناخت نے فرض کی رکعتیں درست شمار کیں، لیکن محفوظ کرنے کا عام مرحلہ ناکام ہوا، اس لیے یہ متبادل طریقے سے درج ہوا۔</li>
+<li><strong class="ui">گھڑی پر «پڑھ لی»</strong>، <strong class="ui">گھڑی کی اطلاع میں «پڑھ لی»</strong>، <strong class="ui">فون پر «پڑھ لی»</strong>، <strong class="ui">فون کی اطلاع میں «پڑھ لی»</strong>، <strong class="ui">«وقت پر پڑھی» کی درستی</strong>، <strong class="ui">قضا ادا کرنے کا نشان</strong>: دستی طور پر لگائے گئے نشان۔</li>
+<li>جن لیبلز میں آپ سے جانچ کرنے کو کہا جاتا ہے وہ تاریخچے میں نارنجی رنگ میں نظر آتے ہیں؛ جائزہ لیں اور ضرورت کے مطابق درست کریں۔</li>
+</ul>
+
+<h2 id="history">7. تاریخچہ، قضا اور پوائنٹس</h2>
+<ul>
+<li>فون پر <span data-platform="apple"><strong class="ui">تاریخچہ</strong> ٹیب</span><span data-platform="android"><strong class="ui">تاریخچہ</strong> صفحہ</span> ہر نماز کو <strong class="ui">ادا کر لی</strong>، <strong class="ui">قضا ادا ہو گئی</strong> یا <strong class="ui">منتظر / چھوٹی ہوئی</strong> کے طور پر دکھاتا ہے، اور متعلقہ ہونے پر <strong class="ui">سجدہ سہو کیا گیا</strong> اور نشان لگانے والے کا لیبل بھی۔</li>
+<li>بغیر اندراج کے گزر جانے والے نماز کے اوقات قضا فہرست میں چلے جاتے ہیں (<strong class="ui">باقی قضا نمازیں: …</strong>)۔ جب آپ قضا ادا کریں تو اس نماز کے ساتھ <strong class="ui">نماز ادا کرنے کا نشان</strong> پر ٹیپ کریں<span data-platform="apple">؛ گھڑی پر <strong class="ui">قضا نمازیں</strong> استعمال کریں</span><span data-platform="android">؛ وقت ختم ہونے کے بعد اس کا بٹن <strong class="ui">قضا ادا کرنے کا نشان</strong> بن جاتا ہے</span>۔</li>
+<li><strong class="ui">پوائنٹس</strong>: وقت کے شروع میں نماز پڑھنے پر زیادہ پوائنٹس ملتے ہیں؛ چھوٹی ہوئی نماز پوائنٹس کم کرتی ہے۔ نفلی نمازیں بونس جوڑتی ہیں (<strong class="ui">نماز ادا کرنے کا نشان · +500</strong>)۔</li>
+<li><strong class="ui">اعداد و شمار</strong>: ہفتہ وار، ماہانہ اور سالانہ خلاصے اور وقت کی پابندی۔</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">بیک اپ فائل بنائیں</strong> آپ کی فرض نماز کی تاریخچہ منتخب کردہ فائل میں محفوظ کرتا ہے؛ <strong class="ui">بیک اپ بحال کریں</strong> اسے واپس ضم کر دیتا ہے۔</li>
+<li>کسی اندراج کا نہ ہونا یہ ثابت نہیں کرتا کہ نماز چھوٹ گئی تھی؛ ایپ صرف آپ کے اور شناخت کے لگائے گئے نشان رکھتی ہے۔</li>
+</ul>
+
+<h2 id="excused">8. عذر کے دن</h2>
+<ul>
+<li>یہ حصہ صرف اس وقت ظاہر ہوتا ہے جب <span data-platform="apple"><strong class="ui">ترتیبات</strong></span><span data-platform="android"><strong class="ui">مقام اور ترتیبات</strong></span> → <strong class="ui">جنس</strong>، <strong class="ui">عورت</strong> ہو۔<span data-platform="apple"> iPhone پر یہ <strong class="ui">حساب اور یاد دہانیاں</strong> کے تحت ہے؛ گھڑی کے مینو میں <strong class="ui">جنس</strong> کی ایک قطار ہے۔</span> <strong class="ui">منتخب کریں</strong> یا <strong class="ui">مرد</strong> کی صورت میں یہ چھپا رہتا ہے؛ انتخاب بدلنے سے محفوظ شدہ مدتیں حذف نہیں ہوتیں۔</li>
+<li><span data-platform="apple"><strong class="ui">ترتیبات</strong> → <strong class="ui">عذر کے دن</strong> (گھڑی کے مینو میں بھی)</span><span data-platform="android"><strong class="ui">عذر کے دن</strong></span>: مدت شروع ہونے پر <strong class="ui">مدت شروع کریں</strong> اور ختم ہونے پر <strong class="ui">مدت ختم کریں</strong> پر ٹیپ کریں۔ اگر مدت زیادہ دیر کھلی رہے تو ایک انتباہ ظاہر ہوتا ہے۔</li>
+<li>گزشتہ مدتوں میں <strong class="ui">ترمیم</strong> (<strong class="ui">آغاز</strong>، <strong class="ui">اختتام</strong>، <strong class="ui">جاری</strong>) سے ترمیم کریں اور <strong class="ui">محفوظ کریں</strong> پر ٹیپ کریں، یا <strong class="ui">مدت حذف کریں</strong> سے انہیں حذف کریں۔</li>
+<li>مدت کے دوران نماز کے وقت، سحری یا افطار کی کوئی اطلاع نہیں آتی، قضا یا پوائنٹس درج نہیں ہوتے؛ شناخت اور <strong class="ui">نماز ادا کرنے کا نشان</strong> بند رہتے ہیں اور تہجد/چاشت کی ٹریکنگ رک جاتی ہے۔ اوقات اور ویجٹس میں <strong class="ui">عذر کا دن</strong> نظر آتا ہے۔</li>
+<li>مدتیں صرف آپ درج کرتے ہیں۔ یہ آپ کے آلے پر محفوظ رہتی ہیں اور ہم آہنگی آن ہونے پر تاریخچے کے ساتھ آپ کے دوسرے آلے پر بھی منتقل ہوتی ہیں۔</li>
+</ul>
+
+<h2 id="hijri">9. ہجری کیلنڈر اور رمضان</h2>
+<ul>
+<li>اوقات کی اسکرین پر ہجری تاریخ ام القریٰ کیلنڈر کے مطابق ہوتی ہے۔ اگر یہ آپ کے مقامی کیلنڈر سے ایک دن آگے پیچھے ہو تو <span data-platform="apple"><strong class="ui">ترتیبات</strong> → <strong class="ui">ہجری کیلنڈر</strong></span><span data-platform="android"><strong class="ui">مقام اور ترتیبات</strong></span> → <strong class="ui">ہجری تاریخ کی ترمیم</strong> میں −1، 0 یا +1 منتخب کریں۔</li>
+<li><strong class="ui">مذہبی دن</strong> آنے والے مذہبی دنوں کی فہرست دکھاتا ہے؛ قریب ترین دن اوقات کی اسکرین پر بھی نظر آتا ہے۔</li>
+<li><strong class="ui">رمضان ٹائم ٹیبل</strong> رمضان کے لیے امساک اور افطار کے اوقات دکھاتا ہے۔</li>
+<li><strong class="ui">سحری کی یاددہانی</strong>: <strong class="ui">بند</strong> یا <strong class="ui">امساک سے … منٹ پہلے</strong> (30، 45، 60، 90)۔ <strong class="ui">افطار کی اطلاع</strong> افطار کے وقت اطلاع دیتا ہے۔ یہ دونوں صرف رمضان میں مقرر ہوتے ہیں۔</li>
+<li>روزہ: رمضان میں اوقات کی اسکرین امساک یا افطار تک گنتی اور <strong class="ui">روزہ رکھا</strong> بٹن دکھاتی ہے؛ نشان زد دن <strong class="ui">روزہ رکھا گیا</strong> دکھاتا ہے۔</li>
+</ul>
+
+<h2 id="widgets">10. ویجٹس، لائیو سرگرمی اور کمپلیکیشنز</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">اگلی نماز</strong> ویجٹ اگلی نماز کے وقت یا موجودہ وقت کے اختتام تک گنتی کرتا ہے۔ اسے ہوم اسکرین (چھوٹا، درمیانہ) یا لاک اسکرین پر شامل کریں: ہوم اسکرین کو دبائے رکھیں → ترمیم → ویجٹ شامل کریں → Salah Sense۔</li>
+<li><strong class="ui">لائیو سرگرمی</strong> (<strong class="ui">ترتیبات</strong> میں) لاک اسکرین اور Dynamic Island میں گنتی دکھاتا ہے؛ عذر کی مدت کے دوران شروع نہیں ہوتا۔</li>
+<li>Apple Watch کمپلیکیشنز: گھڑی کا ڈائل ترمیم کریں اور Salah Sense منتخب کریں (مستطیل، ان لائن، گول، کونے والا)۔</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Android ہوم اسکرین ویجٹ اگلی نماز کا وقت دکھاتا ہے؛ ہوم اسکرین کو دبائے رکھیں اور ویجٹس میں سے Salah Sense شامل کریں۔</li>
+<li>Wear OS پر Salah Sense ٹائل اور کمپلیکیشن دستیاب ہیں۔</li>
+</ul>
+<p>عذر کی مدت کے دوران ویجٹس اور کمپلیکیشنز <strong class="ui">عذر کا دن</strong> دکھاتے ہیں۔</p>
+
+<h2 id="diagnostics">11. تشخیصی ریکارڈنگ بھیجنا</h2>
+<p>اگر شناخت کسی نماز میں بار بار غلطی کرے تو ایک تشخیصی ریکارڈنگ ہمیں مسئلہ سمجھنے میں مدد دیتی ہے۔</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">گھڑی پر: <strong class="ui">شناخت کی ترتیبات</strong> → <strong class="ui">تشخیصی ریکارڈنگ</strong> → <strong class="ui">ریکارڈنگ شروع کریں</strong>۔ ہاتھ نیچے رکھ کر 3 سیکنڈ انتظار کریں، نماز کے تمام حصے پڑھیں، پھر <strong class="ui">ریکارڈنگ ختم کریں</strong> پر ٹیپ کریں۔ ایک ریکارڈنگ زیادہ سے زیادہ 20 منٹ کی ہوتی ہے۔</li>
+<li data-platform="android" data-badge="Android · Wear OS">گھڑی پر، شناخت چلتے ہوئے <strong class="ui">نماز کی شناخت</strong> صفحے پر <strong class="ui">تشخیصی ریکارڈنگ</strong> آن کریں، پھر نماز پڑھیں۔</li>
+<li><span data-platform="apple"><strong class="ui">ریکارڈنگز iPhone پر بھیجیں</strong> (iPhone پر ایپ کھلی ہونی چاہیے)؛ ضرورت پڑنے پر <strong class="ui">تازہ ترین ریکارڈنگ دوبارہ بھیجیں</strong></span><span data-platform="android"><strong class="ui">ریکارڈ فون پر بھیجیں</strong></span>۔</li>
+<li>فون پر: <span data-platform="apple"><strong class="ui">ترتیبات</strong> → <strong class="ui">تشخیصی ریکارڈنگز</strong> → ریکارڈنگ منتخب کریں → <strong class="ui">ریکارڈنگ شیئر کریں</strong></span><span data-platform="android"><strong class="ui">نماز کی شناخت</strong> → <strong class="ui">اشتراک کریں</strong></span>، اور اسے ای میل کے ذریعے <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a> پر بھیجیں۔</li>
+</ol>
+<ul>
+<li>اسکرین بند ہونے کے دوران ریکارڈنگ کے لیے مسلسل شناخت درکار ہے۔</li>
+<li>شناخت کے محفوظ کردہ ہر فرض کے لیے آخری منٹوں کا ایک مختصر <strong class="ui">خودکار فرض کا خلاصہ</strong> رکھا جاتا ہے، جسے اسی طرح شیئر کیا جا سکتا ہے۔</li>
+<li>ریکارڈنگز میں حرکت کے سینسر کی قدریں، دباؤ/نسبتی اونچائی، شناخت کی حالت، کیلیبریشن کا ڈیٹا اور ایپ کا ورژن شامل ہوتا ہے؛ کوئی مقام، آواز، نام یا اکاؤنٹ کا ڈیٹا شامل نہیں ہوتا۔ یہ آلے سے صرف اسی وقت نکلتی ہیں جب آپ خود شیئر کریں۔ حالیہ ریکارڈنگز محفوظ رہتی ہیں؛ <strong class="ui">ریکارڈنگ حذف کریں</strong> سے حذف کریں۔</li>
+</ul>
+
+<h2 id="troubleshooting">12. مسائل کا حل اور معاونت</h2>
+<ul>
+<li><strong>اوقات مختلف ہیں:</strong> حساب کا طریقہ، عصر کا حساب، مقام اور منطقۂ وقت چیک کریں<span data-platform="apple">، پھر <strong class="ui">اوقات تازہ کریں</strong> پر ٹیپ کریں</span>۔</li>
+<li><strong>اطلاع نہیں آتی:</strong> آلے کی ترتیبات میں اطلاع کی اجازت، خاموش موڈ اور فوکس چیک کریں۔<span data-platform="android"> بیٹری کی بچت اور <strong class="ui">وقت مقرر کرنے کی اجازت</strong> بھی اثر ڈالتے ہیں۔</span></li>
+<li><strong>شناخت شروع نہیں ہوتی:</strong> اگر <strong class="ui">حرکت کے سینسر سے ڈیٹا نہیں آیا۔</strong> نظر آئے تو گھڑی کی ایپ دوبارہ کھولیں؛ اگر <strong class="ui">تکبیر کی پیمائش موجود نہیں۔ صوتی کیلیبریشن شروع کریں۔</strong> نظر آئے تو کیلیبریشن کریں؛ اسکرین بند ہونے پر کام کرنے کے لیے مسلسل شناخت آن کریں۔</li>
+<li><strong>گنتی اکثر غلط ہوتی ہے:</strong> گھڑی کو کَس کر پہنیں، دوسری پوزیشن کیلیبریٹ کریں یا دوبارہ کیلیبریٹ کریں؛ دستی طور پر نشان لگائیں اور تشخیصی ریکارڈنگ بھیجیں۔</li>
+<li><strong>فون اور گھڑی کی تاریخچہ مختلف ہے:</strong> دونوں آلات پر ہم آہنگی آن کریں<span data-platform="apple"> اور <strong class="ui">ابھی ہم آہنگ کریں</strong> پر ٹیپ کریں</span><span data-platform="android">؛ <strong class="ui">ہم آہنگی دوبارہ آزمائیں</strong> استعمال کریں</span>۔</li>
+<li><strong>الارم نہیں بجا:</strong> گھڑی کی آواز اور خاموش موڈ چیک کریں<span data-platform="apple">؛ گھڑی کی ایپ کھولنے سے قریب ترین الارم تازہ ہو جاتا ہے</span>۔</li>
+</ul>
+<div class="box">
+<p>مزید جوابات: <a href="https://notes7239.github.io/salahsense/support/ur.html">معاونت کا صفحہ</a> (اکثر پوچھے گئے سوالات)۔ رابطہ: <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a> — براہ کرم آلے کا ماڈل، او ایس ورژن اور ایپ کا ورژن شامل کریں۔</p>
+<p>آپ کے ڈیٹا کا انتظام کیسے ہوتا ہے: <a href="https://notes7239.github.io/salahsense/privacy/ur.html">رازداری کی پالیسی</a>۔ کوئی اکاؤنٹ، اشتہار، تجزیہ یا سرور نہیں؛ آپ کا ڈیٹا آپ کے آلات پر رہتا ہے۔</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/ur.html">معاونت</a> · <a href="https://notes7239.github.io/salahsense/privacy/ur.html">رازداری کی پالیسی</a> · <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

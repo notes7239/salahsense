@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>المساعدة — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>مساعدة Salah Sense</h1>
+<p class="meta">استخدام التطبيق وإعداداته · الهاتف والساعة</p>
+<div class="box warn"><p><strong>مهم:</strong> يتطلب التتبع التلقائي للركعات والسجود ساعة (<span data-platform="apple">Apple Watch</span><span data-platform="android">ساعة Wear OS</span>)؛ لا يستطيع الهاتف وحده قياس حركة المعصم. الاكتشاف وسيلة مساعدة وقد يخطئ: يؤثر فيه وضع الساعة على المعصم وإحكام السوار والفروق الفردية في الحركة. يمكنك دائمًا تصحيح السجلات يدويًا. لا يصدر التطبيق أحكامًا دينية ولا يحكم على صحة الصلاة.</p></div>
+<p>للأسئلة الشائعة وبيانات التواصل راجع <a href="https://notes7239.github.io/salahsense/support/ar.html">صفحة الدعم</a>. الكلمات الغامقة هي أسماء الأزرار والقوائم في التطبيق.</p>
+<nav class="toc" aria-label="المحتويات">
+<strong>المحتويات</strong>
+<ul>
+<li><a href="#getting-started">1. البدء</a></li>
+<li><a href="#prayer-times">2. الموقع ومواقيت الصلاة</a></li>
+<li><a href="#notifications">3. الإشعارات والمنبّهات</a></li>
+<li><a href="#calibration">4. المعايرة على الساعة</a></li>
+<li><a href="#tracking">5. التتبع التلقائي أثناء الصلاة</a></li>
+<li><a href="#sequence-check">6. فحص التسلسل وسؤال التأكيد</a></li>
+<li><a href="#history">7. السجل والقضاء والنقاط</a></li>
+<li><a href="#excused">8. أيام العذر</a></li>
+<li><a href="#hijri">9. التقويم الهجري ورمضان</a></li>
+<li><a href="#widgets">10. الودجات والنشاط المباشر والميزات التكميلية</a></li>
+<li><a href="#diagnostics">11. إرسال تسجيل تشخيصي</a></li>
+<li><a href="#troubleshooting">12. استكشاف الأخطاء والدعم</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. البدء</h2>
+<ul>
+<li>يعرض تطبيق <span data-platform="apple">iPhone</span><span data-platform="android">هاتف Android</span> مواقيت الصلاة والقبلة والأذكار والسجل والإعدادات. يتابع تطبيق <span data-platform="apple">Apple Watch</span><span data-platform="android">ساعة Wear OS</span> حركاتك أثناء الصلاة ويتولى تنبيهات الأذان والمعايرة.</li>
+<li>افتح أولًا <span data-platform="apple">تبويب <strong class="ui">الإعدادات</strong></span><span data-platform="android">صفحة <strong class="ui">الموقع والإعدادات</strong></span> على الهاتف واضبط الموقع وطريقة الحساب وحساب العصر و<strong class="ui">الجنس</strong> (القسمان 2 و8).</li>
+<li>ثم أجرِ <a href="#calibration">المعايرة</a> مرة واحدة على الساعة؛ لا يصبح التتبع التلقائي موثوقًا إلا بعدها.</li>
+<li>بدون ساعة يمكنك مع ذلك استخدام مواقيت الصلاة والقبلة والأذكار وتسجيل <strong class="ui">تسجيل أداء الصلاة</strong> اليدوي وقضاء الصلوات والإحصاءات والتقويم الهجري والإمساكية والودجات.</li>
+<li>يحتوي <strong class="ui">دليل الصلاة</strong> على ملخصات غير متصلة بالإنترنت، مع ذكر مصادرها، عن الصلوات اليومية وسجود السهو.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">لمشاركة السجل، فعّل <strong class="ui">مشاركة سجل الصلاة مع iPhone/Apple Watch المقترن</strong> في <strong class="ui">الإعدادات</strong> → <strong class="ui">الجهاز المقترن</strong> على iPhone، و<strong class="ui">مزامنة السجل</strong> في <strong class="ui">إقران الأجهزة</strong> على الساعة. الخيار مُعطَّل افتراضيًا؛ ويرسل <strong class="ui">المزامنة الآن</strong> السجلات الأقدم أيضًا.</li>
+<li data-platform="android" data-badge="Android · Wear OS">تحتاج مزامنة الهاتف مع الساعة إلى تثبيت التطبيق على الجهازين؛ دون اتصال، تبقى السجلات على الجهاز. عند الحاجة استخدم <strong class="ui">الموقع والإعدادات</strong> → <strong class="ui">إعادة محاولة المزامنة</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">غيّر اللغة من <strong class="ui">الإعدادات</strong> على الهاتف ومن <strong class="ui">اللغة</strong> على الساعة؛ يحتفظ كل جهاز باختياره الخاص.</li>
+</ul>
+
+<h2 id="prayer-times">2. الموقع ومواقيت الصلاة</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">الإعدادات</strong> → <strong class="ui">الموقع والمنطقة الزمنية</strong>. اضغط <strong class="ui">استخدام موقعي</strong> وامنح إذن الموقع، أو املأ <strong class="ui">المدينة</strong> و<strong class="ui">خط العرض</strong> و<strong class="ui">خط الطول</strong> و<strong class="ui">منطقة زمنية IANA</strong> (مثل Asia/Riyadh)، ثم اضغط <strong class="ui">حفظ المدينة/الموقع</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">الموقع والإعدادات</strong>: اضغط <strong class="ui">الحصول على موقعي</strong>، أو املأ <strong class="ui">اسم الموقع</strong> و<strong class="ui">خط العرض</strong> و<strong class="ui">خط الطول</strong> و<strong class="ui">المنطقة الزمنية</strong>، ثم اضغط <strong class="ui">حفظ</strong>.</li>
+<li>إذن الموقع اختياري؛ يمكنك إدخال المدينة والإحداثيات يدويًا. حدّث الموقع والمنطقة الزمنية عند السفر.</li>
+<li><strong class="ui">طريقة الحساب</strong> (12 طريقة): <strong class="ui">تركيا (ديانت)</strong>، <strong class="ui">رابطة العالم الإسلامي</strong>، <strong class="ui">الهيئة المصرية العامة للمساحة</strong>، <strong class="ui">كراتشي (جامعة العلوم الإسلامية)</strong>، <strong class="ui">أم القرى (مكة)</strong>، <strong class="ui">دبي</strong>، <strong class="ui">لجنة رؤية الهلال</strong>، <strong class="ui">أمريكا الشمالية (ISNA)</strong>، <strong class="ui">الكويت</strong>، <strong class="ui">قطر</strong>، <strong class="ui">سنغافورة</strong>، <strong class="ui">طهران</strong>. اختر الأقرب إلى التقويم المحلي لديك.</li>
+<li><strong class="ui">حساب العصر</strong>: يعتمد <strong class="ui">قياسي</strong> على ظل بطول الجسم (العصر الأول)، و<strong class="ui">حنفي</strong> على ضعف الطول (العصر الثاني). يستخدم التقويم التركي الحساب القياسي.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">المذهب</strong>: <strong class="ui">سني (مع السنن والوتر)</strong> أو <strong class="ui">شافعي (الفرض)</strong>. يحدّد هذا فقط الركعات المتتبَّعة، لا المواقيت. على الساعة: <strong class="ui">المذهب / الركعات</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">تُحدَّث المواقيت تلقائيًا بعد أي تغيير؛ اضغط <strong class="ui">تحديث أوقات الصلاة</strong> عند الحاجة. على الساعة، الطريقة وحساب العصر تحت <strong class="ui">طريقة الحساب</strong>.</li>
+<li>تُحسَب المواقيت على الجهاز. التطبيق ليس تقويمًا رسميًا وقد يختلف عن تقويمك ببضع دقائق.</li>
+</ul>
+
+<h2 id="notifications">3. الإشعارات والمنبّهات</h2>
+<h3>إشعار دخول الوقت</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">يرسل <strong class="ui">الإشعار عند دخول وقت الصلاة</strong> إشعارًا لكل وقت صلاة. اضبط التوقيت بالعداد: <strong class="ui">عند دخول الوقت</strong>، أو حتى 60 دقيقة قبل (<strong class="ui">قبل … دقيقة</strong>) أو بعد (<strong class="ui">بعد … دقيقة</strong>). يوجد نفس الإعداد على الساعة في <strong class="ui">تنبيهات الأذان</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">عندما تتولى الساعة هذه الإشعارات، لا يُجدوِل iPhone إشعاره الخاص بها؛ وتصل الإشعارات إلى الساعة حتى عندما يكون iPhone مقفلًا.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">الموقع والإعدادات</strong>: فعّل <strong class="ui">التذكير</strong> واختر <strong class="ui">عند دخول الوقت</strong> أو <strong class="ui">قبل … دقيقة</strong>. إذا تأخرت الإشعارات، امنح <strong class="ui">إذن الجدولة</strong>.</li>
+</ul>
+<h3>المنبّه قبل خروج الوقت</h3>
+<ul>
+<li><strong class="ui">منبّه قبل خروج الوقت</strong>: <strong class="ui">إيقاف</strong> أو عدد من الدقائق قبل خروج وقت الصلاة. إذا لم تُسجَّل الصلاة كمؤداة، يرنّ حتى في الوضع الصامت.</li>
+<li>قد يرنّ أيضًا إذا كان سجل اكتشفته الساعة لم يصل إلى الهاتف بعد.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">يتطلب المنبّه الحقيقي iOS 26؛ وإلا، أو دون إذن المنبّه، يُرسَل إشعار بدلًا منه.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">قبل 45 و30 دقيقة من الخروج، تشغّل الساعة مقطع حيّ على من الأذان مع اهتزاز (<strong class="ui">حيّ على الصلاة، حيّ على الفلاح</strong>)، ومرة أخرى بقوة أكبر إذا كنت نائمًا. وإذا بدوت جالسًا أو مستلقيًا دون حركة بينما لا يزال هناك وقت، يصلك إشعار <strong class="ui">يبدو أنك متفرغ</strong> مرة واحدة (لا يصل أبدًا في وقت الكراهة).</li>
+</ul>
+<h3>تنبيهات التهجد والفجر (الساعة)</h3>
+<ul>
+<li>في <span data-platform="apple"><strong class="ui">تنبيهات الأذان</strong></span><span data-platform="android"><strong class="ui">تنبيهات الأذان</strong></span> على الساعة، يتبع <strong class="ui">تنبيه التهجد</strong> الثلث الأخير من الليل، ويتبع <strong class="ui">تنبيه أذان الفجر</strong> وقت الإمساك.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">وقت التنبيه</strong>: <strong class="ui">عند دخول الوقت</strong> أو قبل 5–60 دقيقة. <strong class="ui">الغفوة</strong>: 1–15 دقيقة.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">الحركة تُسكِت المنبّه مؤقتًا؛ والضغط على <strong class="ui">تسجيل أداء الصلاة</strong> يوقفه. يحدّد <strong class="ui">حركة إسكات المنبه</strong> مقدار الحركة اللازم: <strong class="ui">حركة أقل (حساس)</strong>، <strong class="ui">متوسط</strong>، <strong class="ui">حركة أكثر (صعب)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">يشغّل أقرب منبّه صوت الأذان الذي اخترته، بينما تستخدم التنبيهات الأخرى صوت الإشعار. فتح تطبيق الساعة يجدّد أقرب منبّه.</li>
+<li data-platform="android" data-badge="Android · Wear OS">يأتي الصوت والاهتزاز من قناة إشعارات الجهاز (<strong class="ui">صوت التنبيه والاهتزاز</strong>)؛ لا يحتوي التطبيق على تسجيل أذان مدمج.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">صوت الأذان (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">صوت الأذان</strong> (أو <strong class="ui">تنبيهات الأذان</strong> → <strong class="ui">اختيار صوت الأذان</strong>): أدخل عنوان https لملف CAF أو AIFF أو WAV واضغط <strong class="ui">تنزيل</strong>. يُشغَّل حتى 30 ثانية في الإشعارات؛ والملفات الأطول تُشغَّل داخل التطبيق فقط.</li>
+<li>اختر صوتًا من الأصوات المثبَّتة؛ واستخدم <strong class="ui">تشغيل</strong> و<strong class="ui">إيقاف</strong> و<strong class="ui">حذف</strong>. إذا لم يُختَر أي صوت، يُشغَّل صوت المنبّه المدمج.</li>
+<li><strong class="ui">مقطع حيّ على (تكرار + اهتزاز)</strong>: حدّد مقطع "حيّ على الصلاة، حيّ على الفلاح" بثانيتي <strong class="ui">البداية</strong> و<strong class="ui">النهاية</strong>، واضبط <strong class="ui">التكرار</strong>، وجرّبه بـ<strong class="ui">تشغيل المقطع</strong>.</li>
+<li>يُنزَّل الملف مباشرة من ذلك العنوان؛ وهذا الخادم ليس خادمنا.</li>
+</ul>
+<p>إذن الإشعارات والوضع الصامت والتركيز وتوفير البطارية ومستوى الصوت يمكن أن تؤثر جميعها على التنبيهات.</p>
+
+<h2 id="calibration">4. المعايرة على الساعة</h2>
+<p>تُعلِّم المعايرة الساعة وضعياتك الخاصة في التكبير والقيام والركوع والسجود والجلوس. تتم على الساعة فقط.</p>
+<ol>
+<li>ارتدِ الساعة بإحكام في معصمك المعتاد (الأيمن أو الأيسر).</li>
+<li><span data-platform="apple"><strong class="ui">المعايرة</strong> → <strong class="ui">دليل المعايرة الشخصية</strong> → <strong class="ui">بدء المعايرة الصوتية</strong></span><span data-platform="android"><strong class="ui">المعايرة</strong> → <strong class="ui">بدء المعايرة الصوتية</strong></span>.</li>
+<li>اتبع الإرشاد الصوتي: التكبير (رفع اليدين)، القيام، الركوع، الاعتدال واقفًا، السجود، الجلوس بين السجدتين، السجدة الثانية، الجلوس الأخير، السلام يمينًا، السلام يسارًا. بعد كل إرشاد يُمنح لك وقت لاتخاذ الوضعية، ثم يتبعها قياس قصير؛ حافظ على ثباتك براحة.</li>
+<li>عند تفعيل <strong class="ui">تعلّم حركة ختام الدعاء (اختياري)</strong>، تُقاس أيضًا حركة مسح اليدين على الوجه بعد السلام؛ أو اضغط <strong class="ui">تخطي حركة الدعاء</strong>.</li>
+<li><strong class="ui">إيقاف</strong> يوقف مؤقتًا؛ و<strong class="ui">متابعة هذه الخطوة</strong> يتابع.</li>
+<li>في النهاية ترى <strong class="ui">اكتملت المعايرة</strong> وارتفاعات معصمك بالنسبة للقيام.<span data-platform="apple"> اضغط <strong class="ui">تم، العودة إلى الصلاة</strong>.</span></li>
+</ol>
+<ul>
+<li>السلام يُرشَد صوتيًا فقط؛ لا تُقاس حركة الرأس.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">بعد نجاح المعايرة، يُفعَّل الاكتشاف المستمر تلقائيًا.</li>
+<li>إذا تشابهت الوضعيات كثيرًا أو لم يُتعرَّف على التكبير، أعد البدء على المعصم نفسه وارفع يديك وثبّتهما في خطوة التكبير.</li>
+</ul>
+<h3>الوضع الثاني</h3>
+<ul>
+<li>إذا كانت الساعة تنزلق إلى أسفل معصمك أثناء الصلاة، علّمها هذا الوضع أيضًا: بعد المعايرة العادية اضغط <strong class="ui">عاير الوضع الثاني</strong>، وحرّك الساعة 1–2 سم نحو اليد، وكرّر الخطوات (بما فيها مسح الوجه).</li>
+<li>يستخدم الاكتشاف أي وضع يناسب أكثر. المعايرة العادية الجديدة تُبقي الوضع الثاني؛ وإذا تغيّر إحكام السوار، استخدم <strong class="ui">أعد معايرة الوضع الثاني</strong> أو <strong class="ui">احذف الوضع الثاني</strong>.</li>
+</ul>
+<h3>متى تُعيد المعايرة؟</h3>
+<ul>
+<li>عند تغيّر وضع الساعة أو إحكام السوار أو المعصم، أو عندما يخطئ الاكتشاف كثيرًا.<span data-platform="apple"> يعني إشعار <strong class="ui">تحقق من موضع الساعة</strong> أيضًا أن الساعة غير محكمة.</span></li>
+<li>يتعلّم التطبيق أيضًا ارتفاعات المعصم من صلواتك. بعد تغيير كبير استخدم <strong class="ui">إعادة تعيين الارتفاعات المكتسبة</strong>؛ و<strong class="ui">حذف المعايرة</strong> يزيل المعايرة بالكامل.</li>
+<li>يتيح لك <strong class="ui">تدريب صوتي</strong> التدرب بإرشاد صوتي؛ ولا يُنشئ أي سجل.</li>
+</ul>
+
+<h2 id="tracking">5. التتبع التلقائي أثناء الصلاة</h2>
+<ul>
+<li>افتح تطبيق الساعة ضمن وقت الصلاة وابدأ بتكبيرة الإحرام. يبدأ كل جزء (سنة، فرض، وتر) بتكبيرته الخاصة.<span data-platform="apple"> عند رصد رفع اليدين، تظهر عبارة <strong class="ui">تم رصد وضعية التكبير؛ انتقل إلى القيام.</strong>.</span></li>
+<li>يتبع الترتيب تكبيرات الإحرام: <strong class="ui">الفجر 2+2 · الظهر 4+4+2 · العصر 4+4 · المغرب 3+2 · العشاء 4+4+2+3 وتر</strong>. يبدأ المغرب بالفرض.<span data-platform="apple"> مع <strong class="ui">شافعي (الفرض)</strong>، يُتتبَّع الفرض فقط.</span></li>
+<li>تعرض الشاشة الجزء الحالي والتكبيرة التالية وعدد الركعات المكتشَفة.</li>
+<li>لبدء الفرض مباشرة، اضغط <span data-platform="apple"><strong class="ui">تجاوز السنة الأولى</strong></span><span data-platform="android"><strong class="ui">ابدأ بالفرض</strong></span>.</li>
+<li>يُؤدَّى سجود السهو في نهاية الصلاة، في الجلوس الأخير؛ إذا اكتُشف، يظهر في السجل <strong class="ui">تمّ سجود السهو</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">قبل سجود السهو يمكنك الضغط على <strong class="ui">سأؤدي سجود السهو</strong>؛ عندها يتوقع التطبيق سجدتين إضافيتين والجلوس الأخير. <strong class="ui">سأعيد هذا الجزء من الصلاة</strong> يعيد بدء الجزء الحالي. إذا فشل الحفظ، اضغط <strong class="ui">إعادة محاولة الحفظ</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">إذا كانت المعايرة مفقودة، يظهر زر <strong class="ui">دليل المعايرة الشخصية</strong>.</li>
+</ul>
+<h3>عدد خاطئ أو صلاة فائتة</h3>
+<ul>
+<li>إذا اكتُشفت ركعات أكثر أو أقل من اللازم، تحذّرك الساعة (<strong class="ui">تحقق من عدد الركعات</strong>). تحقق من عددك بنفسك.</li>
+<li>علّم الصلاة يدويًا: <span data-platform="apple"><strong class="ui">تسجيل أداء الفريضة</strong></span><span data-platform="android"><strong class="ui">تسجيل أداء الصلاة</strong></span> على الساعة، و<strong class="ui">تسجيل أداء الصلاة</strong> على الهاتف.</li>
+<li>إذا صلّيت في الوقت لكن فاتها الاكتشاف، بعد خروج الوقت افتح <strong class="ui">السجل</strong> على الهاتف، واضغط <strong class="ui">تسجيل أدائها في وقتها</strong>، واضبط <strong class="ui">وقت أدائك للصلاة</strong>، ثم اضغط <strong class="ui">حفظها كصلاة مؤداة</strong>. يجب أن يكون الوقت ضمن وقت الصلاة؛ ولا يمكن التراجع عن هذا الإجراء.</li>
+<li data-platform="android" data-badge="Android · Wear OS">يمكنك التراجع عن سجل خاطئ في السجل باستخدام <strong class="ui">التراجع عن السجل</strong> ثم الضغط على <strong class="ui">تسجيل أداء الصلاة</strong> مجددًا.</li>
+</ul>
+<h3>الاكتشاف المستمر والبطارية</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">إعدادات الاكتشاف</strong></span><span data-platform="android"><strong class="ui">اكتشاف الصلاة</strong></span> → <strong class="ui">الاكتشاف المستمر (تجريبي)</strong> يُبقي الاكتشاف يعمل أثناء إطفاء الشاشة أو عند عرض قرص الساعة.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">لهذا تُبقي الساعة جلسة تمرين مفتوحة طوال اليوم. لا يُحفَظ أي تمرين في تطبيق Health، لكن استهلاك البطارية يزداد وقد تتأثر حلقات النشاط. إذا توقفت الجلسة، أعد فتح التطبيق.</li>
+<li data-platform="android" data-badge="Android · Wear OS">الاكتشاف في الخلفية يستنزف البطارية أسرع. إذا أُوقف التطبيق قسرًا، أعد فتحه.</li>
+<li>عند إيقافه، يعمل الاكتشاف فقط أثناء فتح التطبيق.</li>
+</ul>
+<h3>النوافل</h3>
+<ul>
+<li>تظهر أوقات التهجد والضحى على شاشة مواقيت الصلاة؛ علّمها ضمن وقتها بـ<strong class="ui">تسجيل أداء الصلاة · +500</strong>. يمكن للساعة أيضًا اكتشافها من تكبيرة الإحرام.</li>
+<li><strong class="ui">قضاء الفجر ← الضحى</strong>: اختر قضاء فجر مسجَّلًا، ثم تُكتشَف ركعات الضحى بالترتيب.</li>
+</ul>
+
+<h2 id="sequence-check">6. فحص التسلسل وسؤال التأكيد</h2>
+<p>قبل حفظ أي فرض مكتشَف، يُتحقق من التسلسل: تكبيرة الإحرام، ركوع وسجدتان في كل ركعة، الجلوس الأخير، أن تكون السجدات في الاتجاه نفسه، وعدم وجود دوران يشبه المشي.</p>
+<ul>
+<li>إذا فشل الفحص، تهتز الساعة وتسأل <strong class="ui">هل صلّيت فرض …؟</strong> مع ذكر الأسباب. تظهر في قائمة الأوقات <strong class="ui">بانتظار التأكيد</strong>.</li>
+<li><strong class="ui">نعم، صلّيت</strong>: يُحفَظ بوقت الانتهاء المكتشَف باسم <strong class="ui">الكشف التلقائي (مؤكَّد)</strong>.</li>
+<li><strong class="ui">لا</strong>: لا يُحفَظ شيء؛ وتعود تذكيرات ذلك الوقت.</li>
+<li>إذا لم تُجب حتى خروج الوقت: يُحفَظ باسم <strong class="ui">الكشف التلقائي (غير مؤكَّد، يُرجى التحقق)</strong>، حتى لا تضيع صلاة أُدِّيت فعلًا. الضغط على <strong class="ui">تسجيل أداء الصلاة</strong> في هذه الأثناء يزيل السؤال.</li>
+</ul>
+<h3>تسميات <strong class="ui">سُجِّل بواسطة: …</strong></h3>
+<ul>
+<li><strong class="ui">الكشف التلقائي</strong>: اجتاز الفرض الفحص.</li>
+<li><strong class="ui">الكشف التلقائي (مؤكَّد)</strong> / <strong class="ui">الكشف التلقائي (غير مؤكَّد، يُرجى التحقق)</strong>: كما سبق.</li>
+<li><strong class="ui">الكشف التلقائي (سجل احتياطي، يُرجى التحقق)</strong>: عدّ الاكتشاف ركعات الفرض بدقة، لكن خطوة الحفظ العادية فشلت، فكتبه مسار احتياطي.</li>
+<li><strong class="ui">«صلّيت» على الساعة</strong>، <strong class="ui">«صلّيت» في إشعار الساعة</strong>، <strong class="ui">«صلّيت» على الهاتف</strong>، <strong class="ui">«صلّيت» في إشعار الهاتف</strong>، <strong class="ui">تصحيح «صلّيت في الوقت»</strong>، <strong class="ui">تسجيل القضاء</strong>: علامات يدوية.</li>
+<li>تظهر التسميات التي تطلب منك التحقق باللون البرتقالي في السجل؛ راجعها وصحّحها عند الحاجة.</li>
+</ul>
+
+<h2 id="history">7. السجل والقضاء والنقاط</h2>
+<ul>
+<li><span data-platform="apple">تبويب <strong class="ui">السجل</strong></span><span data-platform="android">صفحة <strong class="ui">السجل</strong></span> على الهاتف يعرض كل صلاة بحالة <strong class="ui">تمت الصلاة</strong> أو <strong class="ui">تم القضاء</strong> أو <strong class="ui">معلّقة / فائتة</strong>، مع <strong class="ui">تمّ سجود السهو</strong> وتسمية من سجّلها عند الاقتضاء.</li>
+<li>تذهب مواقيت الصلاة التي تنتهي دون تسجيل إلى قائمة القضاء (<strong class="ui">الصلوات المطلوب قضاؤها: …</strong>). عند قضائها، اضغط <strong class="ui">تسجيل أداء الصلاة</strong> بجانب تلك الصلاة<span data-platform="apple">؛ وعلى الساعة استخدم <strong class="ui">قضاء الصلاة</strong></span><span data-platform="android">؛ وبعد خروج الوقت يصبح زرّها <strong class="ui">تسجيل القضاء</strong></span>.</li>
+<li><strong class="ui">النقاط</strong>: الصلاة في وقت مبكر تمنح نقاطًا أعلى؛ والصلاة الفائتة تخفّض النقاط. تضيف النوافل مكافأة (<strong class="ui">تسجيل أداء الصلاة · +500</strong>).</li>
+<li><strong class="ui">الإحصاءات</strong>: ملخصات أسبوعية وشهرية وسنوية ودقة الالتزام بالوقت.</li>
+<li data-platform="android" data-badge="Android · Wear OS">يحفظ <strong class="ui">إنشاء نسخة احتياطية</strong> سجل فروضك في ملف تختاره؛ ويدمجه <strong class="ui">استعادة نسخة احتياطية</strong> مرة أخرى.</li>
+<li>عدم وجود سجل لا يثبت أن صلاة فاتتك؛ يحتفظ التطبيق فقط بالعلامات التي تضعها أنت والاكتشاف.</li>
+</ul>
+
+<h2 id="excused">8. أيام العذر</h2>
+<ul>
+<li>يظهر هذا القسم فقط عندما يكون <span data-platform="apple"><strong class="ui">الإعدادات</strong></span><span data-platform="android"><strong class="ui">الموقع والإعدادات</strong></span> → <strong class="ui">الجنس</strong> هو <strong class="ui">أنثى</strong>.<span data-platform="apple"> على iPhone يقع ضمن <strong class="ui">الحساب والتذكيرات</strong>؛ وفي قائمة الساعة سطر <strong class="ui">الجنس</strong>.</span> مع <strong class="ui">اختر</strong> أو <strong class="ui">ذكر</strong> يُخفى؛ تغيير الاختيار لا يحذف الفترات المحفوظة.</li>
+<li><span data-platform="apple"><strong class="ui">الإعدادات</strong> → <strong class="ui">أيام العذر</strong> (موجود أيضًا في قائمة الساعة)</span><span data-platform="android"><strong class="ui">أيام العذر</strong></span>: اضغط <strong class="ui">بدء فترة</strong> عند بدء الفترة و<strong class="ui">إنهاء الفترة</strong> عند انتهائها. يظهر تحذير إذا بقيت الفترة مفتوحة طويلًا.</li>
+<li>عدّل الفترات السابقة بـ<strong class="ui">تعديل</strong> (<strong class="ui">البداية</strong>، <strong class="ui">النهاية</strong>، <strong class="ui">مستمرة</strong>) و<strong class="ui">حفظ</strong>، أو احذفها بـ<strong class="ui">حذف الفترة</strong>.</li>
+<li>خلال الفترة لا توجد إشعارات لأوقات الصلاة أو السحور أو الإفطار، ولا قضاء أو نقاط؛ يُعطَّل الاكتشاف و<strong class="ui">تسجيل أداء الصلاة</strong> ويتوقف تتبع التهجد/الضحى. تعرض المواقيت والودجات <strong class="ui">يوم عذر</strong>.</li>
+<li>أنت فقط من يُدخل الفترات. تُخزَّن على جهازك، ومع تفعيل المزامنة تُشارَك مع جهازك الآخر جنبًا إلى جنب مع السجل.</li>
+</ul>
+
+<h2 id="hijri">9. التقويم الهجري ورمضان</h2>
+<ul>
+<li>يتبع التاريخ الهجري في شاشة المواقيت تقويم أم القرى. إذا كان يختلف يومًا عن تقويمك المحلي، اختر −1 أو 0 أو +1 في <span data-platform="apple"><strong class="ui">الإعدادات</strong> → <strong class="ui">التقويم الهجري</strong></span><span data-platform="android"><strong class="ui">الموقع والإعدادات</strong></span> → <strong class="ui">تعديل التاريخ الهجري</strong>.</li>
+<li>يسرد <strong class="ui">المناسبات الدينية</strong> المناسبات الدينية القادمة؛ وتظهر الأقرب أيضًا على شاشة المواقيت.</li>
+<li>يعرض <strong class="ui">إمساكية رمضان</strong> أوقات الإمساك والإفطار لشهر رمضان.</li>
+<li><strong class="ui">تذكير السحور</strong>: <strong class="ui">إيقاف</strong> أو <strong class="ui">قبل الإمساك بـ … دقيقة</strong> (30، 45، 60، 90). يُنبِّه <strong class="ui">إشعار الإفطار</strong> عند الإفطار. يُجدوَل الاثنان في رمضان فقط.</li>
+<li>الصيام: في رمضان تعرض شاشة المواقيت العد التنازلي حتى الإمساك أو الإفطار وزر <strong class="ui">صمتُ</strong>؛ ويظهر اليوم المعلَّم بـ<strong class="ui">صيام</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. الودجات والنشاط المباشر والميزات التكميلية</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>يعدّ ودجت <strong class="ui">الصلاة التالية</strong> تنازليًا حتى وقت الصلاة التالية أو خروج الوقت الحالي. أضفه إلى الشاشة الرئيسية (صغير، متوسط) أو شاشة القفل: اضغط مطولًا على الشاشة الرئيسية ← تحرير ← إضافة ودجت ← Salah Sense.</li>
+<li>يعرض <strong class="ui">النشاط المباشر</strong> (في <strong class="ui">الإعدادات</strong>) عدًا تنازليًا على شاشة القفل وفي Dynamic Island؛ ولا يبدأ خلال فترة العذر.</li>
+<li>الميزات التكميلية لـ Apple Watch: عدّل قرص الساعة واختر Salah Sense (مستطيلة، ضمن السطر، دائرية، زاوية).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>يعرض ودجت الشاشة الرئيسية في Android وقت الصلاة التالية؛ اضغط مطولًا على الشاشة الرئيسية وأضف Salah Sense من الودجات.</li>
+<li>يوفّر Wear OS بلاطة (tile) وميزة تكميلية لـ Salah Sense.</li>
+</ul>
+<p>خلال فترة العذر، تعرض الودجات والميزات التكميلية <strong class="ui">يوم عذر</strong>.</p>
+
+<h2 id="diagnostics">11. إرسال تسجيل تشخيصي</h2>
+<p>إذا استمر الاكتشاف في إخطاء صلاة معينة، يساعدنا تسجيل تشخيصي على تحري المشكلة.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">على الساعة: <strong class="ui">إعدادات الاكتشاف</strong> → <strong class="ui">تسجيل تشخيصي</strong> → <strong class="ui">بدء التسجيل</strong>. انتظر 3 ثوانٍ ويداك إلى الأسفل، ثم صلِّ جميع الأجزاء، ثم اضغط <strong class="ui">إنهاء التسجيل</strong>. يدوم التسجيل 20 دقيقة كحد أقصى.</li>
+<li data-platform="android" data-badge="Android · Wear OS">على الساعة، فعّل <strong class="ui">تسجيل تشخيصي</strong> في صفحة <strong class="ui">اكتشاف الصلاة</strong> أثناء عمل الاكتشاف، ثم صلِّ.</li>
+<li><span data-platform="apple"><strong class="ui">إرسال التسجيلات إلى iPhone</strong> (مع فتح التطبيق على iPhone)؛ وعند الحاجة <strong class="ui">إعادة إرسال أحدث تسجيل</strong></span><span data-platform="android"><strong class="ui">إرسال التسجيلات إلى الهاتف</strong></span>.</li>
+<li>على الهاتف: <span data-platform="apple"><strong class="ui">الإعدادات</strong> → <strong class="ui">التسجيلات التشخيصية</strong> → اختر التسجيل → <strong class="ui">مشاركة التسجيل</strong></span><span data-platform="android"><strong class="ui">اكتشاف الصلاة</strong> → <strong class="ui">مشاركة</strong></span>، وأرسله بالبريد الإلكتروني إلى <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>التسجيل مع إطفاء الشاشة يحتاج إلى الاكتشاف المستمر.</li>
+<li>لكل فرض يحفظه الاكتشاف، يُحتفظ بـ<strong class="ui">ملخص الفرض التلقائي</strong> قصير للدقائق الأخيرة، ويمكن مشاركته بالطريقة نفسها.</li>
+<li>تحتوي التسجيلات على قيم مستشعر الحركة، والضغط/الارتفاع النسبي، وحالة الاكتشاف، وبيانات المعايرة، وإصدار التطبيق؛ ولا تحتوي على الموقع أو الصوت أو الاسم أو بيانات الحساب. لا تغادر الجهاز إلا إذا شاركتها بنفسك. تُحفَظ التسجيلات الأخيرة؛ احذفها بـ<strong class="ui">حذف التسجيل</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. استكشاف الأخطاء والدعم</h2>
+<ul>
+<li><strong>اختلاف المواقيت:</strong> تحقق من طريقة الحساب وحساب العصر والموقع والمنطقة الزمنية<span data-platform="apple">، ثم اضغط <strong class="ui">تحديث أوقات الصلاة</strong></span>.</li>
+<li><strong>لا تصل الإشعارات:</strong> تحقق من إذن الإشعارات والوضع الصامت والتركيز في إعدادات الجهاز.<span data-platform="android"> توفير البطارية و<strong class="ui">إذن الجدولة</strong> مهمان أيضًا.</span></li>
+<li><strong>الاكتشاف لا يبدأ:</strong> عند ظهور <strong class="ui">لم تصل بيانات من مستشعر الحركة.</strong> أعد فتح تطبيق الساعة؛ وعند <strong class="ui">قياس التكبير مفقود. ابدأ المعايرة الصوتية.</strong> أجرِ المعايرة؛ وللاستخدام مع إطفاء الشاشة فعّل الاكتشاف المستمر.</li>
+<li><strong>العدد خاطئ كثيرًا:</strong> أحكم ربط الساعة، وعايِر الوضع الثاني أو أعد المعايرة؛ وعلّم يدويًا وأرسل تسجيلًا تشخيصيًا.</li>
+<li><strong>سجل الهاتف والساعة مختلف:</strong> فعّل المزامنة على الجهازين<span data-platform="apple"> واضغط <strong class="ui">المزامنة الآن</strong></span><span data-platform="android">؛ استخدم <strong class="ui">إعادة محاولة المزامنة</strong></span>.</li>
+<li><strong>لم يرن المنبّه:</strong> تحقق من مستوى صوت الساعة والوضع الصامت<span data-platform="apple">؛ فتح تطبيق الساعة يجدّد أقرب منبّه</span>.</li>
+</ul>
+<div class="box">
+<p>مزيد من الإجابات: <a href="https://notes7239.github.io/salahsense/support/ar.html">صفحة الدعم</a> (الأسئلة الشائعة). للتواصل: <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a> — يرجى ذكر طراز الجهاز وإصدار نظام التشغيل وإصدار التطبيق.</p>
+<p>كيفية التعامل مع بياناتك: <a href="https://notes7239.github.io/salahsense/privacy/ar.html">سياسة الخصوصية</a>. لا حساب ولا إعلانات ولا تحليلات ولا خادم؛ تبقى بياناتك على أجهزتك.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/ar.html">الدعم</a> · <a href="https://notes7239.github.io/salahsense/privacy/ar.html">سياسة الخصوصية</a> · <a href="mailto:salahsensetracking@gmail.com" dir="ltr">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

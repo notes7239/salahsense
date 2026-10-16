@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Aide — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Aide Salah Sense</h1>
+<p class="meta">Utilisation de l'application et de ses réglages · téléphone et montre</p>
+<div class="box warn"><p><strong>Important :</strong> Le suivi automatique des rakats et des prosternations (sujud) nécessite une montre (<span data-platform="apple">Apple Watch</span><span data-platform="android">montre Wear OS</span>) ; un téléphone seul ne mesure pas le mouvement du poignet. La détection est une aide et peut se tromper : position de la montre, ajustement du bracelet et mouvements personnels l'influencent. Vous pouvez toujours corriger un enregistrement à la main. L'application ne donne aucun avis religieux et ne juge pas la validité d'une prière.</p></div>
+<p>FAQ et contact : voir la <a href="https://notes7239.github.io/salahsense/support/fr.html">page d'assistance</a>. Les mots en gras sont les noms des boutons et menus de l'application.</p>
+<nav class="toc" aria-label="Sommaire">
+<strong>Sommaire</strong>
+<ul>
+<li><a href="#getting-started">1. Premiers pas</a></li>
+<li><a href="#prayer-times">2. Position et horaires de prière</a></li>
+<li><a href="#notifications">3. Notifications et alarmes</a></li>
+<li><a href="#calibration">4. Calibrage sur la montre</a></li>
+<li><a href="#tracking">5. Suivi automatique pendant la prière</a></li>
+<li><a href="#sequence-check">6. Vérification de l'enchaînement et confirmation</a></li>
+<li><a href="#history">7. Historique, rattrapage et score</a></li>
+<li><a href="#excused">8. Jours d'exemption</a></li>
+<li><a href="#hijri">9. Calendrier hégirien et Ramadan</a></li>
+<li><a href="#widgets">10. Widgets, Live Activity et complications</a></li>
+<li><a href="#diagnostics">11. Envoyer un enregistrement de diagnostic</a></li>
+<li><a href="#troubleshooting">12. Dépannage et assistance</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Premiers pas</h2>
+<ul>
+<li>L'application <span data-platform="apple">iPhone</span><span data-platform="android">téléphone Android</span> affiche les horaires de prière, la qibla, le dhikr, l'historique et les réglages. L'application <span data-platform="apple">Apple Watch</span><span data-platform="android">montre Wear OS</span> suit vos mouvements pendant la prière et gère les alertes de l'adhan et le calibrage.</li>
+<li>Ouvrez d'abord <span data-platform="apple"><strong class="ui">Réglages</strong></span><span data-platform="android"><strong class="ui">Position et réglages</strong></span> sur le téléphone : réglez la position, la méthode de calcul, le calcul de l'Asr et <strong class="ui">Genre</strong> (sections 2 et 8).</li>
+<li>Puis <a href="#calibration">calibrez</a> une fois sur la montre ; le suivi automatique n'est fiable qu'après cela.</li>
+<li>Sans montre : horaires de prière, qibla, dhikr, enregistrement manuel avec <strong class="ui">Marquer accomplie</strong>, qada, statistiques, calendrier hégirien, imsakiyah et widgets restent utilisables.</li>
+<li><strong class="ui">Guide de la prière</strong> propose des résumés hors ligne, avec sources, sur les prières quotidiennes et la prosternation de l'oubli (sahw).</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Pour partager l'historique, activez <strong class="ui">Partager l'historique avec mon iPhone/Apple Watch jumelé</strong> dans <strong class="ui">Réglages</strong> → <strong class="ui">Appareil jumelé</strong> sur l'iPhone et <strong class="ui">Synchroniser l'historique</strong> dans <strong class="ui">Jumelage des appareils</strong> sur la montre. Désactivé par défaut ; <strong class="ui">Synchroniser maintenant</strong> envoie aussi les anciens enregistrements.</li>
+<li data-platform="android" data-badge="Android · Wear OS">La synchronisation téléphone-montre nécessite l'application sur les deux appareils ; sans connexion, les enregistrements restent sur l'appareil. Si besoin : <strong class="ui">Position et réglages</strong> → <strong class="ui">Réessayer la synchronisation</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Changez la langue dans <strong class="ui">Réglages</strong> sur le téléphone et <strong class="ui">Langue</strong> sur la montre ; chaque appareil garde son propre choix.</li>
+</ul>
+
+<h2 id="prayer-times">2. Position et horaires de prière</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone : <strong class="ui">Réglages</strong> → <strong class="ui">Position et fuseau horaire</strong>. Appuyez sur <strong class="ui">Utiliser ma position</strong> et autorisez la localisation, ou renseignez <strong class="ui">Ville</strong>, <strong class="ui">Latitude</strong>, <strong class="ui">Longitude</strong> et <strong class="ui">Fuseau horaire IANA</strong> (ex. Europe/Paris), puis appuyez sur <strong class="ui">Enregistrer la ville/position</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Position et réglages</strong> : appuyez sur <strong class="ui">Obtenir ma position</strong>, ou renseignez <strong class="ui">Nom du lieu</strong>, <strong class="ui">Latitude</strong>, <strong class="ui">Longitude</strong> et <strong class="ui">Fuseau horaire</strong>, puis appuyez sur <strong class="ui">Enregistrer</strong>.</li>
+<li>L'autorisation de localisation est facultative : vous pouvez saisir la ville et les coordonnées à la main, et les mettre à jour lors de vos déplacements.</li>
+<li><strong class="ui">Méthode de calcul</strong> (12 méthodes) : <strong class="ui">Türkiye (Diyanet)</strong>, <strong class="ui">Ligue islamique mondiale</strong>, <strong class="ui">Autorité générale égyptienne</strong>, <strong class="ui">Karachi (Univ. des sciences islamiques)</strong>, <strong class="ui">Umm al-Qura (La Mecque)</strong>, <strong class="ui">Dubaï</strong>, <strong class="ui">Comité d’observation lunaire</strong>, <strong class="ui">Amérique du Nord (ISNA)</strong>, <strong class="ui">Koweït</strong>, <strong class="ui">Qatar</strong>, <strong class="ui">Singapour</strong>, <strong class="ui">Téhéran</strong>. Choisissez celle la plus proche de votre calendrier local.</li>
+<li><strong class="ui">Calcul de l'Asr</strong> : <strong class="ui">Standard</strong> utilise une ombre d'une longueur d'objet (premier Asr), <strong class="ui">Hanafite</strong> deux longueurs (second Asr). Le calendrier turc utilise la méthode standard.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Madhhab</strong> : <strong class="ui">Sunnite (sunna et witr inclus)</strong> ou <strong class="ui">Chaféite (fard)</strong>. Ce choix définit seulement les rakats suivis, pas les horaires. Sur la montre : <strong class="ui">Madhhab / rak'ats</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Les horaires se mettent à jour après un changement ; sinon <strong class="ui">Actualiser les horaires</strong>. Sur la montre, méthode et Asr sont sous <strong class="ui">Méthode de calcul</strong>.</li>
+<li>Les horaires sont calculés sur l'appareil. L'application n'est pas un calendrier officiel et peut différer du vôtre de quelques minutes.</li>
+</ul>
+
+<h2 id="notifications">3. Notifications et alarmes</h2>
+<h3>Notification de l'heure de prière</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Notifier au début de l’heure de prière</strong> notifie à chaque heure de prière ; réglez le moment avec le sélecteur : <strong class="ui">Au début de la prière</strong>, ou jusqu'à 60 min avant (<strong class="ui">… min avant</strong>) ou après (<strong class="ui">… min après</strong>). Même réglage sur la montre, dans <strong class="ui">Alertes de l'adhan</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Si la montre gère ces notifications, l'iPhone ne programme pas les siennes ; elles arrivent sur la montre même si l'iPhone est verrouillé.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Position et réglages</strong> : activez <strong class="ui">Rappel</strong> et choisissez <strong class="ui">Au début de la prière</strong> ou <strong class="ui">… min avant</strong>. Si les notifications sont en retard, accordez <strong class="ui">Autorisation de programmation</strong>.</li>
+</ul>
+<h3>Alarme avant la fin de l'heure</h3>
+<ul>
+<li><strong class="ui">Alarme avant la fin de l'heure</strong> : <strong class="ui">Désactivé</strong> ou un nombre de minutes avant la fin de l'heure de prière. Si la prière n'est pas enregistrée comme accomplie, l'alarme sonne même en mode silencieux.</li>
+<li>Elle peut aussi sonner si un enregistrement détecté par la montre n'a pas encore atteint le téléphone.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Une alarme réelle nécessite iOS 26 ; sinon, ou sans autorisation d'alarme, une notification est envoyée à la place.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">45 et 30 minutes avant la fin, la montre joue avec vibration le segment hayya de l'adhan (<strong class="ui">Venez à la prière, venez à la réussite</strong>), plus intensément encore si vous semblez endormi. Immobile, assis ou allongé alors que l'heure court encore : une notification <strong class="ui">Vous semblez disponible</strong> (jamais en heure makrouh).</li>
+</ul>
+<h3>Alertes tahajjud et fajr (montre)</h3>
+<ul>
+<li>Dans <span data-platform="apple"><strong class="ui">Alertes de l'adhan</strong></span><span data-platform="android"><strong class="ui">Alertes de l'adhan</strong></span> sur la montre, <strong class="ui">Alerte du Tahajjud</strong> suit le dernier tiers de la nuit et <strong class="ui">Alerte de l'adhan du Fajr</strong> suit l'imsak.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Heure de l'alerte</strong> : <strong class="ui">Au début de la prière</strong> ou 5 à 60 minutes avant. <strong class="ui">Report</strong> : 1 à 15 minutes.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Un mouvement coupe brièvement l'alarme ; <strong class="ui">Marquer accomplie</strong> l'arrête. <strong class="ui">Mouvement pour couper le son</strong> fixe le mouvement requis : <strong class="ui">Moins de mouvement (sensible)</strong>, <strong class="ui">Moyen</strong>, <strong class="ui">Plus de mouvement (difficile)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">L'alarme la plus proche joue votre son d'adhan, les autres le son de notification. Ouvrir l'application renouvelle l'alarme la plus proche.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Le son et la vibration proviennent du canal de notification de l'appareil (<strong class="ui">Son et vibration des alertes</strong>) ; l'application n'a pas d'enregistrement d'adhan intégré.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Son de l'adhan (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Son de l'adhan</strong> (ou <strong class="ui">Alertes de l'adhan</strong> → <strong class="ui">Choisir le son de l'adhan</strong>) : indiquez l'adresse https d'un fichier CAF, AIFF ou WAV et appuyez sur <strong class="ui">Télécharger</strong>. 30 secondes max jouent en notification ; au-delà, seulement dans l'application.</li>
+<li>Sélectionnez un son installé (<strong class="ui">Lire</strong>, <strong class="ui">Arrêter</strong>, <strong class="ui">Supprimer</strong>) ; sans sélection, le son d'alarme intégré est joué.</li>
+<li><strong class="ui">Segment Hayya (répétition + vibration)</strong> : marquez le passage "Hayya ala's-salah, Hayya ala'l-falah" avec <strong class="ui">Début</strong> et <strong class="ui">Fin</strong>, réglez <strong class="ui">Répétitions</strong> et testez avec <strong class="ui">Lire le segment</strong>.</li>
+<li>Le fichier est téléchargé directement depuis cette adresse ; ce serveur n'est pas le nôtre.</li>
+</ul>
+<p>Autorisation de notification, mode silencieux, mode Concentration, économie de batterie et volume peuvent tous affecter les alertes.</p>
+
+<h2 id="calibration">4. Calibrage sur la montre</h2>
+<p>Le calibrage apprend à la montre vos postures de takbir, qiyam, rukū, sajda et position assise, uniquement sur la montre.</p>
+<ol>
+<li>Portez la montre ajustée sur votre poignet habituel (droit ou gauche).</li>
+<li><span data-platform="apple"><strong class="ui">Calibrage</strong> → <strong class="ui">Assistant de calibrage personnel</strong> → <strong class="ui">Lancer le calibrage vocal</strong></span><span data-platform="android"><strong class="ui">Calibrage</strong> → <strong class="ui">Lancer le calibrage vocal</strong></span>.</li>
+<li>Suivez le guidage vocal : takbir (mains levées), qiyam, rukū, redressement, sajda, position assise entre les deux prosternations, deuxième sajda, position assise finale, salam à droite, salam à gauche. Un temps est laissé après chaque instruction pour prendre la posture, puis une courte mesure suit ; restez immobile.</li>
+<li>Avec <strong class="ui">Apprendre le geste de fin d’invocation (facultatif)</strong> activé, le geste des mains sur le visage après le salam est aussi mesuré ; sinon, <strong class="ui">Passer le geste d’invocation</strong>.</li>
+<li><strong class="ui">Arrêter</strong> : pause ; <strong class="ui">Reprendre cette étape</strong> : reprise.</li>
+<li>À la fin : <strong class="ui">Calibrage terminé</strong> et vos hauteurs de poignet selon le qiyam.<span data-platform="apple"> Appuyez sur <strong class="ui">Terminé, retour à la prière</strong>.</span></li>
+</ol>
+<ul>
+<li>Le salam n'est guidé que par la voix ; la tête n'est pas mesurée.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Après un calibrage réussi, la détection continue s'active automatiquement.</li>
+<li>Si les postures se ressemblaient trop ou si le takbir n'a pas été reconnu, recommencez sur le même poignet, mains levées à l'étape du takbir.</li>
+</ul>
+<h3>Deuxième position</h3>
+<ul>
+<li>Si la montre glisse vers le bas du poignet pendant la prière, apprenez-lui cette position : après le calibrage normal, <strong class="ui">Calibrer la deuxième position</strong>, glissez la montre de 1 à 2 cm vers la main et répétez les étapes (geste du visage inclus).</li>
+<li>La détection utilise la position la mieux adaptée. Un nouveau calibrage normal conserve la deuxième position ; si l'ajustement du bracelet change, utilisez <strong class="ui">Recalibrer la deuxième position</strong> ou <strong class="ui">Supprimer la deuxième position</strong>.</li>
+</ul>
+<h3>Quand recalibrer</h3>
+<ul>
+<li>Si la position de la montre, le bracelet ou le poignet change, ou si la détection se trompe souvent.<span data-platform="apple"> Une notification <strong class="ui">Vérifiez la position de la montre</strong> signale aussi un mauvais ajustement.</span></li>
+<li>L'application apprend aussi les hauteurs de poignet d'après vos prières. Après un grand changement : <strong class="ui">Réinitialiser les hauteurs apprises</strong> ; <strong class="ui">Supprimer le calibrage</strong> supprime tout le calibrage.</li>
+<li><strong class="ui">Exercice vocal</strong> : s'entraîner avec guidage vocal, sans créer d'enregistrement.</li>
+</ul>
+
+<h2 id="tracking">5. Suivi automatique pendant la prière</h2>
+<ul>
+<li>Ouvrez l'application sur la montre pendant l'heure de prière et commencez par le takbir d'ouverture. Chaque partie (sunna, fard, witr) commence par son propre takbir.<span data-platform="apple"> Mains levées détectées : <strong class="ui">Posture du takbir détectée ; passez au qiyam.</strong> s'affiche.</span></li>
+<li>L'ordre suit les takbirs d'ouverture : <strong class="ui">Fajr 2+2 · Dhuhr 4+4+2 · Asr 4+4 · Maghrib 3+2 · Isha 4+4+2+3 witr</strong>. Le Maghrib commence par le fard.<span data-platform="apple"> Avec <strong class="ui">Chaféite (fard)</strong>, seul le fard est suivi.</span></li>
+<li>L'écran affiche la partie en cours, le prochain takbir et les rakats détectés.</li>
+<li>Pour commencer directement par le fard : <span data-platform="apple"><strong class="ui">Passer la première sunna</strong></span><span data-platform="android"><strong class="ui">Commencer par le fard</strong></span>.</li>
+<li>La prosternation de l'oubli (sahw) se fait à la fin de la prière, en position assise finale ; si détectée, l'enregistrement affiche <strong class="ui">Prosternation de l’oubli (sahw) effectuée</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Avant celle-ci, vous pouvez appuyer sur <strong class="ui">Je vais faire les prosternations de l’oubli</strong> ; l'application attend alors deux sajda de plus et la position assise finale. <strong class="ui">Je vais refaire cette partie de la prière</strong> recommence la partie en cours. Si l'enregistrement échoue : <strong class="ui">Réessayer l'enregistrement</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Si le calibrage est manquant, un bouton <strong class="ui">Assistant de calibrage personnel</strong> apparaît.</li>
+</ul>
+<h3>Décompte erroné ou prière manquée</h3>
+<ul>
+<li>Si trop ou trop peu de rakats sont détectés, la montre vous avertit (<strong class="ui">Vérifiez le nombre de rakats</strong>). Vérifiez votre décompte.</li>
+<li>Marquez la prière manuellement : <span data-platform="apple"><strong class="ui">Marquer le fard accompli</strong></span><span data-platform="android"><strong class="ui">Marquer accomplie</strong></span> sur la montre, <strong class="ui">Marquer accomplie</strong> sur le téléphone.</li>
+<li>Si vous avez prié à l'heure mais que la détection l'a manqué, après la fin de l'heure, ouvrez <strong class="ui">Historique</strong> sur le téléphone, appuyez sur <strong class="ui">Marquer accomplie à l’heure</strong>, réglez <strong class="ui">Heure de la prière</strong> et appuyez sur <strong class="ui">Enregistrer comme accomplie</strong>. L'heure doit se situer dans le créneau de la prière ; action irréversible.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Annulez un enregistrement erroné dans l'historique avec <strong class="ui">Annuler l'enregistrement</strong>, puis appuyez à nouveau sur <strong class="ui">Marquer accomplie</strong>.</li>
+</ul>
+<h3>Détection continue et batterie</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Réglages de détection</strong></span><span data-platform="android"><strong class="ui">Détection de la prière</strong></span> → <strong class="ui">Détection continue (expérimentale)</strong> maintient la détection active écran éteint ou sur le cadran.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Pour cela, la montre garde une session d'entraînement ouverte toute la journée. Aucun entraînement n'est enregistré dans Santé, mais la batterie se vide plus vite et les anneaux d'activité peuvent être affectés. Si la session s'arrête, rouvrez l'application.</li>
+<li data-platform="android" data-badge="Android · Wear OS">La détection en arrière-plan épuise la batterie plus vite. Si l'application est arrêtée de force, rouvrez-la.</li>
+<li>Désactivée, la détection ne fonctionne que si l'application est ouverte.</li>
+</ul>
+<h3>Prières surérogatoires</h3>
+<ul>
+<li>Les horaires du tahajjud et de la doha apparaissent sur l'écran des horaires ; marquez-les dans leur créneau avec <strong class="ui">Marquer accomplie · +500</strong>. La montre peut aussi les détecter via le takbir d'ouverture.</li>
+<li><strong class="ui">Rattrapage du Fajr → Duha</strong> : choisissez un rattrapage du Fajr enregistré, puis les rakats de la doha sont détectés dans l'ordre.</li>
+</ul>
+
+<h2 id="sequence-check">6. Vérification de l'enchaînement et confirmation</h2>
+<p>Avant d'enregistrer un fard détecté, l'enchaînement est vérifié : takbir d'ouverture, un rukū et deux sajda par rakat, position assise finale, sajda dans la même direction, et aucune rotation semblable à de la marche.</p>
+<ul>
+<li>En cas d'échec, la montre vibre et demande <strong class="ui">Avez-vous prié le fard de … ?</strong> en indiquant les raisons. La liste des horaires affiche <strong class="ui">En attente de confirmation</strong>.</li>
+<li><strong class="ui">Oui, j’ai prié</strong> : enregistré avec l'heure de fin détectée sous <strong class="ui">Détection automatique (confirmée)</strong>.</li>
+<li><strong class="ui">Non</strong> : rien n'est enregistré ; les rappels pour cette heure de prière reprennent.</li>
+<li>Sans réponse avant la fin de l'heure : enregistré comme <strong class="ui">Détection automatique (non confirmée, à vérifier)</strong>, pour qu'une prière accomplie ne soit pas perdue. <strong class="ui">Marquer accomplie</strong> entre-temps fait disparaître la question.</li>
+</ul>
+<h3>Étiquettes <strong class="ui">Marqué par : …</strong></h3>
+<ul>
+<li><strong class="ui">Détection automatique</strong> : le fard a passé la vérification.</li>
+<li><strong class="ui">Détection automatique (confirmée)</strong> / <strong class="ui">Détection automatique (non confirmée, à vérifier)</strong> : voir ci-dessus.</li>
+<li><strong class="ui">Détection automatique (enregistrement de secours, à vérifier)</strong> : la détection a compté exactement les rakats du fard, mais l'étape d'enregistrement normale a échoué, donc une voie de secours l'a écrit.</li>
+<li><strong class="ui">« Priée » sur la montre</strong>, <strong class="ui">« Priée » dans la notification de la montre</strong>, <strong class="ui">« Priée » sur le téléphone</strong>, <strong class="ui">« Priée » dans la notification du téléphone</strong>, <strong class="ui">Correction « Priée à l’heure »</strong>, <strong class="ui">Marquer rattrapée</strong> : marques manuelles.</li>
+<li>Les étiquettes demandant une vérification apparaissent en orange dans l'historique ; vérifiez et corrigez si nécessaire.</li>
+</ul>
+
+<h2 id="history">7. Historique, rattrapage et score</h2>
+<ul>
+<li><span data-platform="apple">L'onglet <strong class="ui">Historique</strong></span><span data-platform="android">La page <strong class="ui">Historique</strong></span> sur le téléphone montre chaque prière comme <strong class="ui">Accomplie</strong>, <strong class="ui">Rattrapée</strong> ou <strong class="ui">En attente / manquée</strong>, avec <strong class="ui">Prosternation de l’oubli (sahw) effectuée</strong> et l'étiquette de la personne qui a marqué, le cas échéant.</li>
+<li>Les heures de prière sans enregistrement passent dans la liste de rattrapage (<strong class="ui">Prières à rattraper : …</strong>). Pour rattraper, appuyez sur <strong class="ui">Marquer accomplie</strong> à côté de la prière<span data-platform="apple"> ; sur la montre, <strong class="ui">Prières à rattraper</strong></span><span data-platform="android">; après la fin de l'heure, le bouton devient <strong class="ui">Marquer rattrapée</strong></span>.</li>
+<li><strong class="ui">Score</strong> : prier tôt dans le créneau donne plus de points ; une prière manquée les réduit. Les prières surérogatoires ajoutent un bonus (<strong class="ui">Marquer accomplie · +500</strong>).</li>
+<li><strong class="ui">Statistiques</strong> : résumés hebdomadaires, mensuels et annuels, et ponctualité.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Créer une sauvegarde</strong> sauvegarde votre historique des fards dans un fichier choisi ; <strong class="ui">Restaurer une sauvegarde</strong> le réintègre.</li>
+<li>L'absence d'enregistrement ne prouve pas qu'une prière a été manquée ; l'application ne garde que vos marques et celles de la détection.</li>
+</ul>
+
+<h2 id="excused">8. Jours d'exemption</h2>
+<ul>
+<li>Cette section n'apparaît que si <span data-platform="apple"><strong class="ui">Réglages</strong></span><span data-platform="android"><strong class="ui">Position et réglages</strong></span> → <strong class="ui">Genre</strong> est réglé sur <strong class="ui">Femme</strong>.<span data-platform="apple"> Sur l'iPhone, sous <strong class="ui">Calcul et rappels</strong> ; le menu de la montre a une ligne <strong class="ui">Genre</strong>.</span> Avec <strong class="ui">Sélectionner</strong> ou <strong class="ui">Homme</strong>, elle est masquée ; changer le choix ne supprime pas les périodes enregistrées.</li>
+<li><span data-platform="apple"><strong class="ui">Réglages</strong> → <strong class="ui">Jours d’exemption</strong> (aussi sur la montre)</span><span data-platform="android"><strong class="ui">Jours d’exemption</strong></span> : <strong class="ui">Commencer une période</strong> au début d'une période, <strong class="ui">Terminer la période</strong> à la fin. Un avertissement apparaît si elle reste ouverte longtemps.</li>
+<li>Modifiez les périodes passées avec <strong class="ui">Modifier</strong> (<strong class="ui">Début</strong>, <strong class="ui">Fin</strong>, <strong class="ui">En cours</strong>) et <strong class="ui">Enregistrer</strong>, ou supprimez-les avec <strong class="ui">Supprimer la période</strong>.</li>
+<li>Pendant une période : aucune notification d'heure de prière, de souhour ou d'iftar, ni dette de rattrapage ni score ; détection et <strong class="ui">Marquer accomplie</strong> désactivés, suivi du tahajjud/doha suspendu. Horaires et widgets affichent <strong class="ui">Jour d’exemption</strong>.</li>
+<li>Seul vous saisissez les périodes, stockées sur votre appareil et, si la synchronisation est activée, partagées avec l'historique vers votre autre appareil.</li>
+</ul>
+
+<h2 id="hijri">9. Calendrier hégirien et Ramadan</h2>
+<ul>
+<li>La date hégirienne sur l'écran des horaires suit le calendrier Umm al-Qura. En cas d'écart d'un jour avec votre calendrier local, choisissez −1, 0 ou +1 dans <span data-platform="apple"><strong class="ui">Réglages</strong> → <strong class="ui">Calendrier hégirien</strong></span><span data-platform="android"><strong class="ui">Position et réglages</strong></span> → <strong class="ui">Décalage de la date hégirienne</strong>.</li>
+<li><strong class="ui">Jours religieux</strong> liste les prochains jours religieux ; le plus proche apparaît aussi sur l'écran des horaires.</li>
+<li><strong class="ui">Horaires du Ramadan</strong> affiche les horaires d'imsak et d'iftar pour le Ramadan.</li>
+<li><strong class="ui">Rappel du souhour</strong> : <strong class="ui">Désactivé</strong> ou <strong class="ui">… min avant l’imsak</strong> (30, 45, 60, 90). <strong class="ui">Notification d’iftar</strong> avertit à l'iftar. Les deux ne sont programmés que pendant le Ramadan.</li>
+<li>Jeûne : pendant le Ramadan, l'écran des horaires affiche le compte à rebours vers l'imsak ou l'iftar et un bouton <strong class="ui">J’ai jeûné</strong> ; un jour marqué affiche <strong class="ui">Jeûné</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. Widgets, Live Activity et complications</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>Le widget <strong class="ui">Prochaine prière</strong> décompte jusqu'à la prochaine heure de prière ou la fin de l'heure en cours. Ajoutez-le à l'écran d'accueil (petit, moyen) ou à l'écran verrouillé : maintenez appuyé sur l'écran d'accueil → Modifier → Ajouter un widget → Salah Sense.</li>
+<li><strong class="ui">Activité en direct</strong> (dans <strong class="ui">Réglages</strong>) affiche un compte à rebours sur l'écran verrouillé et dans la Dynamic Island ; elle ne démarre pas pendant une période d'exemption.</li>
+<li>Complications Apple Watch : modifiez le cadran et choisissez Salah Sense (rectangulaire, en ligne, circulaire, coin).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Le widget de l'écran d'accueil Android affiche la prochaine heure de prière ; maintenez appuyé sur l'écran d'accueil et ajoutez Salah Sense depuis les widgets.</li>
+<li>Wear OS propose une tuile et une complication Salah Sense.</li>
+</ul>
+<p>Pendant une période d'exemption, les widgets et complications affichent <strong class="ui">Jour d’exemption</strong>.</p>
+
+<h2 id="diagnostics">11. Envoyer un enregistrement de diagnostic</h2>
+<p>Si la détection se trompe souvent sur une prière, un enregistrement de diagnostic nous aide à l'examiner.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Sur la montre : <strong class="ui">Réglages de détection</strong> → <strong class="ui">Enregistrement de diagnostic</strong> → <strong class="ui">Démarrer l’enregistrement</strong>. Attendez 3 secondes mains baissées, priez toutes les parties, puis <strong class="ui">Terminer l’enregistrement</strong>. Un enregistrement dure au maximum 20 minutes.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Sur la montre, activez <strong class="ui">Enregistrement de diagnostic</strong> sur la page <strong class="ui">Détection de la prière</strong> pendant que la détection fonctionne, puis priez.</li>
+<li><span data-platform="apple"><strong class="ui">Envoyer les enregistrements à l’iPhone</strong> (application ouverte sur l'iPhone) ; si besoin <strong class="ui">Renvoyer le dernier enregistrement</strong></span><span data-platform="android"><strong class="ui">Envoyer les enregistrements au téléphone</strong></span>.</li>
+<li>Sur le téléphone : <span data-platform="apple"><strong class="ui">Réglages</strong> → <strong class="ui">Enregistrements de diagnostic</strong> → choisissez l'enregistrement → <strong class="ui">Partager l’enregistrement</strong></span><span data-platform="android"><strong class="ui">Détection de la prière</strong> → <strong class="ui">Partager</strong></span>, et envoyez-le par e-mail à <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>Enregistrer écran éteint exige la détection continue.</li>
+<li>Pour chaque fard enregistré par la détection, un court <strong class="ui">Résumé automatique du fard</strong> des dernières minutes est conservé et partageable de la même façon.</li>
+<li>Les enregistrements contiennent valeurs du capteur de mouvement, pression/altitude relative, état de détection, données de calibrage et version de l'application ; aucune donnée de localisation, audio, de nom ou de compte. Ils ne quittent l'appareil que si vous les partagez. Les enregistrements récents sont conservés ; supprimez-les avec <strong class="ui">Supprimer l’enregistrement</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Dépannage et assistance</h2>
+<ul>
+<li><strong>Horaires différents :</strong> vérifiez méthode de calcul, calcul de l'Asr, position et fuseau horaire<span data-platform="apple">, puis <strong class="ui">Actualiser les horaires</strong></span>.</li>
+<li><strong>Pas de notifications :</strong> vérifiez l'autorisation de notification, le mode silencieux et le mode Concentration dans les réglages.<span data-platform="android"> Économie de batterie et <strong class="ui">Autorisation de programmation</strong> comptent aussi.</span></li>
+<li><strong>La détection ne démarre pas :</strong> si <strong class="ui">Aucune donnée du capteur de mouvement.</strong>, rouvrez l'application sur la montre ; si <strong class="ui">Mesure du takbir manquante. Lancez le calibrage vocal.</strong>, calibrez ; pour l'écran éteint, activez la détection continue.</li>
+<li><strong>Décompte souvent faux :</strong> resserrez la montre, calibrez la deuxième position ou recalibrez ; marquez manuellement et envoyez un enregistrement de diagnostic.</li>
+<li><strong>Historique différent entre téléphone et montre :</strong> activez la synchronisation sur les deux appareils<span data-platform="apple"> et appuyez sur <strong class="ui">Synchroniser maintenant</strong></span><span data-platform="android">; utilisez <strong class="ui">Réessayer la synchronisation</strong></span>.</li>
+<li><strong>L'alarme n'a pas sonné :</strong> vérifiez le volume de la montre et le mode silencieux<span data-platform="apple">; ouvrir l'application renouvelle l'alarme la plus proche</span>.</li>
+</ul>
+<div class="box">
+<p>Plus de réponses : <a href="https://notes7239.github.io/salahsense/support/fr.html">page d'assistance</a> (FAQ). Contact : <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — indiquez modèle d'appareil, version du système et version de l'application.</p>
+<p>Traitement des données : <a href="https://notes7239.github.io/salahsense/privacy/fr.html">Politique de confidentialité</a>. Pas de compte, de publicité, d'analyse ni de serveur ; vos données restent sur vos appareils.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/fr.html">Assistance</a> · <a href="https://notes7239.github.io/salahsense/privacy/fr.html">Politique de confidentialité</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>

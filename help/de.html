@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="de" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Hilfe — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense Hilfe</h1>
+<p class="meta">Verwendung der App und ihrer Einstellungen · Telefon und Uhr</p>
+<div class="box warn"><p><strong>Wichtig:</strong> Die automatische Rakat- und Sadschda-Erkennung erfordert eine Uhr (<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear-OS-Uhr</span>); ein Telefon allein kann die Handgelenkbewegung nicht messen. Die Erkennung ist eine Hilfe und kann Fehler machen: Die Position der Uhr, der Sitz des Armbands und persönliche Bewegungsunterschiede beeinflussen sie. Sie können Einträge jederzeit manuell korrigieren. Die App erteilt keine religiösen Urteile und bewertet nicht, ob ein Gebet gültig ist.</p></div>
+<p>Häufig gestellte Fragen und Kontaktdaten finden Sie auf der <a href="https://notes7239.github.io/salahsense/support/de.html">Support-Seite</a>. Fett gedruckte Wörter sind Schaltflächen- und Menünamen in der App.</p>
+<nav class="toc" aria-label="Inhalt">
+<strong>Inhalt</strong>
+<ul>
+<li><a href="#getting-started">1. Erste Schritte</a></li>
+<li><a href="#prayer-times">2. Standort und Gebetszeiten</a></li>
+<li><a href="#notifications">3. Benachrichtigungen und Alarme</a></li>
+<li><a href="#calibration">4. Kalibrierung auf der Uhr</a></li>
+<li><a href="#tracking">5. Automatische Erkennung während des Gebets</a></li>
+<li><a href="#sequence-check">6. Ablaufprüfung und Bestätigung</a></li>
+<li><a href="#history">7. Verlauf, Nachholgebete und Punktestand</a></li>
+<li><a href="#excused">8. Befreite Tage</a></li>
+<li><a href="#hijri">9. Hidschri-Kalender und Ramadan</a></li>
+<li><a href="#widgets">10. Widgets, Live-Aktivität und Komplikationen</a></li>
+<li><a href="#diagnostics">11. Eine Diagnoseaufzeichnung senden</a></li>
+<li><a href="#troubleshooting">12. Problembehebung und Support</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. Erste Schritte</h2>
+<ul>
+<li>Die <span data-platform="apple">iPhone</span><span data-platform="android">Android-Telefon</span>-App zeigt Gebetszeiten, Qibla, Dhikr, Verlauf und Einstellungen. Die <span data-platform="apple">Apple Watch</span><span data-platform="android">Wear-OS-Uhr</span>-App verfolgt Ihre Bewegungen während des Gebets und übernimmt Gebetsruf-Hinweise und Kalibrierung.</li>
+<li>Öffnen Sie zuerst <span data-platform="apple">den Tab <strong class="ui">Einstellungen</strong></span><span data-platform="android">die Seite <strong class="ui">Standort und Einstellungen</strong></span> auf dem Telefon und legen Sie Standort, Berechnungsmethode, Asr-Berechnung und <strong class="ui">Geschlecht</strong> fest (Abschnitte 2 und 8).</li>
+<li>Dann <a href="#calibration">kalibrieren</a> Sie einmal auf der Uhr; die automatische Erkennung ist erst danach zuverlässig.</li>
+<li>Ohne Uhr können Sie weiterhin Gebetszeiten, Qibla, Dhikr, manuelle Einträge mit <strong class="ui">Als gebetet markieren</strong>, Nachholgebete, Statistik, den Hidschri-Kalender, den Ramadan-Zeitplan und Widgets nutzen.</li>
+<li><strong class="ui">Gebetswissen</strong> enthält offline abrufbare Zusammenfassungen mit Quellenangabe zu den Tagesgebeten und zur Sahw-Niederwerfung.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Um den Verlauf zu teilen, aktivieren Sie auf dem iPhone <strong class="ui">Gebetsverlauf mit gekoppeltem iPhone/Apple Watch teilen</strong> unter <strong class="ui">Einstellungen</strong> → <strong class="ui">Gekoppeltes Gerät</strong> und auf der Uhr <strong class="ui">Verlauf synchronisieren</strong> unter <strong class="ui">Gerätekopplung</strong>. Die Option ist standardmäßig aus; <strong class="ui">Jetzt synchronisieren</strong> sendet auch ältere Einträge.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Die Synchronisierung zwischen Telefon und Uhr braucht die App auf beiden Geräten; ohne Verbindung bleiben Einträge auf dem Gerät. Nutzen Sie bei Bedarf <strong class="ui">Standort und Einstellungen</strong> → <strong class="ui">Synchronisierung erneut versuchen</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Ändern Sie die Sprache auf dem Telefon unter <strong class="ui">Einstellungen</strong> und auf der Uhr unter <strong class="ui">Sprache</strong>; jedes Gerät behält seine eigene Wahl.</li>
+</ul>
+
+<h2 id="prayer-times">2. Standort und Gebetszeiten</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone: <strong class="ui">Einstellungen</strong> → <strong class="ui">Standort und Zeitzone</strong>. Tippen Sie auf <strong class="ui">Meinen Standort verwenden</strong> und erlauben Sie den Standortzugriff, oder füllen Sie <strong class="ui">Stadt</strong>, <strong class="ui">Breitengrad</strong>, <strong class="ui">Längengrad</strong> und <strong class="ui">IANA-Zeitzone</strong> (z. B. Europe/Berlin) aus und tippen Sie auf <strong class="ui">Stadt/Standort speichern</strong>.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Standort und Einstellungen</strong>: Tippen Sie auf <strong class="ui">Meinen Standort ermitteln</strong>, oder füllen Sie <strong class="ui">Standortname</strong>, <strong class="ui">Breitengrad</strong>, <strong class="ui">Längengrad</strong> und <strong class="ui">Zeitzone</strong> aus und tippen Sie auf <strong class="ui">Speichern</strong>.</li>
+<li>Die Standortberechtigung ist optional; Sie können Stadt und Koordinaten auch manuell eingeben. Aktualisieren Sie Standort und Zeitzone auf Reisen.</li>
+<li><strong class="ui">Berechnungsmethode</strong> (12 Methoden): <strong class="ui">Türkiye (Diyanet)</strong>, <strong class="ui">Islamische Weltliga</strong>, <strong class="ui">Ägyptische Generalbehörde</strong>, <strong class="ui">Karatschi (Univ. für Islamwissenschaften)</strong>, <strong class="ui">Umm al-Qura (Mekka)</strong>, <strong class="ui">Dubai</strong>, <strong class="ui">Moonsighting-Komitee</strong>, <strong class="ui">Nordamerika (ISNA)</strong>, <strong class="ui">Kuwait</strong>, <strong class="ui">Katar</strong>, <strong class="ui">Singapur</strong>, <strong class="ui">Teheran</strong>. Wählen Sie die Methode, die Ihrem örtlichen Gebetszeitenkalender am nächsten kommt.</li>
+<li><strong class="ui">Asr-Berechnung</strong>: <strong class="ui">Standard</strong> verwendet einen Schatten von einer Objektlänge (erster Asr), <strong class="ui">Hanafitisch</strong> zwei Längen (zweiter Asr). Der türkische Kalender verwendet Standard.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Rechtsschule</strong>: <strong class="ui">Sunnitisch (mit Sunna und Witr)</strong> oder <strong class="ui">Schafiitisch (Fard)</strong>. Dies legt nur fest, welche Rakat verfolgt werden, nicht die Zeiten. Auf der Uhr: <strong class="ui">Rechtsschule / Rakʿat</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Die Zeiten aktualisieren sich nach einer Änderung; tippen Sie bei Bedarf auf <strong class="ui">Gebetszeiten aktualisieren</strong>. Auf der Uhr stehen Methode und Asr unter <strong class="ui">Berechnungsmethode</strong>.</li>
+<li>Die Zeiten werden auf dem Gerät berechnet. Die App ist kein offizieller Gebetszeitenkalender und kann von Ihrem um einige Minuten abweichen.</li>
+</ul>
+
+<h2 id="notifications">3. Benachrichtigungen und Alarme</h2>
+<h3>Gebetszeit-Benachrichtigung</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Zum Gebetsbeginn benachrichtigen</strong> sendet für jede Gebetszeit eine Benachrichtigung. Stellen Sie den Zeitpunkt mit dem Schrittregler ein: <strong class="ui">Bei Gebetsbeginn</strong>, oder bis zu 60 Minuten davor (<strong class="ui">… Min. vorher</strong>) oder danach (<strong class="ui">… Min. danach</strong>). Auf der Uhr befindet sich dieselbe Einstellung unter <strong class="ui">Gebetsruf-Hinweise</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Wenn die Uhr diese Benachrichtigungen übernimmt, plant das iPhone keine eigenen; sie erreichen die Uhr auch, wenn das iPhone gesperrt ist.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Standort und Einstellungen</strong>: Aktivieren Sie <strong class="ui">Erinnerung</strong> und wählen Sie <strong class="ui">Bei Gebetsbeginn</strong> oder <strong class="ui">… Min. vorher</strong>. Wenn Benachrichtigungen zu spät kommen, erteilen Sie <strong class="ui">Erlaubnis zur Zeitplanung</strong>.</li>
+</ul>
+<h3>Alarm vor Ende der Gebetszeit</h3>
+<ul>
+<li><strong class="ui">Wecker vor Ende der Gebetszeit</strong>: <strong class="ui">Aus</strong> oder eine Anzahl Minuten vor Ende der Gebetszeit. Ist das Gebet nicht als gebetet verzeichnet, klingelt der Alarm auch im Stumm-Modus.</li>
+<li>Er kann auch klingeln, wenn ein von der Uhr erkannter Eintrag das Telefon noch nicht erreicht hat.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Ein echter Alarm erfordert iOS 26; andernfalls oder ohne Alarmberechtigung wird stattdessen eine Benachrichtigung gesendet.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">45 und 30 Minuten vor Ende spielt die Uhr den Hayya-Teil des Gebetsrufs mit Vibration ab (<strong class="ui">Kommt zum Gebet, kommt zum Erfolg</strong>), und noch einmal stärker, falls Sie zu schlafen scheinen. Wenn Sie bei noch laufender Zeit längere Zeit regungslos sitzen oder liegen, erhalten Sie einmal die Benachrichtigung <strong class="ui">Du scheinst Zeit zu haben</strong> (nie in einer Makruh-Zeit).</li>
+</ul>
+<h3>Tahajjud- und Fajr-Hinweise (Uhr)</h3>
+<ul>
+<li>Unter <span data-platform="apple"><strong class="ui">Gebetsruf-Hinweise</strong></span><span data-platform="android"><strong class="ui">Gebetsruf-Hinweise</strong></span> auf der Uhr richtet sich <strong class="ui">Tahajjud-Hinweis</strong> nach dem letzten Drittel der Nacht und <strong class="ui">Fajr-Gebetsruf</strong> nach dem Imsak.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">Hinweiszeit</strong>: <strong class="ui">Bei Gebetsbeginn</strong> oder 5–60 Minuten davor. <strong class="ui">Schlummern</strong>: 1–15 Minuten.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Eine Bewegung schaltet den Alarm kurz stumm; durch Tippen auf <strong class="ui">Als gebetet markieren</strong> wird er beendet. <strong class="ui">Bewegung zum Stummschalten</strong> legt fest, wie viel Bewegung nötig ist: <strong class="ui">Weniger Bewegung (empfindlich)</strong>, <strong class="ui">Mittel</strong>, <strong class="ui">Mehr Bewegung (schwer)</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Der nächstgelegene Alarm spielt Ihren Gebetsrufton, andere Hinweise verwenden den Benachrichtigungston. Das Öffnen der Uhr-App erneuert den nächstgelegenen Alarm.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Ton und Vibration stammen aus dem Benachrichtigungskanal des Geräts (<strong class="ui">Hinweiston und Vibration</strong>); die App enthält keine eigene Gebetsrufaufnahme.</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">Gebetsrufton (Apple Watch)</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">Gebetsrufton</strong> (oder <strong class="ui">Gebetsruf-Hinweise</strong> → <strong class="ui">Gebetsruf auswählen</strong>): Geben Sie die https-Adresse einer CAF-, AIFF- oder WAV-Datei ein und tippen Sie auf <strong class="ui">Herunterladen</strong>. Bis zu 30 Sekunden werden in Benachrichtigungen abgespielt; längere Dateien nur in der App.</li>
+<li>Wählen Sie einen installierten Ton aus; verwenden Sie <strong class="ui">Abspielen</strong>, <strong class="ui">Stoppen</strong> und <strong class="ui">Löschen</strong>. Ist keiner ausgewählt, spielt der integrierte Alarmton.</li>
+<li><strong class="ui">Hayya-Abschnitt (Wiederholung + Vibration)</strong>: Markieren Sie den Abschnitt "Hayya ala's-salah, Hayya ala'l-falah" mit den Sekunden <strong class="ui">Beginn</strong> und <strong class="ui">Ende</strong>, legen Sie <strong class="ui">Wiederholungen</strong> fest und testen Sie mit <strong class="ui">Abschnitt abspielen</strong>.</li>
+<li>Die Datei wird direkt von dieser Adresse heruntergeladen; der Server gehört nicht uns.</li>
+</ul>
+<p>Benachrichtigungsberechtigung, Stumm-Modus, Fokus, Energiesparmodus und Lautstärke können die Hinweise beeinflussen.</p>
+
+<h2 id="calibration">4. Kalibrierung auf der Uhr</h2>
+<p>Die Kalibrierung bringt der Uhr Ihre eigenen Haltungen für Takbir, Qiyam, Ruku, Sadschda und Sitzen bei. Sie erfolgt nur auf der Uhr.</p>
+<ol>
+<li>Tragen Sie die Uhr eng anliegend an Ihrem gewohnten Handgelenk (rechts oder links).</li>
+<li><span data-platform="apple"><strong class="ui">Kalibrierung</strong> → <strong class="ui">Persönlicher Kalibrierungsassistent</strong> → <strong class="ui">Sprachkalibrierung starten</strong></span><span data-platform="android"><strong class="ui">Kalibrierung</strong> → <strong class="ui">Sprachkalibrierung starten</strong></span>.</li>
+<li>Folgen Sie der Sprachanleitung: Takbir (erhobene Hände), Qiyam, Ruku, Aufrichten, Sadschda, Sitzen zwischen den beiden Sadschda, zweite Sadschda, abschließendes Sitzen, Salam nach rechts, Salam nach links. Nach jeder Anweisung haben Sie Zeit, die Haltung einzunehmen, dann folgt eine kurze Messung; halten Sie bequem still.</li>
+<li>Ist <strong class="ui">Die Abschlussbewegung des Bittgebets lernen (optional)</strong> aktiviert, wird auch das Streichen der Hände über das Gesicht nach dem Salam gemessen; andernfalls tippen Sie auf <strong class="ui">Bittgebetsbewegung überspringen</strong>.</li>
+<li><strong class="ui">Stoppen</strong> pausiert; <strong class="ui">Diesen Schritt fortsetzen</strong> setzt fort.</li>
+<li>Am Ende sehen Sie <strong class="ui">Kalibrierung abgeschlossen</strong> und Ihre Handgelenkhöhen relativ zum Qiyam.<span data-platform="apple"> Tippen Sie auf <strong class="ui">Fertig, zurück zum Gebet</strong>.</span></li>
+</ol>
+<ul>
+<li>Der Salam wird nur sprachlich angeleitet; die Kopfbewegung wird nicht gemessen.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Nach erfolgreicher Kalibrierung wird die kontinuierliche Erkennung automatisch aktiviert.</li>
+<li>Wenn sich die Haltungen zu stark ähnelten oder der Takbir nicht erkannt wurde, beginnen Sie am selben Handgelenk erneut und halten Sie beim Takbir-Schritt die Hände erhoben.</li>
+</ul>
+<h3>Zweite Position</h3>
+<ul>
+<li>Rutscht die Uhr während des Gebets am Handgelenk nach unten, bringen Sie ihr auch diese Position bei: Tippen Sie nach der normalen Kalibrierung auf <strong class="ui">Zweite Position kalibrieren</strong>, schieben Sie die Uhr 1–2 cm in Richtung Hand und wiederholen Sie die Schritte (einschließlich des Gesichtsstreichens).</li>
+<li>Die Erkennung verwendet die jeweils besser passende Position. Eine neue normale Kalibrierung behält die zweite Position bei; hat sich der Armbandsitz geändert, verwenden Sie <strong class="ui">Zweite Position neu kalibrieren</strong> oder <strong class="ui">Zweite Position löschen</strong>.</li>
+</ul>
+<h3>Wann neu kalibrieren</h3>
+<ul>
+<li>Wenn sich die Position der Uhr, der Armbandsitz oder das Handgelenk ändert oder die Erkennung häufig irrt.<span data-platform="apple"> Eine Benachrichtigung <strong class="ui">Prüfe die Position der Uhr</strong> bedeutet auch, dass die Uhr locker sitzt.</span></li>
+<li>Die App lernt außerdem Handgelenkhöhen aus Ihren Gebeten. Nutzen Sie nach einer größeren Veränderung <strong class="ui">Gelernte Höhen zurücksetzen</strong>; <strong class="ui">Kalibrierung löschen</strong> entfernt die gesamte Kalibrierung.</li>
+<li><strong class="ui">Sprachübung</strong> ermöglicht das Üben mit Sprachanleitung; dabei entsteht kein Eintrag.</li>
+</ul>
+
+<h2 id="tracking">5. Automatische Erkennung während des Gebets</h2>
+<ul>
+<li>Öffnen Sie die Uhr-App innerhalb der Gebetszeit und beginnen Sie mit dem Eröffnungstakbir. Jeder Teil (Sunna, Fard, Witr) beginnt mit seinem eigenen Takbir.<span data-platform="apple"> Werden erhobene Hände erkannt, erscheint <strong class="ui">Takbir-Haltung erkannt; zum Qiyam übergehen.</strong>.</span></li>
+<li>Die Reihenfolge richtet sich nach den Eröffnungstakbirs: <strong class="ui">Fajr 2+2 · Dhuhr 4+4+2 · Asr 4+4 · Maghrib 3+2 · Isha 4+4+2+3 Witr</strong>. Das Maghrib-Gebet beginnt mit dem Fard.<span data-platform="apple"> Bei <strong class="ui">Schafiitisch (Fard)</strong> wird nur das Fard verfolgt.</span></li>
+<li>Der Bildschirm zeigt den aktuellen Teil, den nächsten Takbir und die erkannten Rakat.</li>
+<li>Um direkt mit dem Fard zu beginnen, tippen Sie auf <span data-platform="apple"><strong class="ui">Erste Sunna überspringen</strong></span><span data-platform="android"><strong class="ui">Mit dem Pflichtgebet beginnen</strong></span>.</li>
+<li>Die Sahw-Niederwerfung erfolgt am Ende des Gebets, im abschließenden Sitzen; wird sie erkannt, zeigt der Eintrag <strong class="ui">Sahw-Niederwerfung ausgeführt</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Vor der Sahw-Niederwerfung können Sie auf <strong class="ui">Ich werde Vergesslichkeitsniederwerfungen machen</strong> tippen; die App erwartet dann zwei zusätzliche Sadschda und das abschließende Sitzen. <strong class="ui">Ich werde diesen Gebetsabschnitt wiederholen</strong> startet den aktuellen Teil neu. Ist das Speichern fehlgeschlagen, tippen Sie auf <strong class="ui">Speichern erneut versuchen</strong>.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Fehlt die Kalibrierung, erscheint eine Schaltfläche <strong class="ui">Persönlicher Kalibrierungsassistent</strong>.</li>
+</ul>
+<h3>Falsche Zählung oder verpasstes Gebet</h3>
+<ul>
+<li>Werden zu viele oder zu wenige Rakat erkannt, warnt die Uhr (<strong class="ui">Rakat-Zahl prüfen</strong>). Prüfen Sie Ihre Zählung.</li>
+<li>Markieren Sie das Gebet manuell: <span data-platform="apple"><strong class="ui">Fard als gebetet markieren</strong></span><span data-platform="android"><strong class="ui">Als gebetet markieren</strong></span> auf der Uhr, <strong class="ui">Als gebetet markieren</strong> auf dem Telefon.</li>
+<li>Haben Sie rechtzeitig gebetet, aber die Erkennung hat es verpasst, öffnen Sie nach Ende der Zeit auf dem Telefon <strong class="ui">Verlauf</strong>, tippen Sie auf <strong class="ui">Als rechtzeitig gebetet markieren</strong>, stellen Sie <strong class="ui">Gebetszeitpunkt</strong> ein und tippen Sie auf <strong class="ui">Als gebetet speichern</strong>. Die Uhrzeit muss innerhalb der Gebetszeit liegen; dies kann nicht rückgängig gemacht werden.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Sie können einen falschen Eintrag im Verlauf mit <strong class="ui">Eintrag rückgängig machen</strong> rückgängig machen und danach erneut auf <strong class="ui">Als gebetet markieren</strong> tippen.</li>
+</ul>
+<h3>Kontinuierliche Erkennung und Akku</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">Erkennungseinstellungen</strong></span><span data-platform="android"><strong class="ui">Gebetserkennung</strong></span> → <strong class="ui">Kontinuierliche Erkennung (experimentell)</strong> hält die Erkennung bei ausgeschaltetem Display oder auf dem Zifferblatt aktiv.</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Dafür hält die Uhr den ganzen Tag über eine Trainingssitzung offen. Es wird kein Training in Health gespeichert, aber der Akkuverbrauch steigt, und die Aktivitätsringe können beeinflusst werden. Stoppt die Sitzung, öffnen Sie die App erneut.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Die Erkennung im Hintergrund verbraucht den Akku schneller. Wird die App erzwungen beendet, öffnen Sie sie erneut.</li>
+<li>Ist sie deaktiviert, funktioniert die Erkennung nur bei geöffneter App.</li>
+</ul>
+<h3>Freiwillige Gebete</h3>
+<ul>
+<li>Die Zeiten für Tahajjud und Duha erscheinen auf dem Gebetszeiten-Bildschirm; markieren Sie sie innerhalb ihrer Zeit mit <strong class="ui">Als gebetet markieren · +500</strong>. Die Uhr kann sie auch anhand des Eröffnungstakbirs erkennen.</li>
+<li><strong class="ui">Fajr-Nachholen → Duha</strong>: Wählen Sie ein erfasstes Fajr-Nachholgebet aus, danach werden die Duha-Rakat der Reihe nach erkannt.</li>
+</ul>
+
+<h2 id="sequence-check">6. Ablaufprüfung und Bestätigung</h2>
+<p>Bevor ein erkanntes Fard gespeichert wird, wird der Ablauf geprüft: Eröffnungstakbir, ein Ruku und zwei Sadschda in jeder Rakat, das abschließende Sitzen, Sadschda in dieselbe Richtung und keine gehähnliche Drehung.</p>
+<ul>
+<li>Schlägt die Prüfung fehl, vibriert die Uhr und fragt <strong class="ui">Haben Sie das …-Fard gebetet?</strong> mit den Gründen. Die Zeitenliste zeigt <strong class="ui">Bestätigung ausstehend</strong>.</li>
+<li><strong class="ui">Ja, gebetet</strong>: wird mit der erkannten Endzeit als <strong class="ui">Automatische Erkennung (bestätigt)</strong> gespeichert.</li>
+<li><strong class="ui">Nein</strong>: Es wird nichts gespeichert; die Erinnerungen für diese Gebetszeit kehren zurück.</li>
+<li>Ohne Antwort bis zum Ende der Gebetszeit: Wird als <strong class="ui">Automatische Erkennung (nicht bestätigt, bitte prüfen)</strong> gespeichert, damit ein verrichtetes Gebet nicht verloren geht. Tippen Sie zwischenzeitlich auf <strong class="ui">Als gebetet markieren</strong>, entfällt die Frage.</li>
+</ul>
+<h3>Beschriftungen <strong class="ui">Markiert durch: …</strong></h3>
+<ul>
+<li><strong class="ui">Automatische Erkennung</strong>: Das Fard hat die Prüfung bestanden.</li>
+<li><strong class="ui">Automatische Erkennung (bestätigt)</strong> / <strong class="ui">Automatische Erkennung (nicht bestätigt, bitte prüfen)</strong>: siehe oben.</li>
+<li><strong class="ui">Automatische Erkennung (Ersatzeintrag, bitte prüfen)</strong>: Die Erkennung hat die Rakat des Fards exakt gezählt, aber der normale Speicherschritt ist fehlgeschlagen, sodass ein Ersatzweg den Eintrag geschrieben hat.</li>
+<li><strong class="ui">„Gebetet“ auf der Uhr</strong>, <strong class="ui">„Gebetet“ in der Uhr-Mitteilung</strong>, <strong class="ui">„Gebetet“ auf dem Telefon</strong>, <strong class="ui">„Gebetet“ in der Telefon-Mitteilung</strong>, <strong class="ui">Korrektur „Rechtzeitig gebetet“</strong>, <strong class="ui">Als nachgeholt markieren</strong>: manuelle Markierungen.</li>
+<li>Beschriftungen, die zur Prüfung auffordern, erscheinen orange im Verlauf; prüfen und korrigieren Sie bei Bedarf.</li>
+</ul>
+
+<h2 id="history">7. Verlauf, Nachholgebete und Punktestand</h2>
+<ul>
+<li><span data-platform="apple">Der Tab <strong class="ui">Verlauf</strong></span><span data-platform="android">Die Seite <strong class="ui">Verlauf</strong></span> auf dem Telefon zeigt jedes Gebet als <strong class="ui">Gebetet</strong>, <strong class="ui">Nachgeholt</strong> oder <strong class="ui">Ausstehend / verpasst</strong>, mit <strong class="ui">Sahw-Niederwerfung ausgeführt</strong> und der Markierungs-Beschriftung, wenn zutreffend.</li>
+<li>Gebetszeiten, die ohne Eintrag enden, kommen auf die Nachhol-Liste (<strong class="ui">Nachzuholende Gebete: …</strong>). Wenn Sie nachholen, tippen Sie neben diesem Gebet auf <strong class="ui">Als gebetet markieren</strong><span data-platform="apple">; auf der Uhr nutzen Sie <strong class="ui">Nachholgebete</strong></span><span data-platform="android">; nach Ende der Zeit wird die Schaltfläche zu <strong class="ui">Als nachgeholt markieren</strong></span>.</li>
+<li><strong class="ui">Punkte</strong>: Früher innerhalb der Zeit zu beten ergibt mehr Punkte; ein verpasstes Gebet senkt den Punktestand. Freiwillige Gebete bringen einen Bonus (<strong class="ui">Als gebetet markieren · +500</strong>).</li>
+<li><strong class="ui">Statistik</strong>: wöchentliche, monatliche und jährliche Übersichten sowie Pünktlichkeit.</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">Sicherungsdatei erstellen</strong> speichert Ihren Fard-Verlauf in einer von Ihnen gewählten Datei; <strong class="ui">Sicherung wiederherstellen</strong> führt sie wieder zusammen.</li>
+<li>Ein fehlender Eintrag beweist nicht, dass ein Gebet verpasst wurde; die App speichert nur Markierungen von Ihnen und von der Erkennung.</li>
+</ul>
+
+<h2 id="excused">8. Befreite Tage</h2>
+<ul>
+<li>Dieser Abschnitt erscheint nur, wenn <span data-platform="apple"><strong class="ui">Einstellungen</strong></span><span data-platform="android"><strong class="ui">Standort und Einstellungen</strong></span> → <strong class="ui">Geschlecht</strong> auf <strong class="ui">Weiblich</strong> steht.<span data-platform="apple"> Auf dem iPhone befindet sich dies unter <strong class="ui">Berechnung und Erinnerungen</strong>; im Menü der Uhr gibt es eine Zeile <strong class="ui">Geschlecht</strong>.</span> Bei <strong class="ui">Auswählen</strong> oder <strong class="ui">Männlich</strong> ist er ausgeblendet; eine Änderung der Auswahl löscht gespeicherte Zeiträume nicht.</li>
+<li><span data-platform="apple"><strong class="ui">Einstellungen</strong> → <strong class="ui">Befreite Tage</strong> (auch im Menü der Uhr)</span><span data-platform="android"><strong class="ui">Befreite Tage</strong></span>: Tippen Sie bei Beginn eines Zeitraums auf <strong class="ui">Zeitraum beginnen</strong> und bei dessen Ende auf <strong class="ui">Zeitraum beenden</strong>. Bleibt ein Zeitraum lange offen, erscheint eine Warnung.</li>
+<li>Bearbeiten Sie vergangene Zeiträume mit <strong class="ui">Bearbeiten</strong> (<strong class="ui">Beginn</strong>, <strong class="ui">Ende</strong>, <strong class="ui">Läuft</strong>) und <strong class="ui">Speichern</strong>, oder entfernen Sie sie mit <strong class="ui">Zeitraum löschen</strong>.</li>
+<li>Während eines Zeitraums gibt es keine Benachrichtigungen zu Gebetszeit, Sahur oder Iftar, keine Nachhol-Schuld und keine Punkte; Erkennung und <strong class="ui">Als gebetet markieren</strong> sind deaktiviert, und die Tahajjud-/Duha-Erfassung pausiert. Zeiten und Widgets zeigen <strong class="ui">Befreiter Tag</strong>.</li>
+<li>Nur Sie geben Zeiträume ein. Sie werden auf Ihrem Gerät gespeichert und bei aktivierter Synchronisierung zusammen mit dem Verlauf mit Ihrem anderen Gerät geteilt.</li>
+</ul>
+
+<h2 id="hijri">9. Hidschri-Kalender und Ramadan</h2>
+<ul>
+<li>Das Hidschri-Datum auf dem Zeiten-Bildschirm richtet sich nach dem Umm-al-Qura-Kalender. Weicht es um einen Tag von Ihrem lokalen Kalender ab, wählen Sie −1, 0 oder +1 unter <span data-platform="apple"><strong class="ui">Einstellungen</strong> → <strong class="ui">Hidschri-Kalender</strong></span><span data-platform="android"><strong class="ui">Standort und Einstellungen</strong></span> → <strong class="ui">Hidschri-Datumsverschiebung</strong>.</li>
+<li><strong class="ui">Religiöse Tage</strong> listet bevorstehende religiöse Tage auf; der nächste erscheint auch auf dem Zeiten-Bildschirm.</li>
+<li><strong class="ui">Ramadan-Zeitplan</strong> zeigt die Imsak- und Iftar-Zeiten für den Ramadan.</li>
+<li><strong class="ui">Sahur-Erinnerung</strong>: <strong class="ui">Aus</strong> oder <strong class="ui">… Min. vor Imsak</strong> (30, 45, 60, 90). <strong class="ui">Iftar-Benachrichtigung</strong> benachrichtigt zum Iftar. Beide werden nur im Ramadan geplant.</li>
+<li>Fasten: Im Ramadan zeigt der Zeiten-Bildschirm den Countdown bis Imsak oder Iftar sowie eine Schaltfläche <strong class="ui">Ich habe gefastet</strong>; ein markierter Tag zeigt <strong class="ui">Gefastet</strong>.</li>
+</ul>
+
+<h2 id="widgets">10. Widgets, Live-Aktivität und Komplikationen</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li>Das Widget <strong class="ui">Nächstes Gebet</strong> zählt bis zur nächsten Gebetszeit oder bis zum Ende der aktuellen herunter. Fügen Sie es dem Homescreen (klein, mittel) oder dem Sperrbildschirm hinzu: Homescreen gedrückt halten → Bearbeiten → Widget hinzufügen → Salah Sense.</li>
+<li><strong class="ui">Live-Aktivität</strong> (unter <strong class="ui">Einstellungen</strong>) zeigt einen Countdown auf dem Sperrbildschirm und in der Dynamic Island; sie startet nicht während eines befreiten Zeitraums.</li>
+<li>Apple Watch-Komplikationen: Bearbeiten Sie das Zifferblatt und wählen Sie Salah Sense (rechteckig, inline, rund, Ecke).</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Das Android-Homescreen-Widget zeigt die nächste Gebetszeit; Homescreen gedrückt halten und Salah Sense aus den Widgets hinzufügen.</li>
+<li>Wear OS bietet eine Salah Sense-Kachel und -Komplikation.</li>
+</ul>
+<p>Während eines befreiten Zeitraums zeigen Widgets und Komplikationen <strong class="ui">Befreiter Tag</strong>.</p>
+
+<h2 id="diagnostics">11. Eine Diagnoseaufzeichnung senden</h2>
+<p>Wenn die Erkennung ein Gebet immer wieder falsch erfasst, hilft uns eine Diagnoseaufzeichnung bei der Untersuchung.</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">Auf der Uhr: <strong class="ui">Erkennungseinstellungen</strong> → <strong class="ui">Diagnoseaufzeichnung</strong> → <strong class="ui">Aufzeichnung starten</strong>. Warten Sie 3 Sekunden mit gesenkten Händen, beten Sie alle Teile und tippen Sie dann auf <strong class="ui">Aufzeichnung beenden</strong>. Eine Aufzeichnung dauert höchstens 20 Minuten.</li>
+<li data-platform="android" data-badge="Android · Wear OS">Aktivieren Sie auf der Uhr <strong class="ui">Diagnoseaufzeichnung</strong> auf der Seite <strong class="ui">Gebetserkennung</strong>, während die Erkennung läuft, und beten Sie dann.</li>
+<li><span data-platform="apple"><strong class="ui">Aufzeichnungen an iPhone senden</strong> (bei geöffneter App auf dem iPhone); bei Bedarf <strong class="ui">Letzte Aufzeichnung erneut senden</strong></span><span data-platform="android"><strong class="ui">Aufnahmen ans Telefon senden</strong></span>.</li>
+<li>Auf dem Telefon: <span data-platform="apple"><strong class="ui">Einstellungen</strong> → <strong class="ui">Diagnoseaufzeichnungen</strong> → Aufzeichnung auswählen → <strong class="ui">Aufzeichnung teilen</strong></span><span data-platform="android"><strong class="ui">Gebetserkennung</strong> → <strong class="ui">Teilen</strong></span>, und senden Sie sie per E-Mail an <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>.</li>
+</ol>
+<ul>
+<li>Für die Aufzeichnung bei ausgeschaltetem Display ist die kontinuierliche Erkennung erforderlich.</li>
+<li>Für jedes von der Erkennung gespeicherte Fard wird eine kurze <strong class="ui">Automatische Fard-Zusammenfassung</strong> der letzten Minuten aufbewahrt und kann auf demselben Weg geteilt werden.</li>
+<li>Aufzeichnungen enthalten Bewegungssensorwerte, Druck/relative Höhe, Erkennungsstatus, Kalibrierungsdaten und App-Version; keine Standort-, Audio-, Namens- oder Kontodaten. Sie verlassen das Gerät nur, wenn Sie sie teilen. Aktuelle Aufzeichnungen werden aufbewahrt; löschen Sie sie mit <strong class="ui">Aufzeichnung löschen</strong>.</li>
+</ul>
+
+<h2 id="troubleshooting">12. Problembehebung und Support</h2>
+<ul>
+<li><strong>Zeiten weichen ab:</strong> Prüfen Sie Berechnungsmethode, Asr-Berechnung, Standort und Zeitzone<span data-platform="apple">, und tippen Sie dann auf <strong class="ui">Gebetszeiten aktualisieren</strong></span>.</li>
+<li><strong>Keine Benachrichtigungen:</strong> Prüfen Sie Benachrichtigungsberechtigung, Stumm-Modus und Fokus in den Geräteeinstellungen.<span data-platform="android"> Energiesparmodus und <strong class="ui">Erlaubnis zur Zeitplanung</strong> spielen ebenfalls eine Rolle.</span></li>
+<li><strong>Erkennung startet nicht:</strong> Bei <strong class="ui">Keine Daten vom Bewegungssensor.</strong> öffnen Sie die Uhr-App erneut; bei <strong class="ui">Takbir-Messung fehlt. Starte die Sprachkalibrierung.</strong> kalibrieren Sie; für die Nutzung bei ausgeschaltetem Display aktivieren Sie die kontinuierliche Erkennung.</li>
+<li><strong>Zählung oft falsch:</strong> Ziehen Sie die Uhr fester an, kalibrieren Sie die zweite Position oder kalibrieren Sie neu; markieren Sie manuell und senden Sie eine Diagnoseaufzeichnung.</li>
+<li><strong>Verlauf von Telefon und Uhr unterscheidet sich:</strong> Aktivieren Sie die Synchronisierung auf beiden Geräten<span data-platform="apple"> und tippen Sie auf <strong class="ui">Jetzt synchronisieren</strong></span><span data-platform="android">; verwenden Sie <strong class="ui">Synchronisierung erneut versuchen</strong></span>.</li>
+<li><strong>Alarm hat nicht geklingelt:</strong> Prüfen Sie die Lautstärke der Uhr und den Stumm-Modus<span data-platform="apple">; das Öffnen der Uhr-App erneuert den nächstgelegenen Alarm</span>.</li>
+</ul>
+<div class="box">
+<p>Weitere Antworten: <a href="https://notes7239.github.io/salahsense/support/de.html">Support-Seite</a> (FAQ). Kontakt: <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — bitte Gerätemodell, Betriebssystemversion und App-Version angeben.</p>
+<p>Wie Ihre Daten verarbeitet werden: <a href="https://notes7239.github.io/salahsense/privacy/de.html">Datenschutzerklärung</a>. Kein Konto, keine Werbung, keine Analyse und kein Server; Ihre Daten bleiben auf Ihren Geräten.</p>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/de.html">Support</a> · <a href="https://notes7239.github.io/salahsense/privacy/de.html">Datenschutzerklärung</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>
