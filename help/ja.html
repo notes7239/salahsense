@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>ヘルプ — Salah Sense</title>
+<style>
+:root{color-scheme:light dark;--fg:#1d1d1f;--bg:#fff;--mut:#6e6e73;--acc:#0a7d5a;--card:#f2f4f3;--warn:#a15c00}
+@media (prefers-color-scheme:dark){:root{--fg:#f2f2f2;--bg:#121212;--mut:#a5a5aa;--acc:#5fd0a5;--card:#1e1f1e;--warn:#f0b35a}}
+body{margin:0;font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Noto Sans","Noto Naskh Arabic",Tahoma,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:46rem;margin:0 auto;padding:1.5rem 1.25rem 3rem}
+h1{font-size:1.7rem;line-height:1.25;margin:.5rem 0 .25rem}h2{font-size:1.2rem;margin-top:2.2rem;scroll-margin-top:1rem}
+h3{font-size:1rem;margin:1.2rem 0 .3rem}
+a{color:var(--acc)}.meta{color:var(--mut);font-size:.9rem}
+.box{background:var(--card);border-radius:10px;padding:.75rem 1rem;margin:1rem 0}
+.warn{border-inline-start:4px solid var(--warn)}
+nav.toc{background:var(--card);border-radius:10px;padding:.5rem 1rem;margin:1rem 0}
+nav.toc ul{margin:.3rem 0;padding:0;list-style:none}
+li{margin:.2rem 0}
+.ui{font-weight:600}
+footer{margin-top:3rem;color:var(--mut);font-size:.85rem}
+html[data-platform="apple"] [data-platform="android"],html[data-platform="android"] [data-platform="apple"]{display:none}
+html[data-no-corpus] [data-feature~="corpus"],html[data-no-quran-com] [data-feature~="quran-com"],html[data-no-memorization] [data-feature~="ezber"]{display:none}
+html:not([data-platform]) span[data-platform="apple"]+span[data-platform="android"]::before{content:" / ";font-weight:400}
+html:not([data-platform]) [data-badge]:not(span)::before{content:attr(data-badge);display:inline-block;font-size:.75rem;font-weight:600;color:var(--mut);border:1px solid var(--mut);border-radius:6px;padding:0 .35rem;margin-inline-end:.4rem}
+</style>
+</head>
+<body>
+<main>
+<h1>Salah Sense ヘルプ</h1>
+<p class="meta">アプリとその設定の使い方 · スマートフォンとウォッチ</p>
+<div class="box warn"><p><strong>重要：</strong> ラクアとサジダの自動検出にはウォッチが必要です（<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS ウォッチ</span>）。スマートフォン単体では手首の動きを測定できません。検出はあくまで補助であり、誤認識することがあります。ウォッチの位置、バンドの締め具合、個人差のある動きがその精度に影響します。記録はいつでも手動で修正できます。本アプリは宗教的な判断を下したり、礼拝の有効性を判定したりするものではありません。</p></div>
+<p>よくある質問とお問い合わせ先は<a href="https://notes7239.github.io/salahsense/support/ja.html">サポートページ</a>をご覧ください。太字はアプリ内のボタンやメニューの名称です。</p>
+<nav class="toc" aria-label="目次">
+<strong>目次</strong>
+<ul>
+<li><a href="#getting-started">1. はじめに</a></li>
+<li><a href="#prayer-times">2. 位置情報と礼拝時刻</a></li>
+<li><a href="#notifications">3. 通知とアラーム</a></li>
+<li><a href="#calibration">4. ウォッチでのキャリブレーション</a></li>
+<li><a href="#tracking">5. 礼拝中の自動追跡</a></li>
+<li><a href="#sequence-check">6. 手順チェックと確認</a></li>
+<li><a href="#history">7. 履歴、カダー、ポイント</a></li>
+<li><a href="#excused">8. 生理期間</a></li>
+<li><a href="#hijri">9. ヒジュラ暦とラマダーン</a></li>
+<li><a href="#widgets">10. ウィジェット、ライブアクティビティ、コンプリケーション</a></li>
+<li><a href="#diagnostics">11. 診断記録の送信</a></li>
+<li><a href="#troubleshooting">12. トラブルシューティングとサポート</a></li>
+<li data-feature="ezber"><a href="#memorization">13. クルアーンの暗記</a></li>
+</ul>
+</nav>
+
+<h2 id="getting-started">1. はじめに</h2>
+<ul>
+<li><span data-platform="apple">iPhone</span><span data-platform="android">Androidスマートフォン</span>アプリには礼拝時刻、キブラ、ズィクル、履歴、設定が表示されます。<span data-platform="apple">Apple Watch</span><span data-platform="android">Wear OS ウォッチ</span>アプリは礼拝中の動きを追跡し、アザーンのアラートとキャリブレーションを管理します。</li>
+<li>まず、スマートフォンで<span data-platform="apple"><strong class="ui">設定</strong>タブ</span><span data-platform="android"><strong class="ui">位置情報と設定</strong>ページ</span>を開き、位置情報、計算方法、アスルの計算、<strong class="ui">性別</strong>を設定してください（2と8を参照）。</li>
+<li>次にウォッチで一度<a href="#calibration">キャリブレーション</a>を行ってください。自動追跡はそれ以降でないと信頼できません。</li>
+<li>ウォッチがなくても、礼拝時刻、キブラ、ズィクル、手動での<strong class="ui">礼拝済みにする</strong>記録、カダー、統計、ヒジュラ暦、ラマダーン時刻表、ウィジェットは利用できます。</li>
+<li><strong class="ui">礼拝ガイド</strong>には、定時礼拝と忘却のサジダについて出典付きのオフラインで読める要約が収められています。<strong class="ui">礼拝の祈願文</strong>のページには、礼拝中に唱える祈願文がアラビア語本文、読み方、意味とともに収められています。スマートフォンの<strong class="ui">ズィクル</strong>画面では、<strong class="ui">タスビーフ</strong>モードが礼拝後の33回ずつの三つの数を順に数えます。</li>
+<li><strong class="ui">ズィクル</strong>タブの<strong class="ui">日々の祈願文</strong>には、イブン・アラビーの祈願書『アル＝アウラード・アル＝ウスブーイーヤ』（週のウィルド）の序文と十四のウィルドが並びます。週の毎夜と毎日に一つずつです。<strong class="ui">いま</strong>のカードには、いま読むウィルドが表示されます。夕方の礼拝の時刻から朝までは翌日の夜のウィルド、朝から夕方まではその日のウィルドです。祈願文は一続きの本文として開き、上の<strong class="ui">アラビア語</strong>・<strong class="ui">読み方</strong>・<strong class="ui">意味</strong>ボタンで表示する部分を選べます。祈りの中のクルアーンの引用は訳さず、意味は末尾の脚注に示します。リストからウィルドを外したり、<strong class="ui">祈願文を追加</strong>で戻したり、タイトル・アラビア語・読み方・意味を入れてご自身の祈願文を追加したりできます。ご自身の祈願文はこのスマートフォンにのみ保存されます。右上の Aa ボタンで読み方の表記方式（DIN 31635 または İSAM）、アラビア語の文字サイズ、ページの色調を選べます。<span data-feature="ezber">これらは<strong class="ui">暗記</strong>と共通です。</span>アッラーの美名、クルアーンのアーヤ、サラワートはそれぞれ別の色で表示されます。意味の本文では、アッラーの美名は訳さず、アラビア語の名前を読み方で表記します。アーヤまたはその番号をタップすると、スーラとアーヤの番号、ムスハフの本文、訳が表示されます。アッラーの美名をタップすると、その意味が表示されます。色は Aa ボタンの<strong class="ui">色</strong>で変更したり、なしにしたりできます。</li>
+<li><strong class="ui">ズィクル</strong>タブでは、<strong class="ui">タスビーフ</strong>と<strong class="ui">自由カウント</strong>のカードの下に自分のズィクルを保存できます。<strong class="ui">新しいズィクル</strong>で読み方を入力し、必要ならアラビア語と意味も入力します。カウントは33・99・100・カスタム目標・自由から選び、色も選びます。目標に達するたびに強く振動します。<strong class="ui">ウォッチにも表示</strong>をオンにしたズィクルはウォッチの<strong class="ui">ズィクル</strong>画面で選べます。カウンターはデバイスごとに別です。リストには既定のズィクルが入っています。4つのドゥアーとクルアーンの33の節です。既定のズィクルはスマートフォンにのみ表示されます。どれでも「ウォッチにも表示」をオンにできます。既定のズィクルは編集や削除ができます。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">履歴を共有するには、iPhoneの<strong class="ui">設定</strong> → <strong class="ui">ペアリングされたデバイス</strong>で<strong class="ui">礼拝の履歴をペアリングしたiPhone/Apple Watchと共有</strong>を、ウォッチの<strong class="ui">デバイスのペアリング</strong>で<strong class="ui">履歴を同期</strong>をオンにしてください。既定ではオフです。<strong class="ui">今すぐ同期</strong>すると古い記録も送信されます。</li>
+<li data-platform="android" data-badge="Android · Wear OS">スマートフォンとウォッチの同期には両方の端末にアプリが必要です。接続がない場合、記録はその端末に残ります。必要な場合は<strong class="ui">位置情報と設定</strong> → <strong class="ui">同期を再試行</strong>を使ってください。</li>
+<li>初めて起動すると、アプリは端末の言語で開きます。その言語に対応していない場合は英語で開きます。言語は、スマートフォンでは<strong class="ui">設定</strong> → <strong class="ui">言語</strong>、ウォッチでは<strong class="ui">言語</strong>で変更します。選択はそれぞれの端末ごとに保存されます。</li>
+<li>時刻は端末の12時間／24時間表示の設定に従います。日付はどの言語でも西暦とアラビア数字（1、2、3）で表示されます。ヒジュラ暦の日付は<strong class="ui">ヒジュラ暦の日付調整</strong>の設定に従って別に表示されます（9を参照）。</li>
+<li><strong class="ui">設定</strong> → <strong class="ui">外観</strong>：<strong class="ui">自動</strong>は端末のライト／ダーク設定に従います。<strong class="ui">ライト</strong>または<strong class="ui">ダーク</strong>を選ぶと、アプリとヘルプがそれに従います<span data-feature="ezber">（暗記でページの色調を<strong class="ui">自動</strong>にした場合も同様）</span>。ウォッチは常にダークで、ホーム画面のウィジェットは端末の設定に従います。選択はこの端末に保存されます。</li>
+</ul>
+
+<h2 id="prayer-times">2. 位置情報と礼拝時刻</h2>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">iPhone：<strong class="ui">設定</strong> → <strong class="ui">位置情報とタイムゾーン</strong>。<strong class="ui">自分の位置情報を使う</strong>をタップして位置情報の利用を許可するか、<strong class="ui">都市</strong>、<strong class="ui">緯度</strong>、<strong class="ui">経度</strong>、<strong class="ui">IANAタイムゾーン</strong>（例：Asia/Tokyo）を入力し、<strong class="ui">都市／位置情報を保存</strong>をタップしてください。</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">位置情報と設定</strong>：<strong class="ui">自分の位置情報を取得</strong>をタップするか、<strong class="ui">位置情報の名前</strong>、<strong class="ui">緯度</strong>、<strong class="ui">経度</strong>、<strong class="ui">タイムゾーン</strong>を入力して<strong class="ui">保存</strong>をタップしてください。</li>
+<li>位置情報の利用許可は任意です。都市と座標は手動でも入力できます。旅行の際は位置情報とタイムゾーンを更新してください。</li>
+<li><strong class="ui">計算方法</strong>（12種類）：<strong class="ui">トルコ（ディヤーネト）</strong>、<strong class="ui">世界ムスリム連盟</strong>、<strong class="ui">エジプト（測量総局）</strong>、<strong class="ui">カラチ（イスラム科学大学）</strong>、<strong class="ui">ウンム・アルクラー（マッカ）</strong>、<strong class="ui">ドバイ</strong>、<strong class="ui">新月観測委員会</strong>、<strong class="ui">北米（ISNA）</strong>、<strong class="ui">クウェート</strong>、<strong class="ui">カタール</strong>、<strong class="ui">シンガポール</strong>、<strong class="ui">テヘラン</strong>。お住まいの地域の時刻表に最も近いものを選んでください。</li>
+<li><strong class="ui">アスルの計算</strong>：<strong class="ui">標準</strong>は影の長さが物の長さと同じになった時点（アスル・アウワル）、<strong class="ui">ハナフィー派</strong>は2倍になった時点（アスル・サーニー）を基準とします。トルコの時刻表は標準を使用します。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">法学派</strong>：<strong class="ui">スンニ派（スンナ＋ウィトルを含む）</strong>または<strong class="ui">シャーフィイー派（ファルド）</strong>。これは追跡するラクアの構成のみを決め、礼拝時刻には影響しません。ウォッチでは<strong class="ui">法学派 / ラクア</strong>にあります。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">変更後、礼拝時刻は自動的に更新されます。必要であれば<strong class="ui">礼拝時刻を更新</strong>をタップしてください。ウォッチでは計算方法とアスルの計算は<strong class="ui">計算方法</strong>にあります。</li>
+<li>礼拝時刻は端末上で計算されます。本アプリは公式の時刻表ではなく、お住まいの地域の時刻表と数分の差が生じることがあります。</li>
+</ul>
+
+<h2 id="notifications">3. 通知とアラーム</h2>
+<h3>礼拝時刻の通知</h3>
+<ul>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">礼拝時刻になったら通知</strong>をオンにすると、各礼拝時刻に通知が届きます。ステッパーで時間を設定してください：<strong class="ui">礼拝時刻に</strong>、または最大60分前（<strong class="ui">…分前</strong>）・後（<strong class="ui">…分後</strong>）。ウォッチにも同じ設定が<strong class="ui">アザーン・アラート</strong>にあります。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">ウォッチがこれらの通知を処理している場合、iPhoneは独自に通知を設定しません。iPhoneがロックされていても通知はウォッチに届きます。</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">位置情報と設定</strong>：<strong class="ui">リマインダー</strong>をオンにし、<strong class="ui">礼拝時刻に</strong>または<strong class="ui">…分前</strong>を選択してください。通知が遅れる場合は<strong class="ui">スケジュール権限</strong>を許可してください。</li>
+</ul>
+<h3>礼拝時刻終了前のアラーム</h3>
+<ul>
+<li><strong class="ui">礼拝時刻終了前のアラーム</strong>：<strong class="ui">オフ</strong>、または礼拝時刻終了の何分前かを設定します。その礼拝が礼拝済みとして記録されていない場合、サイレントモードでも鳴ります。</li>
+<li><strong class="ui">アラームを鳴らす礼拝</strong>：アラームがオンのとき、各礼拝ごとに個別のスイッチがあり、選択した礼拝（例：ファジュルのみ）でのみ鳴ります。既定ではすべてオンです。</li>
+<li>ウォッチが検出した記録がまだスマートフォンに届いていない場合、鳴ることがあります。</li>
+<li><strong class="ui">アラームをテスト</strong>：同じアラームを1分後に設定します。スマートフォンをロックしてお待ちください。朝を待たずに、スマートフォンでアラームが鳴るかを確認できます。<span data-platform="android">テスト用アラームは最長1分間鳴ります。</span></li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">実際のアラームにはiOS 26が必要です。それ以外の場合、またはアラームの権限がない場合は、代わりに通知が送信されます。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">終了の45分前と30分前に、ウォッチはアザーンのハイヤ部分を振動とともに再生します（<strong class="ui">ハイヤ・アラッサラー、ハイヤ・アラルファラーフ</strong>）。眠っている場合はもう一度より強く鳴ります。時間内に座ったまま、または横になったままでいるようであれば、<strong class="ui">手が空いているようです</strong>という通知が1回届きます（忌避される時間には届きません）。</li>
+</ul>
+<h3>タハッジュドとファジュルのアラート（ウォッチ）</h3>
+<ul>
+<li>ウォッチの<strong class="ui">設定</strong> → <span data-platform="apple"><strong class="ui">アザーン・アラート</strong></span><span data-platform="android"><strong class="ui">アザーン・アラート</strong></span>では、<strong class="ui">タハッジュド・アラート</strong>は夜の最後の三分の一に、<strong class="ui">ファジュルのアザーン・アラート</strong>はイムサークに合わせて設定されます。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">アラート時刻</strong>：<strong class="ui">礼拝時刻に</strong>、または5〜60分前。<strong class="ui">スヌーズ</strong>：1〜15分。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">動くと一時的にアラームが消音され、<strong class="ui">礼拝済みにする</strong>をタップすると停止します。必要な動きの量は<strong class="ui">消音ジェスチャー</strong>で設定します：<strong class="ui">動きを抑えて（高感度）</strong>、<strong class="ui">中</strong>、<strong class="ui">動きが多い（難しい）</strong>。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">直近のアラームでは選択したアザーンの音が再生され、それ以外のアラートは通知音が使われます。ウォッチアプリを開くと直近のアラームが更新されます。</li>
+<li data-platform="android" data-badge="Android · Wear OS">音と振動は端末の通知チャンネル（<strong class="ui">アラート音とバイブレーション</strong>）から再生されます。アプリに内蔵のアザーン音源はありません。</li>
+</ul>
+<h3 data-platform="apple" data-badge="iPhone · Apple Watch">アザーンの音（Apple Watch）</h3>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">アザーンの音</strong>（または<strong class="ui">アザーン・アラート</strong> → <strong class="ui">アザーンの音を選択</strong>）：CAF、AIFFまたはWAVファイルのhttpsアドレスを入力し、<strong class="ui">ダウンロード</strong>をタップしてください。通知では最大30秒まで再生され、それより長いファイルはアプリ内でのみ再生されます。</li>
+<li>インストールした音源を選択し、<strong class="ui">再生</strong>、<strong class="ui">停止</strong>、<strong class="ui">削除</strong>で管理します。何も選択されていない場合は、内蔵のアラーム音が再生されます。</li>
+<li><strong class="ui">ハイヤ部分（リピート＋バイブレーション）</strong>：「ハイヤ・アラッサラー、ハイヤ・アラルファラーフ」の部分を<strong class="ui">開始</strong>と<strong class="ui">終了</strong>の秒数で指定し、<strong class="ui">繰り返し</strong>回数を設定して<strong class="ui">セグメントを再生</strong>で確認してください。</li>
+<li>ファイルはそのアドレスから直接ダウンロードされます。そのサーバーは当社のものではありません。</li>
+</ul>
+<p>通知の権限、サイレントモード、フォーカス、バッテリー節約、音量のいずれもアラートに影響することがあります。</p>
+
+<h2 id="calibration">4. ウォッチでのキャリブレーション</h2>
+<p>キャリブレーションでは、ご自身のタクビール、キヤーム（立礼）、ルクー、サジダ、座位の姿勢をウォッチに学習させます。キャリブレーションはウォッチでのみ行います。</p>
+<ol>
+<li>いつも着けている手首に、ウォッチをしっかりと装着してください（右手首でも左手首でも構いません）。</li>
+<li><span data-platform="apple"><strong class="ui">キャリブレーション</strong> → <strong class="ui">個人キャリブレーション（ウィザード）</strong> → <strong class="ui">音声キャリブレーションを開始</strong></span><span data-platform="android"><strong class="ui">キャリブレーション</strong> → <strong class="ui">音声キャリブレーションを開始</strong></span>。</li>
+<li>音声の指示に従ってください：タクビール（両手を上げる）、キヤーム、ルクー、立ち上がり、サジダ、2回のサジダの間の座位、2回目のサジダ、最後の座位、右へのサラーム、左へのサラーム。各指示の後に姿勢をとる時間があり、続いて短い計測が行われます。無理のない範囲で動かずにお待ちください。</li>
+<li><strong class="ui">ドゥアーの終了ジェスチャーを学習（任意）</strong>をオンにすると、サラームの後に両手で顔を拭う動作も計測されます。不要な場合は<strong class="ui">ドゥアーの動作をスキップ</strong>をタップしてください。</li>
+<li><strong class="ui">停止</strong>で一時停止し、<strong class="ui">中断した手順から再開</strong>で続行します。</li>
+<li>最後に<strong class="ui">キャリブレーション完了</strong>と、キヤームを基準にした手首の高さが表示されます。<span data-platform="apple"><strong class="ui">完了、礼拝に戻る</strong>をタップしてください。</span></li>
+</ol>
+<ul>
+<li>サラームは音声でのみ案内され、頭の動きは計測されません。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">キャリブレーションが正常に完了すると、継続検出が自動的にオンになります。</li>
+<li>姿勢が似すぎている、またはタクビールが認識されなかった場合は、同じ手首で最初からやり直し、タクビールの手順では両手を上げたままお待ちください。</li>
+</ul>
+<h3>2番目の位置</h3>
+<ul>
+<li>礼拝中にウォッチが手首をずり落ちる場合は、その位置も学習させてください。通常のキャリブレーションの後に<strong class="ui">2番目の位置をキャリブレーション</strong>をタップし、ウォッチを手の方向に1〜2cmずらして、同じ手順（顔を拭う動作を含む）を繰り返します。</li>
+<li>検出はより適合する位置を使用します。新しく通常のキャリブレーションを行っても2番目の位置は保持されます。バンドの締め具合が変わった場合は<strong class="ui">2番目の位置を再キャリブレーション</strong>、または<strong class="ui">2番目の位置を削除</strong>を使ってください。</li>
+</ul>
+<h3>いつ再キャリブレーションするか</h3>
+<ul>
+<li>ウォッチの位置、バンドの締め具合、または手首が変わったとき、あるいは検出がよく間違えるときに行ってください。<span data-platform="apple"><strong class="ui">ウォッチの位置を確認してください</strong>という通知も、ウォッチが緩んでいることを示します。</span></li>
+<li>本アプリは礼拝からも手首の高さを学習します。大きな変化があった後は<strong class="ui">学習した高さをリセット</strong>を使用してください。<strong class="ui">キャリブレーションを削除</strong>はキャリブレーション全体を削除します。</li>
+<li><strong class="ui">音声練習</strong>では、音声案内に合わせて練習できます。記録は作成されません。</li>
+</ul>
+
+<h2 id="tracking">5. 礼拝中の自動追跡</h2>
+<ul>
+<li>礼拝時刻内にウォッチアプリを開き、開始のタクビールから始めてください。各セクション（スンナ、ファルド、ウィトル）はそれぞれ独自のタクビールから始まります。<span data-platform="apple">両手を上げる動作が検出されると、<strong class="ui">タクビールの姿勢を検出しました。キヤーム（立礼）に移ってください。</strong>と表示されます。</span></li>
+<li>順序は開始のタクビールに従います：<strong class="ui">ファジュル 2+2 · ズフル 4+4+2 · アスル 4+4 · マグリブ 3+2 · イシャー 4+4+2+3 ウィトル</strong>。マグリブはファルドから始まります。<span data-platform="apple"><strong class="ui">シャーフィイー派（ファルド）</strong>の場合は、ファルドのみが追跡されます。</span></li>
+<li>画面には現在のセクション、次のタクビール、検出されたラクア数が表示されます。</li>
+<li>最初のスンナを行わずに直接ファルドから始める場合は、<span data-platform="apple"><strong class="ui">最初のスンナをスキップ</strong></span><span data-platform="android"><strong class="ui">ファルドから開始</strong></span>をタップしてください。</li>
+<li>忘却のサジダは礼拝の最後、最後の座位で行います。検出された場合、記録に<strong class="ui">忘却のサジダを実施</strong>と表示されます。</li>
+<li data-platform="apple" data-badge="Apple Watch">礼拝のセクションが開始のタクビールで始まると、サジダ中に画面に誤って触れないよう、ウォッチは防水ロックをオンにします。解除するにはDigital Crownを回してください。セクションの途中でロックを解除すると、ウォッチが<strong class="ui">防水ロックが解除されました</strong>と尋ねます。<strong class="ui">このセクションをやり直します</strong>は新しい開始のタクビールから数え直し、<strong class="ui">続ける</strong>はセクションを続けます。不要な場合は<strong class="ui">検出設定</strong> → <strong class="ui">防水ロック</strong>でオフにできます。検出には影響しません。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch"><strong class="ui">このセクションをやり直します</strong>は現在のセクションを初めからやり直します。保存に失敗した場合は<strong class="ui">保存を再試行</strong>をタップしてください。</li>
+<li data-platform="android" data-badge="Android · Wear OS">セクションを最初からやり直すには、ウォッチで<strong class="ui">このセクションをやり直します</strong>をタップします。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">キャリブレーションが行われていない場合は、<strong class="ui">個人キャリブレーション（ウィザード）</strong>ボタンが表示されます。</li>
+</ul>
+<h3>回数の誤りや礼拝の検出漏れ</h3>
+<ul>
+<li>ラクアが多すぎる、または少なすぎると検出された場合、ウォッチが警告します（<strong class="ui">ラクア数を確認してください</strong>）。ご自身でラクア数を確認してください。</li>
+<li>間違いに気づいてセクションを最初からやり直す場合は、両手をタクビールの位置で約5秒保ち、キヤーム（立礼）に下ろしてください。ウォッチが振動して<strong class="ui">長いタクビール：このセクションを最初から数え直します。</strong>と表示し、数え直しが始まります。画面に触れる必要はありません。通常のタクビール、クヌート、10秒を超えて手を上げたままにすることではセクションは変わりません。最後まで礼拝したセクションの後の長いタクビールは次のセクションを開始します。</li>
+<li>足りないラクア数でドゥアーにより終えたセクションをやり直すとき、開始のタクビールが認識されなくても、最初のラクアが終わるとやり直しとして数えます。</li>
+<li>カダーセッション中にあるセクションでラクア数やサジダ数のアラートが出ると、ウォッチに表示されます。<strong class="ui">もう一度礼拝する</strong>は同じカダーを新しい開始のタクビールから待ち直します。<strong class="ui">このまま続ける</strong>はそのセクションを礼拝済みとして数え、アラートを記録に残して次のカダーに進みます。</li>
+<li>セクションの開始のタクビールが礼拝が忌避される時間（日の出後45分、ズフル前10分、マグリブ前45分）に検出されると、ウォッチが振動し<strong class="ui">礼拝が忌避される時間には礼拝を行いません。</strong>と表示します。記録は変わりません。ハナフィー派の実践（スンナとウィトルを含む）では、その日のアスルのファルドはマグリブ前の忌避される時間でも警告されません。</li>
+<li>礼拝を手動で記録するには、ウォッチで<span data-platform="apple"><strong class="ui">ファルドを礼拝済みにする</strong></span><span data-platform="android"><strong class="ui">礼拝済みにする</strong></span>、スマートフォンで<strong class="ui">礼拝済みにする</strong>をタップしてください。スマートフォンの<strong class="ui">礼拝済みにする</strong>は先に確認します。ダイアログの<strong class="ui">礼拝済みにする</strong>で記録し、<strong class="ui">キャンセル</strong>では何も記録しません。手動で記録したファルドは、ウォッチの礼拝の手順に記録元と時刻とともに表示されます（例：<strong class="ui">スマートフォンで「礼拝済みにする」</strong> · 21:09）。ほかの端末からの記録はオレンジ色です。</li>
+<li>時間内に礼拝したのに検出が見逃した場合は、礼拝時刻が終了した後にスマートフォンで<strong class="ui">履歴</strong>を開き、<strong class="ui">時間内に礼拝済みにする</strong>をタップして<strong class="ui">礼拝した時刻</strong>を設定し、<strong class="ui">礼拝済みとして保存</strong>をタップしてください。時刻はその礼拝時刻の範囲内である必要があり、この操作は取り消せません。</li>
+<li data-platform="android" data-badge="Android · Wear OS">履歴で誤った記録を<strong class="ui">記録を元に戻す</strong>で取り消し、改めて<strong class="ui">礼拝済みにする</strong>をタップできます。</li>
+</ul>
+<h3>継続検出とバッテリー</h3>
+<ul>
+<li><span data-platform="apple"><strong class="ui">検出設定</strong></span><span data-platform="android"><strong class="ui">礼拝検出</strong></span> → <strong class="ui">継続検出（実験的機能）</strong>をオンにすると、画面オフ時や文字盤表示中でも検出が続きます。</li>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">このためウォッチは1日中ワークアウトセッションを開いたままにします。ヘルスケアにワークアウトは保存されませんが、バッテリー消費が増え、アクティビティリングに影響する場合があります。セッションが停止した場合はアプリを再度開いてください。</li>
+<li data-platform="android" data-badge="Android · Wear OS">バックグラウンドでの検出はバッテリー消費が速くなります。アプリが強制終了された場合は再度開いてください。</li>
+<li>オフの場合、検出はアプリを開いている間のみ動作します。</li>
+</ul>
+<h3>任意の礼拝</h3>
+<ul>
+<li>タハッジュドとドゥハーの時間は礼拝時刻画面に表示されます。その時間内に<strong class="ui">礼拝済みにする · +500</strong>で記録してください。ウォッチは開始のタクビールからも検出できます。どちらも任意の礼拝なので、義務の礼拝が先です。タハッジュドはイシャーのファルド、後のスンナ、ウィトルが記録された後に、ドゥハーはその日のファジュルのファルドが記録された後にだけ検出されます。<span data-platform="apple">法学派の設定がシャーフィイー派の場合、タハッジュドはウィトルを待ちません。</span></li>
+</ul>
+
+<h2 id="sequence-check">6. 手順チェックと確認</h2>
+<p>検出されたファルドが保存される前に、手順が確認されます：開始のタクビール、各ラクアでのルクーと2回のサジダ、最後の座位、サジダが同じ方向を向いていること、歩行のような回転動作がないこと。</p>
+<ul>
+<li>チェックに失敗すると、ウォッチが振動し<strong class="ui">…のファルドを礼拝しましたか？</strong>と理由とともに尋ねます。時刻のリストには<strong class="ui">確認待ち</strong>と表示されます。</li>
+<li><strong class="ui">はい、礼拝しました</strong>：検出された終了時刻で<strong class="ui">自動検出（確認済み）</strong>として保存されます。</li>
+<li><strong class="ui">いいえ</strong>：何も保存されず、その礼拝時刻のリマインダーが再び届くようになります。</li>
+<li>礼拝時刻が終わるまでに回答しなかった場合は、行った礼拝が失われないよう<strong class="ui">自動検出（未確認、確認してください）</strong>として保存されます。この間に<strong class="ui">礼拝済みにする</strong>をタップすると、質問は消えます。</li>
+</ul>
+<h3><strong class="ui">記録者：…</strong>のラベル</h3>
+<ul>
+<li><strong class="ui">自動検出</strong>：ファルドがチェックに合格しました。</li>
+<li><strong class="ui">自動検出（確認済み）</strong> / <strong class="ui">自動検出（未確認、確認してください）</strong>：上記を参照してください。</li>
+<li><strong class="ui">自動検出（バックアップ記録、確認してください）</strong>：検出はファルドのラクア数を正確に数えましたが、通常の保存処理が失敗したため、バックアップの経路で記録されました。</li>
+<li><strong class="ui">ウォッチで「礼拝済みにする」</strong>、<strong class="ui">ウォッチの通知で「礼拝済みにする」</strong>、<strong class="ui">スマートフォンで「礼拝済みにする」</strong>、<strong class="ui">スマートフォンの通知で「礼拝済みにする」</strong>、<strong class="ui">「時間内に礼拝済みにする」の修正</strong>、<strong class="ui">カダー済みにする</strong>：手動での記録です。</li>
+<li>確認を求めるラベルは履歴でオレンジ色で表示されます。確認し、必要であれば修正してください。</li>
+</ul>
+
+<h2 id="history">7. 履歴、カダー、ポイント</h2>
+<ul>
+<li>スマートフォンの<span data-platform="apple"><strong class="ui">履歴</strong>タブ</span><span data-platform="android"><strong class="ui">履歴</strong>ページ</span>には、各礼拝が<strong class="ui">礼拝済み</strong>、<strong class="ui">カダー済み</strong>、または<strong class="ui">保留中／未実施</strong>として表示され、該当する場合は<strong class="ui">忘却のサジダを実施</strong>や記録者のラベルも表示されます。</li>
+<li>記録されずに終了した礼拝時刻はカダーのリストに追加されます（<strong class="ui">カダー未済分: …</strong>）。カダーを行ったら、その礼拝の横にある<strong class="ui">礼拝済みにする</strong>をタップしてください<span data-platform="apple">。ウォッチでは<strong class="ui">カダー</strong>を使用します</span><span data-platform="android">。時間が終了すると、ボタンは<strong class="ui">カダー済みにする</strong>になります</span>。</li>
+<li>ウォッチの<strong class="ui">カダー</strong> › <strong class="ui">カダーの追跡</strong>で、<strong class="ui">オフ</strong>（既定）、<strong class="ui">定時礼拝の後：同じ礼拝のカダー</strong>（その礼拝のファルドを1〜10回。イシャーの後は各回がイシャーのファルドとウィトルで、ウィトルはカウントのみ）、<strong class="ui">定時礼拝の後：1日分のカダー</strong>（1日または2日分のカダーセット：ファジュル → ズフル → アスル → マグリブ → イシャー → ウィトル）、<strong class="ui">礼拝時刻に関係ないカダーセット</strong>から選べます。1日分のカダーとセットにはカダー台帳が必要です。定時礼拝の手順が終わると、選んだカダーが自動で始まります。礼拝時刻の始めにカダーについて尋ねることはありません。礼拝が忌避される時間や生理期間中は始まりません。メイン画面では、定時礼拝の後に行うカダーが礼拝の手順の下に1つずつ表示され、行うたびにチェックが付きます。<strong class="ui">カダーの検出を終了</strong>でこの礼拝時刻のカダーを止め、<strong class="ui">やり直す</strong>で礼拝中のセクションを新しい開始のタクビールから待ち直すか、残りのカダーを再開します。独立したセットでは、カダーセットが常にメイン画面に表示されます。<strong class="ui">1日間のセット</strong> / <strong class="ui">2日間のセット</strong>でいつでも始められ、<strong class="ui">セットを続ける</strong>で続きから再開します。</li>
+<li><strong class="ui">旅行モード</strong>：スマートフォンまたはウォッチの<strong class="ui">設定</strong>でオン／オフします。スマートフォンとウォッチは同期されます。オンの間はメイン画面に<strong class="ui">旅行中</strong>と表示され、ズフル、アスル、イシャーのファルドは2ラクアとして扱われます。ファジュルとマグリブのファルド、スンナ、ウィトルは変わりません。旅行中に逃したズフル、アスル、イシャーはカダーのリストで別に数えられ（旅行中）、自宅で行う場合も2ラクアでカダーします。</li>
+<li><strong class="ui">ポイント</strong>：礼拝時刻の早い時間に礼拝するほど得点が高くなり、未実施の礼拝は得点を下げます。任意の礼拝はボーナス点が加算されます（<strong class="ui">礼拝済みにする · +500</strong>）。</li>
+<li>注：このポイント制度は、信者が定時礼拝を時間内に行うことを促すためだけに設けられています。アッラーがあなたの礼拝を受け入れてくださいますように。アーミーン！</li>
+<li><strong class="ui">統計</strong>：週単位、月単位、年単位の集計と時間の正確さを確認できます。</li>
+<li data-platform="android" data-badge="Android · Wear OS"><strong class="ui">バックアップファイルを作成</strong>すると、ファルドの履歴を選択したファイルに保存できます。<strong class="ui">バックアップから復元</strong>すると、それを現在の履歴と統合します。</li>
+<li>記録がないことは礼拝しなかった証拠にはなりません。本アプリはご自身による記録と検出による記録のみを保持します。</li>
+</ul>
+
+<h2 id="excused">8. 生理期間</h2>
+<ul>
+<li>この項目は<span data-platform="apple"><strong class="ui">設定</strong></span><span data-platform="android"><strong class="ui">位置情報と設定</strong></span> → <strong class="ui">性別</strong>が<strong class="ui">女性</strong>のときのみ表示されます。<span data-platform="apple">iPhoneでは<strong class="ui">計算とリマインダー</strong>の下にあります。ウォッチのメニューには<strong class="ui">性別</strong>の行があります。</span><strong class="ui">選択してください</strong>または<strong class="ui">男性</strong>の場合は非表示になります。選択を変更しても保存済みの期間は削除されません。</li>
+<li><span data-platform="apple"><strong class="ui">設定</strong> → <strong class="ui">生理期間</strong>（ウォッチのメニューにもあります）</span><span data-platform="android"><strong class="ui">生理期間</strong></span>：期間が始まったら<strong class="ui">期間を開始</strong>、終わったら<strong class="ui">期間を終了</strong>をタップしてください。期間が長く続いている場合は警告が表示されます。</li>
+<li>過去の期間は<strong class="ui">編集</strong>（<strong class="ui">開始</strong>、<strong class="ui">終了</strong>、<strong class="ui">進行中</strong>）と<strong class="ui">保存</strong>で変更するか、<strong class="ui">期間を削除</strong>で削除してください。</li>
+<li>期間中は礼拝時刻、スフール、イフタールの通知が届かず、カダーやポイントも発生しません。検出と<strong class="ui">礼拝済みにする</strong>はオフになり、タハッジュドとドゥハーの追跡も停止します。礼拝時刻画面やウィジェットには<strong class="ui">生理日</strong>と表示されます。</li>
+<li>期間はご自身で入力します。情報はお使いの端末に保存され、同期がオンの場合は履歴とともに他の端末にも共有されます。</li>
+</ul>
+
+<h2 id="hijri">9. ヒジュラ暦とラマダーン</h2>
+<ul>
+<li>礼拝時刻画面のヒジュラ暦の日付はウンム・アルクラー暦に基づいています。お住まいの地域の暦と1日ずれている場合は、<span data-platform="apple"><strong class="ui">設定</strong> → <strong class="ui">ヒジュラ暦</strong></span><span data-platform="android"><strong class="ui">位置情報と設定</strong></span> → <strong class="ui">ヒジュラ暦の日付調整</strong>で−1、0、+1のいずれかを選んでください。</li>
+<li><strong class="ui">宗教的な日</strong>には今後の宗教的な日が一覧表示され、次の日は礼拝時刻画面にも表示されます。</li>
+<li><strong class="ui">ラマダーン時刻表</strong>には、ラマダーン中のイムサークとイフタールの時刻が表示されます。</li>
+<li><strong class="ui">スフールのリマインダー</strong>：<strong class="ui">オフ</strong>または<strong class="ui">イムサークの…分前</strong>（30、45、60、90）。<strong class="ui">イフタールの通知</strong>はイフタールの時刻に通知します。いずれもラマダーン中のみ設定されます。</li>
+<li>断食：ラマダーン中は礼拝時刻画面にイムサークまたはイフタールまでの残り時間と<strong class="ui">断食しました</strong>ボタンが表示されます。記録された日は<strong class="ui">断食済み</strong>と表示されます。</li>
+</ul>
+
+<h2 id="widgets">10. ウィジェット、ライブアクティビティ、コンプリケーション</h2>
+<ul data-platform="apple" data-badge="iPhone · Apple Watch">
+<li><strong class="ui">次の礼拝</strong>ウィジェットは、次の礼拝時刻または現在の礼拝時刻の終了までカウントダウンします。ホーム画面（小、中）またはロック画面に追加できます：ホーム画面を長押し → 編集 → ウィジェットを追加 → Salah Sense。</li>
+<li><strong class="ui">ライブアクティビティ</strong>（<strong class="ui">設定</strong>内）は、ロック画面とDynamic Islandにカウントダウンを表示します。生理期間中は開始されません。</li>
+<li>Apple Watchのコンプリケーション：文字盤を編集してSalah Senseを選択してください（長方形、インライン、円形、コーナー）。</li>
+</ul>
+<ul data-platform="android" data-badge="Android · Wear OS">
+<li>Androidのホーム画面ウィジェットには次の礼拝時刻が表示されます。ホーム画面を長押しし、ウィジェットの一覧からSalah Senseを追加してください。</li>
+<li>Wear OSではSalah Senseのタイルとコンプリケーションを利用できます。</li>
+</ul>
+<p>生理期間中は、ウィジェットとコンプリケーションに<strong class="ui">生理日</strong>と表示されます。</p>
+
+<h2 id="diagnostics">11. 診断記録の送信</h2>
+<p>検出が特定の礼拝で繰り返し間違う場合、診断記録を送っていただくと問題の調査に役立ちます。</p>
+<ol>
+<li data-platform="apple" data-badge="iPhone · Apple Watch">ウォッチで：<strong class="ui">検出設定</strong> → <strong class="ui">診断記録</strong> → <strong class="ui">記録を開始</strong>。両手を下げたまま3秒待ち、すべてのセクションを礼拝し、<strong class="ui">記録を終了</strong>をタップしてください。1回の記録は最大20分です。</li>
+<li data-platform="android" data-badge="Android · Wear OS">ウォッチで、検出が動作している間に<strong class="ui">礼拝検出</strong>ページの<strong class="ui">診断記録</strong>をオンにしてから礼拝してください。</li>
+<li><span data-platform="apple"><strong class="ui">記録をiPhoneに送信</strong>（iPhoneでアプリを開いた状態で）。必要であれば<strong class="ui">直前の記録を再送信</strong></span><span data-platform="android"><strong class="ui">記録をスマートフォンに送信</strong></span>。</li>
+<li>スマートフォンで：<span data-platform="apple"><strong class="ui">設定</strong> → <strong class="ui">診断記録</strong> → 記録を選択 → <strong class="ui">記録を共有</strong></span><span data-platform="android"><strong class="ui">礼拝検出</strong> → <strong class="ui">共有</strong></span>し、<a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a>宛にメールで送ってください。</li>
+</ol>
+<ul>
+<li>画面オフの状態で記録するには、継続検出が必要です。</li>
+<li>検出によって保存された各ファルドについて、直前数分間の短い<strong class="ui">自動ファルド概要</strong>が保持され、同じ方法で共有できます。</li>
+<li>記録には、動きセンサーの値、気圧／相対高度、検出の状態、キャリブレーションデータ、アプリのバージョンが含まれます。位置情報、音声、氏名、アカウント情報は含まれません。記録は共有した場合にのみ端末の外に送信されます。最近の記録は端末に保存され、<strong class="ui">記録を削除</strong>で削除できます。</li>
+</ul>
+
+<h2 id="troubleshooting">12. トラブルシューティングとサポート</h2>
+<ul>
+<li><strong>礼拝時刻が異なる：</strong>計算方法、アスルの計算、位置情報、タイムゾーンを確認してください<span data-platform="apple">。その後<strong class="ui">礼拝時刻を更新</strong>をタップしてください</span>。</li>
+<li><strong>通知が来ない：</strong>端末の設定で通知の権限、サイレントモード、フォーカスを確認してください。<span data-platform="android">バッテリー節約と<strong class="ui">スケジュール権限</strong>も影響します。</span></li>
+<li><strong>検出が始まらない：</strong><strong class="ui">動きセンサーからデータが届きませんでした。</strong>と表示される場合はウォッチアプリを再度開いてください。<strong class="ui">タクビールの測定データがありません。音声キャリブレーションを開始してください。</strong>と表示される場合はキャリブレーションを行ってください。画面オフで使うには継続検出をオンにしてください。</li>
+<li><strong>回数がよく間違う：</strong>ウォッチをしっかり締める、2番目の位置をキャリブレーションする、または再キャリブレーションしてください。手動で記録し、診断記録を送ってください。</li>
+<li><strong>スマートフォンとウォッチの履歴が異なる：</strong>両方の端末で同期をオンにしてください<span data-platform="apple">。その後<strong class="ui">今すぐ同期</strong>をタップしてください</span><span data-platform="android">。<strong class="ui">同期を再試行</strong>を使用してください</span>。</li>
+<li><strong>アラームが鳴らなかった：</strong>ウォッチの音量とサイレントモードを確認してください<span data-platform="apple">。ウォッチアプリを開くと直近のアラームが更新されます</span>。スマートフォンのアラームは<strong class="ui">設定</strong>の<strong class="ui">アラームをテスト</strong>で確認できます（3を参照）。</li>
+</ul>
+<div class="box">
+<p>その他の回答：<a href="https://notes7239.github.io/salahsense/support/ja.html">サポートページ</a>（よくある質問）。お問い合わせ：<a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a> — 端末のモデル、OSのバージョン、アプリのバージョンを記載してください。アプリのバージョンと出典は<strong class="ui">設定</strong> → <strong class="ui">このアプリについて</strong>にあります。</p>
+<p>データの取り扱いについて：<a href="https://notes7239.github.io/salahsense/privacy/ja.html">プライバシーポリシー</a>。アカウント、広告、アナリティクス、サーバーはありません。データはお使いの端末に保存されます。</p>
+</div>
+
+<div data-feature="ezber">
+<h2 id="memorization">13. クルアーンの暗記</h2>
+<ul>
+<li>スマートフォンの<strong class="ui">暗記</strong>タブはクルアーンの暗記を助けます。<strong class="ui">新しい暗記</strong>で<strong class="ui">スーラ</strong>（最初と最後のアーヤ）、<strong class="ui">ページ</strong>（604ページのマディーナ版ムスハフの割り付け）、または<strong class="ui">ジュズ</strong>を選び、<strong class="ui">追加</strong>をタップします。すでにリストにあるアーヤは二重に追加されません。</li>
+<li>毎日、まず復習の時期が来たアーヤ、次に<strong class="ui">1日の新規：…アーヤ</strong>までの新しいアーヤが出ます。<strong class="ui">アーヤ</strong>の行で今日のセッションを開きます。リストの項目をタップすると、その項目のアーヤだけが開きます。</li>
+<li><strong class="ui">今日</strong>には<strong class="ui">アーヤ</strong>、<strong class="ui">語</strong>、<strong class="ui">アーヤごとの語</strong>の3行があります。各行に残りが表示され、タップするとその部分が開きます。下の<strong class="ui">続ける</strong>で次の部分を開きます。上に目安の時間が表示されます。</li>
+<li>アーヤはアラビア語で、必要に応じて読み方付きで表示されます。読むたびに大きな<strong class="ui">読むたびにタップ</strong>の領域をタップします。新しいアーヤが<strong class="ui">各アーヤ：…回</strong>に達すると覚えたものとみなされ、翌日に復習として出ます。</li>
+<li>読んでいる間、強調表示が1語ずつ進み、下のカードにその語のアラビア文字と読み方が表示されます。<strong class="ui">自動送り</strong>がオフのときは<strong class="ui">前の語</strong>と<strong class="ui">次の語</strong>、または語をタップして進みます。タップするたびに強調表示は最初から始まります。</li>
+<li>アーヤの下にアプリの言語の訳が表示されます。日本語はサイード佐藤訳です。訳は QuranEnc.com から改変せずに使用し、訳者または発行者とバージョンを訳の下に表示します。脚注がある場合は<strong class="ui">脚注</strong>で開きます。繰り返し画面では訳は最初は隠れています。<strong class="ui">訳を表示</strong>で表示します。</li>
+<li><strong class="ui">隠してテスト</strong>は各単語を最初の文字以外隠します。単語をタップすると表示され、<strong class="ui">すべて表示</strong>ですべて表示されます。その後、<strong class="ui">難しい・明日</strong>、<strong class="ui">良い・…日後</strong>、<strong class="ui">簡単・…日後</strong>のいずれかを選びます。間隔は1、3、7、16、35日で、<strong class="ui">難しい・明日</strong>を選ぶとそのアーヤは最初からやり直しになります。まだ時期が来ていないアーヤを繰り返しても予定は変わりません。<strong class="ui">訳のヒント</strong>で訳を表示できます。ヒントを使った場合、選べるのは<strong class="ui">良い・…日後</strong>までです。</li>
+<li>覚えたアーヤの語は語のデッキに入ります。<strong class="ui">今日</strong>の<strong class="ui">語</strong>の行をタップします。毎日、まず復習の時期が来た語、次に最大10語の新しい語が出ます。複数のアーヤに出てくる語は1回だけ出題されます。カードではその語がアーヤの中で強調表示されます。意味を思い出してから<strong class="ui">表示</strong>をタップします。裏面には読み方、<strong class="ui">アーヤの訳</strong>、この形でクルアーンに出てくる回数が表示されます。その後、<strong class="ui">わからない</strong>（その語は最初から）、<strong class="ui">難しい</strong>、<strong class="ui">わかる</strong>のいずれかを選びます。間隔はアーヤと同じです。アーヤのテストで<strong class="ui">難しい・明日</strong>を選ぶと、そのアーヤの語も遅くとも翌日に出ます。<span data-feature="corpus quran-com">そのアーヤでの語の意味と品詞は語のパネルに表示されます。カード裏面の出現回数をタップすると開きます。</span></li>
+<li><strong class="ui">アーヤごとの語</strong>では、暗記リストのアーヤの語をスーラとアーヤ番号の順にアーヤごとに学びます。まだデッキにない語だけが出題され、学んだ語はすぐにデッキに入ります。タイトルの矢印で前後のアーヤへ移動し、タイトルをタップするとスーラとアーヤを選べます。位置は保存されます。アーヤが終わったら<strong class="ui">次のアーヤ</strong>または<strong class="ui">このアーヤを暗記</strong>を選びます。新しいアーヤの繰り返し画面の<strong class="ui">先に語</strong>ボタンからもこの画面を開けます。</li>
+<li>アーヤの語をタップすると語のパネルが開きます。読み方、アーヤ内の位置、この形がクルアーンと暗記リストに何回出てくるかが表示されます。<strong class="ui">出てくるアーヤ</strong>ではこの形が出てくるすべての箇所を一覧できます（<strong class="ui">すべて</strong>または<strong class="ui">暗記リスト内</strong>）。各行には、そのアーヤでの語の位置と読み方が表示されます。行をタップすると、語に印を付けたアーヤが訳とともに開きます。<strong class="ui">語</strong>のカード裏面の出現回数をタップしてもパネルが開きます。<span data-feature="corpus quran-com">パネルと一覧には、そのアーヤでの語の意味と品詞も表示されます。意味は Quran.com から取得し（インターネットが必要。お使いの言語の訳がない語は英語の意味と EN 表示）、品詞は Quranic Arabic Corpus によります。出典は一覧の下に表示されます。</span><span data-feature="corpus">語根のある語では、パネルに語根と<strong class="ui">語根が出てくるアーヤ</strong>ボタンも表示されます。一覧では<strong class="ui">同じ語</strong>がこの形だけを、<strong class="ui">語根</strong>が語根のすべての形を表示します（例：يَوْمِ なら語根 ي و م の يَوْمَ、ٱلْيَوْمَ、أَيَّامٍ…）。上の形のチップで一つの形に絞り込めます。語根も Quranic Arabic Corpus によります。小辞や代名詞など語根のない語ではこの選択は表示されません。</span></li>
+<li><strong class="ui">暗記の設定</strong>：<strong class="ui">リマインダー</strong>と<strong class="ui">時刻</strong>（既定は21:00）、1日の新規アーヤ数と繰り返し回数、<strong class="ui">読み方を最初から表示</strong>（<strong class="ui">暗記の復習</strong>、<strong class="ui">アーヤごとの語</strong>、<strong class="ui">隠してテスト</strong>、アーヤ表示では、<strong class="ui">読み方を表示</strong>／<strong class="ui">読み方を隠す</strong>のリンクでそのセッション中だけ切り替えられます）と<strong class="ui">読み方の表記方式</strong>：DIN 31635（国際方式、既定）または İSAM / TDV。読み方の表記は文字の音を示すものです。タジュウィードは先生から学んでください。</li>
+<li><strong class="ui">読みやすさ</strong>（暗記の設定）：<strong class="ui">アラビア語の文字サイズ</strong>（既定は<strong class="ui">大</strong>）、<strong class="ui">ページの色調</strong>（<strong class="ui">自動</strong>・<strong class="ui">白</strong>・<strong class="ui">クリーム</strong>・<strong class="ui">夜</strong>。<strong class="ui">自動</strong>はライトモードでクリーム、ダークモードで夜）、<strong class="ui">強調色</strong>（既定は<strong class="ui">青</strong>、<strong class="ui">緑</strong>、<strong class="ui">オレンジ</strong>、<strong class="ui">紫</strong>、<strong class="ui">ボルドー</strong>。アーヤ・読み方・抜粋で強調される語にこの色が使われます）、<span data-feature="corpus quran-com"><strong class="ui">意味の色</strong>（既定は<strong class="ui">ダーク</strong>）、<strong class="ui">品詞の色</strong>（既定は<strong class="ui">淡い</strong>）、</span><strong class="ui">訳を最初から表示</strong>、<strong class="ui">タップ時の振動</strong>。暗記画面の強調は細い下線です。</li>
+<li>通知は、復習または新しく覚えるアーヤがある日だけ届きます。暗記はスマートフォンだけの機能で、ウォッチには暗記の項目はありません。暗記リストはこのスマートフォンにだけ保存されます。</li>
+<li>クルアーンの本文は Tanzil プロジェクト（tanzil.net）のウスマーン体の本文で、改変せずに使用しています（CC BY 3.0）。読み方の表記はこの本文から生成しています。</li>
+<li><strong class="ui">キブラ</strong>は独立したタブではなくなりました。<strong class="ui">礼拝時刻</strong>画面の上部にあるボタンから開きます。</li>
+</ul>
+</div>
+
+<footer>Salah Sense · <a href="https://notes7239.github.io/salahsense/support/ja.html">サポート</a> · <a href="https://notes7239.github.io/salahsense/privacy/ja.html">プライバシーポリシー</a> · <a href="mailto:salahsensetracking@gmail.com">salahsensetracking@gmail.com</a></footer>
+</main>
+</body>
+</html>
